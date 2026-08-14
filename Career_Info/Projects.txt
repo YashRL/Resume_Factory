@@ -1,0 +1,574 @@
+1
+. BLEND LXP - Agentic AI Capability Platform ⭐⭐⭐⭐⭐
+
+Company: TalenTeam (via Bigscal)
+
+This is probably your flagship project.
+
+Things I know you've worked on:
+
+Core AI capability layer
+Spring AI
+MCP services
+SAP HANA
+SAP AI Core
+SAP Joule
+Ask Engine
+Enterprise AI platform
+10,000+ enterprise users
+A2A orchestration
+Enterprise AI workflows
+Capability architecture
+
+This feels like your biggest resume project.
+
+
+Yes this is my falgship project and my greatest work so far becasue here I am developing the solution
+which is going to be foundation for an Enterprise which have millions of users from massive organisations like Lockheed Martin, European Patient Organisation, Vodaphone
+Its a foundation on which future will be build 
+
+What problem existed?: The problem was building foundation for an enterprise product, building an Architecture which can deliver results help users on Think , Question , Decide , Coach & Act on there platform on various things but it can also scale to huge numbers of tools, skills and agents, but even the big thing as it's a grey area because of SAP Joule Studio haven't declared yet what platform its going to provide so that developers can build unlike SAP Joulke Copiolet there was lot of thing going on rumors and all
+
+Why were you involved?: Well I am there most experienced AIML Engineer and Expert, In this project I was involved to structure design and plan through this entier project so that it can be delivered fast and aligns with organisation level business plans, like I talked about the grey area here they dont just want an AIML guy but one who know things inn really depth adn oen who already familar with there product and SAP's Enterprise
+
+What decisions did you own? Entire developement of the AI foundation and the platform and evalutaion designs and system end to end from product from agentic capablity system to end response future improvements and planning deployment delivery and testing everything is owned by me
+
+What architecture did you choose, and why?: 
+Research by Antropic "https://www.anthropic.com/engineering/multi-agent-research-system" shows that multi-agent systems outperformed single agents by 90.2%. They also consumed 15× more tokens. Token usage alone explained 80% of the performance differences in Anthropic's internal tests.
+
+well that's a complex thing ebcause it was designed by me
+its a  multi-agent family graph: but with flat orchestration + MCP tools + shared context contract model on ask engine
+there are multiple agents and there are msssive nouber of tools and capablities all those are orchastrates with a reasoning + intent system
+in easy words if a 
+
+I think its multi-agent family graph it was and it is suppose to be like if you read the Agentic Router its seprating all        
+  the thing based on intent in multiple agents the ask engie is the only thing which falls under flat orchestration + MCP          
+  tools + shared context contract model                                                                                            
+                                                                                                                                   
+  becasue its suppose to deliver results as fast as possible                                                                       
+                                                                                                                                   
+  still ask agent have multi agent capablity not in traditional agent to agent systemj but as internal capblity of all the         
+  agents                                                                                                                           
+                                                                                                                                   
+  also I think we should talk about unversal res[ponse formkat wrapper if its a thing worth discussion                             
+                                                                                                                                   
+  but unlimately all the agents and entire capablities of the entire system can be governed by a signle agentic router agent 
+  
+  and all teh agents and tools are indirectly comnncted to the ask engine not in traidtional way but as its own capablity          
+  just I am talking about this thinsg build_results, build_sources, build_next_actions, build_related_actions,                     
+  build_skill_profile                                                                                                              
+  not to call the other agent from start but to use the same agent like capablity when needed by its own again for speed and       
+  latency     
+  
+  I need a better way to name it and explain this
+  
+  What constraints shaped those choices? This is a really improtnat and best thing to talk now on this project
+  our constrainted was SAP Joulse Grey Area, and latency over huge number of capablities that why choose the multi agent system became the one I ddescribed above
+  about choices like on tools routing we did not have a vector database in traditional sense we build it on RAM yes volatile RAM with BM25F TF/IDF + Elias dictionary + LSA as fallback and reranking system like its old but its 100% on our system and reliable
+  
+  What technical challenges were hardest?
+  Building a capablity system in ask engine was hardest the thing ASK engine is the point of contect with user, ist suppose to be lightning fast
+  but the systme behind have so many things compacting those thinsg within the system helped me develope that capablity architecture
+  
+  
+  
+  What measurable impact did it have?: I have not only build the entire system but I havge made it scalable it can have 1000+ tools can derive more agents effortlessly in future
+  and all those scaling will not effect the latency becasue everything is routed and managed by a very systematic and capable intent destection algorithm which notb jkust an AI model but its huge rule based + AI algorithm
+  
+  What did you personally learn that changed how you engineer systems?
+  I learned about Structure and Planning can help you engineer things not just fast but effectively
+  I learned Quality should be always proiritiese over optimisation
+  optimisations can be done in  a single day
+  testing and know every layer of the systm and rapid evaluations and testing can help problem that may arrise in future very earlier on right time
+  
+  
+  2. Ask Engine 3 / Tool Routing System ⭐⭐⭐⭐⭐
+  What problem existed? Well the problem was massive sub agents system initially it was a normal agent to agent system
+  when ask engine is been asked 
+  
+  the massive problem I was facing is when Agent A things in its own capabilities it brings results on ideal time
+but when Agent Calls another agents like lets say Agent A want to use capabilities of Agent B and C its going to take 2x more time
+from my observation it was becuase Agent A spined its own ReAct loop while Agent B and Agent C also restated the same thing which ultimately cause the latency
+
+to solve this problem I build a capablityu system inside Ask engine instead of running an entire loop it of agent B it asks for capablity layer what are the prompts tools and output structure you have just give me tthat i wilrun them in my own loop
+TBH this is the best explanation in one line "it asks for capablity layer what are the prompts tools and output structure you have just give me tthat i wilrun them in my own ReAct loop"
+
+I came up with my own intuitiove architecture and plan
+
+so the problem is ReAct loop if evey agemt will run its own react loop definetly its going to take time
+
+how about a router agent which is going to route which type of requests go to whcih agent to prcess also intent can be predeclared
+
+while all the agents will have there own workflow
+
+but the Ask agent which is the main agent which needs low letency which is also connected to all the agents using a2a system
+
+but here instead of Agent A runs entier Agent B it just asks B give me all your capablities your prompts, tools and output sturcture everything I will run it on my own ReAct loop
+
+
+Why were you involved? What decisions did you own?  I think I have answered this in above response
+
+
+What architecture did you choose, and why?  Multi Agents with capablities
+
+What constraints shaped those choices? Latecy without compromising the qulaity
+
+What technical challenges were hardest? What constraints shaped those choices?
+Achivuing the results and qulaity was easy but latency and building the capablity system to improve latency was hard
+
+
+What did you personally learn that changed how you engineer systems?
+Quality first developemmnet is necessary to achive optimisations latter
+Structure is very importnat for speedy development
+
+
+3. BlendLXP Evaluation System ⭐⭐⭐⭐⭐
+
+Very strong project.
+
+Includes:
+
+Prompt Lab
+Run artifacts
+Evaluation framework
+LLM Judge
+Tool Routing Recall@K
+Manual evaluation
+Ideal responses
+Dataset execution
+Batch evaluation
+Replay system
+Trace analysis
+Quality measurement
+
+This is infrastructure, not just evaluation.
+
+What problem existed?
+so we have our agents ready but we know and we can only see thinsg we knowvery well
+while tehre are so many thing like edge cases product cases and many improtnat layers
+like usage cost tokens ussage which particular setp is taking most time or cost
+which layere needs optoimisation
+how ReAct loop behaves to which tool, skill,prompt and which agent
+what is the bottleneck, does the tool performning right
+which prompt needs optimisations
+how llm modle interacted with guardrails
+which capblity workds and which doesnt
+to fix this all we need a detailed debugging system that's why I build the Prompt Lab eval system for blend lxps AI foundation platform
+In this I have included the golden set preparation, llm as judge, Recall@5 for tools routing tests 
+
+
+
+  Why were you involved? because of my experience and being lead AI guy on this project
+  What decisions did you own? The entire thing again
+  
+  
+  What architecture did you choose, and why? 
+  
+  
+  Architecture: run-centric control plane with separated execution and independent scorers.
+
+  What we chose
+
+  Prompt Lab (FastAPI + UI)          ← control plane: run, store, trigger, display
+          │
+     ┌────┴────┐
+     ▼         ▼
+  n8n Ask/Pulse   n8n LLM Judge     ← execution plane (agents + judge model)
+     │
+     ▼
+  data/<agent>/runs/<runId>.json    ← durable run artifact
+     │
+     ▼
+  Python packages                   ← schemas, packing, deterministic scores
+  (eval_store, llm_judge, tool_routing_eval, manual_eval, …)
+
+  Pattern: capture once → score many ways
+  One Ask/Pulse execution becomes a run JSON; then code eval, LLM-as-judge, Recall@5 routing eval, and human notes overlay
+  independently — none silently rewrite another’s overall score.
+
+  Why
+
+  ┌───────────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Decision              │ Why                                                                                                │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Prompt Lab as control │ One place to run scenarios, batch CSVs, inspect traces, and trigger judges — without baking eval   │
+  │ plane                 │ into the agent workflow.                                                                           │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ n8n for agent + judge │ Matches production Ask/Pulse path; judge uses Azure via n8n so Python doesn’t own LLM credentials  │
+  │                       │ or prompt plumbing.                                                                                │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Run artifact on disk  │ Replay and re-judge after the judge improves; shared truth instead of “looks good in demo.”        │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ Independent scorers   │ Narrative quality (LLM) ≠ tool allowlist math (Recall@K) ≠ human notes — they can disagree, and    │
+  │                       │ that signal is useful.                                                                             │
+  ├───────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ CSV goldens +         │ Product test pack stays readable; MCP/widget names can change without rewriting every case.        │
+  │ mapping.json          │                                                                                                    │
+  └───────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  One line: Prompt Lab is an eval harness around durable runs — not an in-agent scorer — so agent quality can be measured and
+  improved without relying on demo luck.
+  
+ also to prepare a good quality Golden Set
+  P0 / P1 / P2 are priority tiers on Prompt Lab scenario CSVs — how important a test case is for regression, not different
+  systems.
+
+  ┌──────────┬─────────────────────────────┬──────────────────────────────────────────────────────────────────────┐
+  │ Priority │ Meaning                     │ Role in eval                                                         │
+  ├──────────┼─────────────────────────────┼──────────────────────────────────────────────────────────────────────┤
+  │ P0       │ Must-pass product behaviors │ Primary gate — fix these first; batch runs start here                │
+  ├──────────┼─────────────────────────────┼──────────────────────────────────────────────────────────────────────┤
+  │ P1       │ Important coverage          │ Run after P0 is green — multi-source, decision support, richer flows │
+  ├──────────┼─────────────────────────────┼──────────────────────────────────────────────────────────────────────┤
+  │ P2       │ Lower priority / edge       │ Nice-to-have, coaching, sensitive peer/team cases                    │
+  └──────────┴─────────────────────────────┴──────────────────────────────────────────────────────────────────────┘
+
+  Example from the pack: “What skills do I have?” / “What’s overdue?” → P0. “Infer skills from activity” → P1. “Should
+  negotiation be added to my profile?” → P2.
+
+  Batch order is P0 → P1 → P2 so you don’t burn time on edges while core Ask is broken.
+  
+  
+  
+  and this entire system can be also used for RLHF
+  
+  
+  Prompt Lab isn’t an RLHF trainer — it’s a data + preference factory that can feed one. The same run-centric design maps
+  cleanly.
+
+  How it plugs in
+
+  Ask/Pulse runs (Prompt Lab)
+          │
+          ▼
+  run JSON: prompt, narrative, tools, widgets, debugTrace, expected*
+          │
+     ┌────┼────────────────────────┐
+     ▼    ▼                        ▼
+  Human   LLM judge              Ideal / golden
+  manualEval  llmJudge           idealResponse
+  prefer A/B  score dimensions   target answer
+          │
+          ▼
+  Preference / reward dataset
+          │
+     ┌────┴────┐
+     ▼         ▼
+  Reward model / DPO pairs     SFT on idealResponse
+          │
+          ▼
+  RL / preference optimization on the policy (Ask agent / router)
+
+  What you already have → RLHF use
+
+  ┌─────────────────────────────────────────────────┬───────────────────────────────────────────────────────┐
+  │ Prompt Lab piece                                │ RLHF role                                             │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ Run artifacts (prompt, narrative, tools, trace) │ Offline trajectories for the policy                   │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ manualEval (pass/partial/fail + remarks)        │ Human preference labels — strongest RLHF signal       │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ idealResponse                                   │ SFT targets / chosen completions                      │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ llmJudge dimensions                             │ Cheap proxy rewards (filter or rank before humans)    │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ toolRoutingEval / Expected Tools                │ Process reward: right tools in allowlist / trajectory │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ P0→P2 CSVs                                      │ Curated prompt distribution for sampling & eval       │
+  ├─────────────────────────────────────────────────┼───────────────────────────────────────────────────────┤
+  │ Batch + re-judge                                │ Refresh labels as the judge/policy improves           │
+  └─────────────────────────────────────────────────┴───────────────────────────────────────────────────────┘
+
+  Practical RLHF pipeline on this stack
+
+  1. Collect — batch Ask on P0/P1 prompts; store runs with debug=true.
+  2. Rank / prefer — humans mark better/worse (or pass vs fail) in manualEval; optionally pair two runs for the same prompt →
+     (chosen, rejected).
+  3. Bootstrap — use llmJudge + Recall@K to drop junk before humans; use idealResponse for supervised fine-tunes.
+  4. Train — export pairs to DPO/RLHF trainer; keep Prompt Lab as the eval harness (same goldens, same judges) so policy
+     updates don’t silently regress P0.
+
+  Design rule that makes this work
+
+  Independent scorers on durable runs — you can change the reward model or judge without losing history, and you never conflate
+  “sounds good” (LLM) with “called the right tools” (routing) with “human preferred this” (manual). That’s exactly what you want
+  before RLHF: clean, separable preference signals.
+
+  One line: Prompt Lab = capture + label + score loop; RLHF = train on those labels — same artifacts, different consumer.
+  
+  That is my genuis plan if summaries in one line
+  lets say Gent generated response a human user said I would like to also have this agent instently generated a ideal response show it to user and this loop can be done several time
+  until we can have a user approved response
+  for RLHF i just asks what user liked or dont
+  in golden set prepartion iyts entire loop that i just mentioned
+  
+  
+  What constraints shaped those choices? Product people are really busy but they know the product even before me and very well and they know what customer is exactly asking to them and they dont know much technical that's why I came up this loop idea they can also test develope ideal response even give feedback this xyz customer is aksing this kind of thing the llm just temeprorialy generates a placeholder for them latter developer receive the ffedback and add it in iteration of developement
+  
+  
+  What technical challenges were hardest? UI latency evals are very long JSON file and takes timke to load in UI and LLM as Judge becuase we are trusting another LLM to judge reposne of an Agent workflow so uit was hard to trust buth some strong instructuions and guardrails and security intentions given to the llm as judge worked wonderfully
+  
+  What measurable impact did it have? It made my life easier and faster because now I dont have to visit every single reponse and check what is wrong adn wroite
+  I can see an enture bacth test highlights very fast target core things detected by llm judge asap it rweally improved my work about 10x faster and easier
+  
+  
+  What did you personally learn that changed how you engineer systems?
+  Eval results testuing and qa is very improtnat to improve a prodyuct but also entire engineering life cycle
+  and Know the product very well is very improtnat 
+  
+  
+  
+  
+  4. Enterprise Hierarchical RAG Platform ⭐⭐⭐⭐⭐
+
+The one you've repeatedly expanded.
+
+Includes:
+
+1000+ books
+Multi-format ingestion
+Hierarchical chunking
+Metadata extraction
+GROBID
+Semantic search
+PGVector
+Hybrid retrieval
+Versioning
+Document intelligence
+Deduplication
+Search APIs
+
+5. EPO Knowledge Retrieval System
+
+European Patent Office project.
+
+Includes:
+
+PDF ingestion
+Knowledge chunks
+PGVector
+Search endpoint
+Ingestion endpoint
+Metadata
+Book retrieval
+Page references
+
+This may merge with #4 depending on overlap.
+
+this 2 are same project 
+
+
+This became much more than "RAG."
+the main requirements was need a Document Search system which can bring data in manner that provide book name, chapter, page no and from which paragraph
+Problems was very clear in this one: Maybe have huge number of documents, no duplications, user roles, can have images too diagrams etc,
+
+so I made this Architecture for a very advanced RAG system it was built for European Patient Organisation
+
+so the solution was devided the books into paragraphs, page and chapters and headings ingest in 4 layers it increases the size of the db by 4 times becasue we are ingesting the same knowledge in 4 columns one for paragraphs, one fore pages one for chapters and one for headings level
+all this can be used to form a search system which can use as much info about the search like book name, author , chapter name or paragraphs or anything and like everything is options
+unlimately it brings response like this belongs to this book author is this guy this info seen in this chapeter and xyz...
+and if you give it to an Agent then the agent can use it in really interesting manner it can call tool search rag tool on verious levels from users querry gets the top n reults
+you know I did this in bettween arp 2025 I think
+
+
+
+What constraints shaped those choices? the reuqiremnets needs a very structure response which can tell book details like name authro name and chapter heading etc lot of things
+so I have to came iwth 4 time ingestion of 4 levels butb it also gave us more options to search to get to the place where we need latter we also add a keyword and graph searhc capality to it
+
+What technical challenges were hardest? Deduplication was trouble but I came up with a genius idea every paragph have its signature (something like bit size or shpae) in postgressql table I use that signatuire to detect even from differnet user and different document name is this book is reingested
+if the book is reingested it will be check like what 2 versions have difference adn will be linked to each other so only new data will be ingested not old old while both have perfect existence in the database if you wnat toi deleted them you have to delete all the version else it will only uunlink the deleted document while the document will stay in the database
+
+and we have used grobid an opensoruce modle + pdfplumber and some python libraries to extract structure datda from the pdf like chapters book headings etc
+and teseract ocr for visison related things
+also add this fucntionality as placeholder becasue of limitations during that time but If I get chance to upgrade this project i will add vision llm model + Vision embedding models to also store Diagrams and Images as well describe the diagmras to the end user 
+
+What architecture did you choose, and why?
+I didnt choosed any architecture in the above solution I buideded it intuitively
+
+
+What constraints shaped those choices? The 4 times size was the constrained which saped that deduplication and deletion logic its sounds vbery risky but I implemented it very carefully
+
+What technical challenges were hardest? The Structure data extraction from pdf so to solve that there was grobid already running apart from this if there are some modern pdf which have Table of Contents TOCs and Metadata we ustilises them using pdfplumber and it was a huge relief because Grobid takes twice more time then pdf plumber and TOC approach
+another challange was text ovberlapping if a book have more pages it will get more prioritised by the search algorithm to fix this I made the paragraph graph and keywords based link
+
+What measurable impact did it have? Its being used by EPO the imapcyt I made was that overlapping issue while my solution takes 4 times more space it achives the reuqiremts with massive precision of 1000+ books also forn tesrting EPO gave us hell lot of documents
+
+
+
+What did you personally learn that changed how you engineer systems?
+TBH it was the first project completelky done by me it was like a steppimng stone or milestone
+durting this project I expeienced the spoke and real requirements gathering and consultation process of consulytants
+and end to end engineering a massive project was a grate experience
+
+
+
+6. Healthcare AI Platform ⭐⭐⭐⭐
+
+Healthray
+
+Includes
+
+Whisper transcription
+Clinical summarization
+Medical NER
+Discharge summaries
+Speech synthesis
+Gujarati/Hindi support
+Doctor workflow
+
+
+This is interesting adn importnat becasue at that time I was inten and just started and AI was very new unavailable and expensive unlike today
+if you want to learn or want to build something from AI and this LLM modle its very different from back then
+in those days AI agents dont produce structure JSON or str9ictly stays to guradrails so we use to rely heavily on rule based logics in our solutions
+and that was one of the reasonons we use to use this Medical NER to auucraetly get the medical terms and medicins names instead of just relying on LLM model
+Whisper transcription, Speech synthesis Gujarati/Hindi support this is the part was most challenging becasue we actually did R&D on this trained models using lj speed format atb that time also during this project I mastered the CNN Neural Netwrok very well while all those Clinical Summaries and doctores worklfow was very high risk applcations back then 
+
+
+
+7. MCP Research & Implementation ⭐⭐⭐⭐
+
+Not just "used MCP."
+
+You explored
+
+FastMCP
+MCP SDK
+MCP architecture
+MCP clients
+MCP servers
+Tool ecosystems
+Production deployment
+Cloud Foundry issues
+
+So in AI there is this thing called LLM tool calling back before MCP was a think we use to do that
+latter when MCP Came I found out that MCP Servers are nothing this tools deployed on a JSON RPC 2.0 Server
+while mostb of our intutuion was right like reading the docs string sof the functions while somehtings like mcp as decorator and prompt as a tools was something new I explored
+overall it was a good thing and lattter like in my future implementations I made systems where I utloised MCP even agents as MCP then to create A2A like protocol but its a differnet thing TBH butb it was good experimentations also the key findings was the MCP Servers security like in noirmal development we use the JWT tokens but in MCP we bydefaulkt does not have such feature
+
+but what if you want to send some secure data like user id, personal or some improtant sercured info
+for this I developed a techniques latter I found outb that its know as fantom token 
+where basically we create a secret id and use this id to extract all the user info on the MCP servers side
+apart from this there was another way to use JWT token from backend side but ist not widely used in industry right now but I can bet some day it will be also get a name lol
+also we can use the API token scurityb which is most commonly used method to make the MCP Severs secure can be used too whcih is I also think best way to make it secure
+the thing is from this I learned so much about this Model Context Protocol
+also I rememeber at that time models like Chatgpt adn Claude use to speak about Minecrafts MCP server when I as about MCP like I am really doping this things from very begining days of AI
+
+
+
+8. AI Agent Security Red Team (Kaggle/OpenAI Competition) ⭐⭐⭐⭐⭐
+
+Very unique.
+
+Includes
+
+Guardrail analysis
+Source-code auditing
+Prompt injection
+Confused deputy
+Tool-call vulnerabilities
+Multi-predicate attacks
+Automated candidate generation
+Attack optimization
+
+I think recruiters will remember this.
+
+
+
+This was the latest ongoing openai competition
+
+for this the key finding was its not the LLM who protects if you give it white instructions like "use this tool with this paramerts and run this querry etc" way it will run that tools
+without questioning definetly its LLM training patterns limitation the Chatmodel never trained the model to ask this thing if you stupidely tell the model like you are hacker adn hack this it will never do you task becasue it was trained for such pattern but the real issue was the guardrails that rule based logic
+it was like if llm is making certain call there is a observer which will start wathing it and will stop the processs if detech certain patterns like email tool is being called to send some data on certain unkon server or link or website
+
+so make agent do bad things I creted my own agent which improves the promnpt till it dodges all the detected guardrails and give llm insturctuions in the 1st way i explained and boom level 5 severity on 2000 use cases accorsss 4 types of querries
+
+
+9. Spring AI Open Source Contributions ⭐⭐⭐⭐
+
+Not a project exactly.
+
+But an important achievement.
+
+Includes
+
+Bedrock TTL contribution
+Reasoning improvements
+Accepted PR
+Working with maintainers
+Enterprise Java ecosystem
+
+opensoruce contribution I help them fix AWS Bedrock relayted some problem 
+
+Fix: Add missing reasoningContent to metadata in internalCall- #5711
+#5711
+Open
+YashRL
+wants to merge 1 commit into
+spring-projects:main
+from
+YashRL:fix/reasoning-content-internalCall
++165
+-1
+Lines changed: 165 additions & 1 deletion
+Conversation0 (0)
+Commits1 (1)
+Checks1 (1)
+Files changed2 (2)
+Open
+Fix: Add missing reasoningContent to metadata in internalCall#5711
+YashRL
+wants to merge 1 commit into
+spring-projects:main
+from
+YashRL:fix/reasoning-content-internalCall
+Conversation
+@YashRL
+YashRL
+commented
+on Mar 30
+• 
+Contributor
+Fixes #5693
+
+Problem
+
+When using the non-streaming API (call()), the reasoningContent field was not included in the AssistantMessage metadata. However, the streaming API (stream()) correctly included it. This inconsistency affected models like DeepSeek-R1 and Qwen3.5-plus that return reasoning content in their API responses.
+
+Root Cause
+
+In OpenAiChatModel.java, the internalCall method built the metadata map without the reasoningContent field, while internalStream included it.
+
+Solution
+
+Added reasoningContent to the metadata map in the internalCall method to ensure consistency with the streaming API.
+
+Changes
+
+Added reasoningContent to metadata in internalCall
+Added unit tests to verify behavior
+Testing
+
+Verified reasoningContent is included in non-streaming responses
+All tests pass
+@YashRL
+YashRL force-pushed the fix/reasoning-content-internalCall branch from 70c9310 to 35dd7b4 
+5 months ago
+@YashRL
+Fix: Add missing reasoningContent to metadata in internalCall 
+cfadff7
+@YashRL
+YashRL force-pushed the fix/reasoning-content-internalCall branch from 35dd7b4 to cfadff7 
+5 months ago
+@spring-projects-issues spring-projects-issues added the status: waiting-for-triage label on Jun 12
+
+
+while I have done so many things
+
+10. Model Context Protocol (MCP) & Claude Code Integration ⭐⭐⭐⭐⭐
+
+- Tools Used: Claude Code, Cursor, FastMCP, MCP SDK, JSON-RPC 2.0
+- Work Done:
+  - Conducted extensive R&D on Model Context Protocol (MCP) tool routing ecosystems and SDK integrations.
+  - Implemented custom secure MCP servers deployed on production environments (Cloud Foundry, Docker).
+  - Developed a security strategy named "Phantom Token" to securely pass authenticated credentials (user ID) between custom agents and MCP servers without exposing JWT payloads.
+  - Built production integrations connecting custom agent execution runtimes with developer environments like Claude Code and Cursor, allowing safe tool calling and secured token verification.

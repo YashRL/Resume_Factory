@@ -1,0 +1,14 @@
+# Node
+career-ops/node_modules/
+
+# Generated PDF/HTML output (keep source, not output binaries)
+career-ops/output/*.pdf
+career-ops/output/*.html
+
+# Env / secrets
+career-ops/.env
+career-ops/.envrc
+
+# OS
+.DS_Store
+Thumbs.db
