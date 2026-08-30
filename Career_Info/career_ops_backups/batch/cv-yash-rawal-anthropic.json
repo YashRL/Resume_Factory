@@ -15,7 +15,7 @@
     "portfolio": null,
     "location": "Surat, Gujarat, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, MCP integrations, and ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, MCP integrations, and Claude-powered infrastructure. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
   "experience": [
     {
       "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
@@ -82,23 +82,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering"
+      "items": "Python, FastAPI, Java, SQL, Spring Boot, PostgreSQL, SAP HANA, Data Engineering"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings"
+      "items": "MCP, Agentic AI, Model Training & SFT, Machine Learning, Vector Embeddings"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule"
+      "items": "Spring AI, LangGraph, LlamaIndex, PyTorch, LangChain, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber"
     },
     {
       "category": "Platforms & Models",
-      "items": "Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights"
+      "items": "Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Gemini, Qwen, Meta Llama & Open Weights, SAP AI Core"
     },
     {
       "category": "Infrastructure & Security",
-      "items": "Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)"
+      "items": "Red Teaming, LLM-as-Judge, PII Sanitization (BIO NER), Docker, Kubernetes, Linux, Cloud Foundry, CI/CD"
     }
   ]
 }

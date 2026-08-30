@@ -82,23 +82,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering"
+      "items": "Python, SQL, FastAPI, Java, Spring Boot, PostgreSQL, SAP HANA, Data Engineering"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings"
+      "items": "Agentic AI, Vector Embeddings, MCP, Machine Learning, Model Training & SFT"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule"
+      "items": "LangGraph, CrewAI, Spring AI, LlamaIndex, PyTorch, LangChain, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber"
     },
     {
       "category": "Platforms & Models",
-      "items": "Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights"
+      "items": "Claude, Azure OpenAI, Amazon Bedrock, Google Vertex AI, Gemini, Qwen, Meta Llama & Open Weights, SAP AI Core"
     },
     {
       "category": "Infrastructure & Security",
-      "items": "Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)"
+      "items": "Docker, Kubernetes, LLM-as-Judge, PII Sanitization (BIO NER), Red Teaming, CI/CD, Cloud Foundry, Linux"
     }
   ]
 }
