@@ -3,18 +3,9 @@
   "page_format": "letter",
   "name": "Yash Rawal",
   "contact_line": "Surat, Gujarat, India • +91-9399159685",
-  "email": {
-    "url": "mailto:yashrawal987@gmail.com",
-    "display": "yashrawal987@gmail.com"
-  },
-  "linkedin": {
-    "url": "https://linkedin.com/in/rawal-yash",
-    "display": "linkedin.com/in/rawal-yash"
-  },
-  "github": {
-    "url": "https://github.com/YashRL",
-    "display": "github.com/YashRL"
-  },
+  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
+  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
   "candidate": {
     "name": "Yash Rawal",
     "phone": "+91-9399159685",
@@ -24,87 +15,90 @@
     "portfolio": null,
     "location": "Surat, Gujarat, India"
   },
-  "summary": "AI Engineer specialized in AI Platform Engineering and enterprise LLM infrastructure for 1M+ active users. Skilled in building low-latency, secure agent execution runtimes, zero-vector-DB tool-routing layers, and AWS-native AI services. Open-source contributor to Spring AI, leveraging deep system design and security experience to ship production-scale software.",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and financial-grade ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
   "experience": [
     {
       "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
       "role": "AI/ML Engineer",
       "location": "Remote",
-      "dates": "Oct 2024 – Present",
+      "dates": "Oct 2024 - Present",
       "bullets": [
-        "Developed full-stack applied AI workflows and multi-agent family graphs (flat orchestration and Model Context Protocol tools) on AWS Bedrock serving 1M+ active ERP users across healthcare, manufacturing, and financial services.",
-        "Addressed Ask Engine multi-agent latency by designing a capability contract layer that executes nested capability profiles inside a single ReAct loop, reducing latency by 3x and token costs by 70%.",
-        "Built a custom zero-vector-DB tool routing system on volatile RAM (using BM25F, TF-IDF, Elias encoding, and LSA fallback) to scale 1,000+ capabilities with microsecond-level latency.",
-        "Architected the Prompt Lab evaluation system for large-scale model evaluations by engineering a FastAPI + UI + n8n control plane to capture durable trajectories and human preference annotations, serving as an offline RLHF/DPO dataset factory to optimize routing policies.",
-        "Built a search platform for 10,000+ documents at an international patent authority by implementing a hierarchical RAG pipeline (indexing paragraph, page, and chapter layers) and Postgres signature deduplication, achieving 90%+ Recall@10.",
-        "Secured agentic workflows against OWASP LLM Top 10 vulnerabilities by implementing observer-based tool-call monitoring and automated PII redaction, protecting sensitive customer financial data in production."
+        "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.",
+        "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by **70%**.",
+        "Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.",
+        "Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
+        "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
+        "Secured agentic workflows against OWASP LLM vulnerabilities via runtime tool monitoring and trained token-classification models for automated PII redaction."
       ]
     },
     {
       "company": "Healthray (Bigscal Technologies)",
       "role": "AI/ML Engineer Intern",
       "location": "Surat, India",
-      "dates": "Apr 2024 – Sep 2024",
+      "dates": "Apr 2024 - Sep 2024",
       "bullets": [
-        "Built clinical transcription workflows (Whisper transcription, medical NER, speech synthesis) using rule-based guardrails to extract medication schedules.",
-        "Developed LLM-based safeguards for structured extraction of medications and patient history."
+        "Engineered clinical summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR (Whisper, Vosk, NeMo).",
+        "Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets."
       ]
     }
   ],
   "projects": [
     {
       "name": "Spring AI (spring-projects/spring-ai)",
-      "badge": "Active Contributor",
-      "tech": "Java, Spring Boot, AWS Bedrock",
-      "description": "Merged DeepSeek-R1/Qwen reasoningContent metadata fix (PR #5711) and prompt-cache TTL support for AWS Bedrock Converse API to resolve streaming/non-streaming consistency.",
-      "context": "Active Contributor | Java, Spring Boot, AWS Bedrock",
-      "dates": "Mar 2026 – Present",
-      "bullets": [
-        "Merged DeepSeek-R1/Qwen reasoningContent metadata fix (PR #5711) and prompt-cache TTL support for AWS Bedrock Converse API to resolve streaming/non-streaming consistency."
-      ]
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot",
+      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
     },
     {
-      "name": "Model Context Protocol (MCP) & Claude Code",
-      "badge": "Research & Integration",
-      "tech": "Claude Code, Cursor, JSON-RPC 2.0",
-      "description": "Researched Model Context Protocol (MCP) tool routing integrations with Claude Code, Cursor, and custom agentic workflows to secure API token validation.",
-      "context": "Research & Integration | Claude Code, Cursor, JSON-RPC 2.0",
-      "dates": "Jan 2026 – Present",
-      "bullets": [
-        "Researched Model Context Protocol (MCP) tool routing integrations with Claude Code, Cursor, and custom agentic workflows to secure API token validation."
-      ]
+      "name": "Modular Agent Harness & Memory System (\"Brain\")",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot, PostgreSQL, WebSockets",
+      "description": "**Principal Creator & Architect** of an open-source plug-and-play agentic framework designed as modular, composable building blocks for flexible enterprise workflows, implementing a formal Java-based ReAct loop (Thought-Action-Observation) with step budgets, tactical pgvector tool routing, and dynamic MCP settings caching."
     },
     {
-      "name": "AI Agent Security Red Teaming (OpenAI Competition)",
-      "badge": "Research",
-      "tech": "Kaggle, OpenAI API",
-      "description": "Developed automated adversarial pipelines (bypassing guardrails and security observers via optimized multi-predicate prompt injections) to achieve level 5 severity exploits across 2,000+ test cases.",
-      "context": "Research | Kaggle, OpenAI API",
-      "dates": "Aug 2026",
-      "bullets": [
-        "Developed automated adversarial pipelines (bypassing guardrails and security observers via optimized multi-predicate prompt injections) to achieve level 5 severity exploits across 2,000+ test cases."
-      ]
+      "name": "AI Agent Security Red Teaming \u2013 OpenAI",
+      "badge": "Security Researcher",
+      "tech": "Python, Kaggle",
+      "description": "Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases."
     }
   ],
   "education": [
     {
-      "title": "Master of Computer Applications (MCA - AI & ML)",
-      "institution": "Parul University",
+      "title": "Master of Computer Applications (Artificial Intelligence & Machine Learning)",
       "org": "Parul University",
-      "degree": "MCA (AI & ML)",
-      "location": "Gujarat, India",
-      "dates": "2024",
-      "year": "2024",
-      "description": "Specialized in Artificial Intelligence and Machine Learning."
+      "year": "2022 - 2024"
     }
   ],
   "certifications": [
-    { "title": "Microsoft Certified: Azure AI Fundamentals (AI-900)", "org": "Microsoft", "year": "2024" },
-    { "title": "Microsoft Certified: Azure Fundamentals (AZ-900)", "org": "Microsoft", "year": "2024" }
+    {
+      "title": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "org": "Microsoft"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "org": "Microsoft"
+    }
   ],
   "skills": [
-    { "category": "Languages & Backend", "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA" },
-    { "category": "AI Frameworks & Platforms", "items": "LangChain, LangGraph, LlamaIndex, Spring AI, CrewAI, AutoGen, Docker, Kubernetes" },
-    { "category": "Cloud & Security", "items": "AWS Bedrock, AWS SageMaker, Azure OpenAI, CI/CD, LLM-as-Judge, OWASP LLM Top 10, PII Sanitization, Red Teaming" }
+    {
+      "category": "Languages & Backend",
+      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering"
+    },
+    {
+      "category": "AI & ML Engineering",
+      "items": "Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings"
+    },
+    {
+      "category": "AI & ML Frameworks",
+      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule"
+    },
+    {
+      "category": "Platforms & Models",
+      "items": "Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights"
+    },
+    {
+      "category": "Infrastructure & Security",
+      "items": "Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)"
+    }
   ]
 }
