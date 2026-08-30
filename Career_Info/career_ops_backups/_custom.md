@@ -37,13 +37,11 @@
 - **Scale-First Professional Summary**: The Professional Summary must lead with enterprise scale metrics (e.g., 1M+ active users, 120+ ERP organizations, enterprise agentic platform) first, followed directly by core model training and machine learning engineering.
 - **Strong Engineering Verbs**: Never use weak or passive descriptors like "Built local POCs," "Assisted," "Helped," or "Worked on." Use authoritative engineering verbs such as "Engineered," "Designed," "Optimized," "Architected," and "Trained" to represent internship and project work.
 - **Pre-Tuning Applied AI Logic**: If a job post is focused only on Applied AI, frame it to show that the candidate tunes and trains the models first (SFT, triplet contrastive training, quantization), then builds the applied agentic systems on top of them. Do not let the profile look like a simple API-wrapper developer.
-- **Mandatory Strategic CV Bold Highlights**: Always preserve and highlight exactly the following five key terms/phrases across every generated CV:
-  1. `**1M+ active ERP users**` (or `**1M+ user scale**` in the professional summary)
-  2. `**3x**` and `**70%**` (efficiency metrics)
-  3. `**Qwen2.5-7B**` (model training proof)
-  4. `**Human Feedback (RLHF) Pipeline**` (RLHF alignment/annotations system)
-  5. `**90%+ Recall@10**` (retrieval metric)
-  6. `**Principal Creator & Architect**` (modular harness leadership role)
+- **Strategic CV Bold Highlights (Max 5 highlights)**: Limit the total number of bold highlighted terms/phrases across the entire CV to a maximum of 5 to prevent visual clutter and maintain readability.
+- **Compulsory Highlights**: The following two highlights are compulsory and must always be preserved and bolded across every generated CV:
+  1. `**1M+ active ERP users**` (or `**1M+ user scale**` in the professional summary) — representing scale and impact.
+  2. `**Qwen2.5-7B**` — representing core machine learning/model training background.
+- **Flexible Dynamic Highlights (Up to 3 additional)**: The tailoring system has the flexibility to dynamically choose up to 3 additional key metrics, terms, or roles (such as `**3x**` / `**70%**` efficiency, `**90%+ Recall@10**` RAG metric, `**Human Feedback (RLHF) Pipeline**`, or `**Principal Creator & Architect**`) to bold based on what best matches the target JD.
 - **No Line Wrap for Long Bold Phrases**: If a highlighted term or phrase is long (e.g., `**Human Feedback (RLHF) Pipeline**`, `**Principal Creator & Architect**`, `**1M+ active ERP users**`), it must not wrap across a line break to a second line. Format the surrounding sentence text or adjust sentence structure to ensure these bold phrases sit cleanly on a single line.
 
 
