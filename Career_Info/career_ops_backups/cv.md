@@ -19,10 +19,10 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 ### TalenTeam Ltd., UK (via Bigscal Technologies)
 *AI/ML Engineer* | *Oct 2024 – Present*
 - Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.
-- Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by **70%**.
+- Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by 3x and token consumption by 70%.
 - Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.
 - Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.
-- Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.
+- Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate.
 - Secured agentic workflows against OWASP LLM vulnerabilities via runtime tool monitoring and trained token-classification models for automated PII redaction.
 
 ### Healthray (Bigscal Technologies)

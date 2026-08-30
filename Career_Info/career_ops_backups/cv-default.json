@@ -1,11 +1,6 @@
 {
   "lang": "en",
-  "page_format": "letter",
-  "name": "Yash Rawal",
-  "contact_line": "Surat, Gujarat, India • +91-9399159685",
-  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
-  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
-  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+  "page_format": "a4",
   "candidate": {
     "name": "Yash Rawal",
     "phone": "+91-9399159685",
@@ -13,9 +8,19 @@
     "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
     "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
     "portfolio": null,
-    "location": "Surat, Gujarat, India"
+    "location": "Surat, Gujarat, India",
+    "photo": "",
+    "photo_style": "rounded"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, MCP integrations, and ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
+  "sections": {
+    "summary": "Professional Summary",
+    "experience": "Experience",
+    "projects": "Open Source & Projects",
+    "education": "Education",
+    "certifications": "Certifications",
+    "skills": "Technical Skills"
+  },
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
   "experience": [
     {
       "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
