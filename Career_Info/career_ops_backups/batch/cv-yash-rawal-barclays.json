@@ -1,0 +1,110 @@
+{
+  "lang": "en",
+  "page_format": "letter",
+  "name": "Yash Rawal",
+  "contact_line": "Surat, Gujarat, India • +91-9399159685",
+  "email": {
+    "url": "mailto:yashrawal987@gmail.com",
+    "display": "yashrawal987@gmail.com"
+  },
+  "linkedin": {
+    "url": "https://linkedin.com/in/rawal-yash",
+    "display": "linkedin.com/in/rawal-yash"
+  },
+  "github": {
+    "url": "https://github.com/YashRL",
+    "display": "github.com/YashRL"
+  },
+  "candidate": {
+    "name": "Yash Rawal",
+    "phone": "+91-9399159685",
+    "email": "yashrawal987@gmail.com",
+    "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+    "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+    "portfolio": null,
+    "location": "Surat, Gujarat, India"
+  },
+  "summary": "AI Engineer specialized in AI Platform Engineering and enterprise LLM infrastructure for 1M+ active users. Skilled in building low-latency, secure agent execution runtimes, zero-vector-DB tool-routing layers, and AWS-native AI services. Open-source contributor to Spring AI, leveraging deep system design and security experience to ship production-scale software.",
+  "experience": [
+    {
+      "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
+      "role": "AI/ML Engineer",
+      "location": "Remote",
+      "dates": "Oct 2024 – Present",
+      "bullets": [
+        "Developed full-stack applied AI workflows and multi-agent family graphs (flat orchestration and Model Context Protocol tools) on AWS Bedrock serving 1M+ active ERP users across healthcare, manufacturing, and financial services.",
+        "Addressed Ask Engine multi-agent latency by designing a capability contract layer that executes nested capability profiles inside a single ReAct loop, reducing latency by 3x and token costs by 70%.",
+        "Built a custom zero-vector-DB tool routing system on volatile RAM (using BM25F, TF-IDF, Elias encoding, and LSA fallback) to scale 1,000+ capabilities with microsecond-level latency.",
+        "Architected the Prompt Lab evaluation system for large-scale model evaluations by engineering a FastAPI + UI + n8n control plane to capture durable trajectories and human preference annotations, serving as an offline RLHF/DPO dataset factory to optimize routing policies.",
+        "Built a search platform for 10,000+ documents at an international patent authority by implementing a hierarchical RAG pipeline (indexing paragraph, page, and chapter layers) and Postgres signature deduplication, achieving 90%+ Recall@10.",
+        "Secured agentic workflows against OWASP LLM Top 10 vulnerabilities by implementing observer-based tool-call monitoring and automated PII redaction, protecting sensitive customer financial data in production."
+      ]
+    },
+    {
+      "company": "Healthray (Bigscal Technologies)",
+      "role": "AI/ML Engineer Intern",
+      "location": "Surat, India",
+      "dates": "Apr 2024 – Sep 2024",
+      "bullets": [
+        "Built clinical transcription workflows (Whisper transcription, medical NER, speech synthesis) using rule-based guardrails to extract medication schedules.",
+        "Developed LLM-based safeguards for structured extraction of medications and patient history."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spring AI (spring-projects/spring-ai)",
+      "badge": "Active Contributor",
+      "tech": "Java, Spring Boot, AWS Bedrock",
+      "description": "Merged DeepSeek-R1/Qwen reasoningContent metadata fix (PR #5711) and prompt-cache TTL support for AWS Bedrock Converse API to resolve streaming/non-streaming consistency.",
+      "context": "Active Contributor | Java, Spring Boot, AWS Bedrock",
+      "dates": "Mar 2026 – Present",
+      "bullets": [
+        "Merged DeepSeek-R1/Qwen reasoningContent metadata fix (PR #5711) and prompt-cache TTL support for AWS Bedrock Converse API to resolve streaming/non-streaming consistency."
+      ]
+    },
+    {
+      "name": "Model Context Protocol (MCP) & Claude Code",
+      "badge": "Research & Integration",
+      "tech": "Claude Code, Cursor, JSON-RPC 2.0",
+      "description": "Researched Model Context Protocol (MCP) tool routing integrations with Claude Code, Cursor, and custom agentic workflows to secure API token validation.",
+      "context": "Research & Integration | Claude Code, Cursor, JSON-RPC 2.0",
+      "dates": "Jan 2026 – Present",
+      "bullets": [
+        "Researched Model Context Protocol (MCP) tool routing integrations with Claude Code, Cursor, and custom agentic workflows to secure API token validation."
+      ]
+    },
+    {
+      "name": "AI Agent Security Red Teaming (OpenAI Competition)",
+      "badge": "Research",
+      "tech": "Kaggle, OpenAI API",
+      "description": "Developed automated adversarial pipelines (bypassing guardrails and security observers via optimized multi-predicate prompt injections) to achieve level 5 severity exploits across 2,000+ test cases.",
+      "context": "Research | Kaggle, OpenAI API",
+      "dates": "Aug 2026",
+      "bullets": [
+        "Developed automated adversarial pipelines (bypassing guardrails and security observers via optimized multi-predicate prompt injections) to achieve level 5 severity exploits across 2,000+ test cases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Master of Computer Applications (MCA - AI & ML)",
+      "institution": "Parul University",
+      "org": "Parul University",
+      "degree": "MCA (AI & ML)",
+      "location": "Gujarat, India",
+      "dates": "2024",
+      "year": "2024",
+      "description": "Specialized in Artificial Intelligence and Machine Learning."
+    }
+  ],
+  "certifications": [
+    { "title": "Microsoft Certified: Azure AI Fundamentals (AI-900)", "org": "Microsoft", "year": "2024" },
+    { "title": "Microsoft Certified: Azure Fundamentals (AZ-900)", "org": "Microsoft", "year": "2024" }
+  ],
+  "skills": [
+    { "category": "Languages & Backend", "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA" },
+    { "category": "AI Frameworks & Platforms", "items": "LangChain, LangGraph, LlamaIndex, Spring AI, CrewAI, AutoGen, Docker, Kubernetes" },
+    { "category": "Cloud & Security", "items": "AWS Bedrock, AWS SageMaker, Azure OpenAI, CI/CD, LLM-as-Judge, OWASP LLM Top 10, PII Sanitization, Red Teaming" }
+  ]
+}
