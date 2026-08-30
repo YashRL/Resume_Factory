@@ -43,6 +43,7 @@
   2. `**Qwen2.5-7B**` — representing core machine learning/model training background.
 - **Flexible Dynamic Highlights (Up to 3 additional)**: The tailoring system has the flexibility to dynamically choose up to 3 additional key metrics, terms, or roles (such as `**3x**` / `**70%**` efficiency, `**90%+ Recall@10**` RAG metric, `**Human Feedback (RLHF) Pipeline**`, or `**Principal Creator & Architect**`) to bold based on what best matches the target JD.
 - **No Line Wrap for Long Bold Phrases**: If a highlighted term or phrase is long (e.g., `**Human Feedback (RLHF) Pipeline**`, `**Principal Creator & Architect**`, `**1M+ active ERP users**`), it must not wrap across a line break to a second line. Format the surrounding sentence text or adjust sentence structure to ensure these bold phrases sit cleanly on a single line.
+- **Context Loading of Projects.txt**: Always read and incorporate the full project inventory context from [Projects.txt](file:///D:/Yash_Code/Resume_Factory/Career_Info/Projects.txt) during tailoring. Use these granular details (such as n8n routing workflows, pgvector indexing, SpaCy NER models, and model parameters) to match the target JD's requirements with the most relevant and high-signal achievements from your actual career history.
 
 
 ## Custom Workflows
