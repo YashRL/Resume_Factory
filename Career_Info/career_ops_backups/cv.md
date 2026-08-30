@@ -10,7 +10,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 - **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering
 - **AI & ML Engineering**: Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings
-- **AI & ML Frameworks**: PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule
+- **AI & ML Frameworks**: PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber
 - **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights
 - **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)
 
@@ -22,8 +22,8 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by 3x and token consumption by 70%.
 - Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.
 - Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.
-- Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate.
-- Secured agentic workflows against OWASP LLM vulnerabilities via runtime tool monitoring and trained token-classification models for automated PII redaction.
+- Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate.
+- Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for automated PII redaction.
 
 ### Healthray (Bigscal Technologies)
 *AI/ML Engineer Intern* | *Apr 2024 – Sep 2024*
