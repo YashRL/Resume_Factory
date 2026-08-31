@@ -82,23 +82,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, Data Engineering, REST APIs"
+      "items": "Python, Java, SQL, FastAPI, Spring Boot, PostgreSQL, REST APIs"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Model Training & SFT, Agentic AI, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization, Machine Learning, MCP, Vector Embeddings"
+      "items": "Model Training & SFT, Agentic AI, Distributed Training & Inference, KV Caching, MCP, Vector Embeddings"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Triton, CUDA, HIP, vLLM, Spring AI, LangGraph, CrewAI, LangChain, LlamaIndex, AutoGen, Hugging Face, DataParallel, AdamW"
+      "items": "PyTorch, Triton, CUDA, HIP, vLLM, Hugging Face, Spring AI, LangGraph, CrewAI"
     },
     {
       "category": "Platforms & Models",
-      "items": "TinyStories, Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Qwen, Gemini, Meta Llama & Open Weights"
+      "items": "Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Qwen, TinyStories, Meta Llama & Open Weights"
     },
     {
       "category": "Infrastructure & Security",
-      "items": "Docker, Kubernetes, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets"
+      "items": "Docker, Kubernetes, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization, WebSockets"
     }
   ]
 }
