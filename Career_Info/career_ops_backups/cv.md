@@ -8,11 +8,11 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ## Technical Skills
 
-- **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering
-- **AI & ML Engineering**: Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings
-- **AI & ML Frameworks**: PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber
-- **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights
-- **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)
+- **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
+- **AI & ML Engineering**: Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference
+- **AI & ML Frameworks**: PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Triton, Hugging Face
+- **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule
+- **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets
 
 ## Experience
 

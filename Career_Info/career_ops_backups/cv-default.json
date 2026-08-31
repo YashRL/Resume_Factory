@@ -87,23 +87,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering"
+      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Machine Learning, Model Training & SFT, Agentic AI, MCP, Vector Embeddings"
+      "items": "Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber"
+      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Triton, Hugging Face"
     },
     {
       "category": "Platforms & Models",
-      "items": "Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights"
+      "items": "Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule"
     },
     {
       "category": "Infrastructure & Security",
-      "items": "Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER)"
+      "items": "Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets"
     }
   ]
 }
