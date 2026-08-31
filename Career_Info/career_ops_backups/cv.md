@@ -4,15 +4,15 @@ Surat, Gujarat, India • +91-9399159685 • yashrawal987@gmail.com • linkedin
 
 ## Professional Summary
 
-Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.
+Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and ERP AI infrastructure across 120+ organizations. Specialized in core model training, multimodal signal processing (speech/audio DSP and vision), and low-latency execution frameworks. Active contributor to Spring AI, bridging machine learning research with production systems.
 
 ## Technical Skills
 
-- **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
-- **AI & ML Engineering**: Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization
-- **AI & ML Frameworks**: PyTorch, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face, DataParallel, AdamW
-- **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule, TinyStories
-- **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets
+- **Languages & Backend**: Python, Java, C++, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
+- **AI & ML Engineering**: Multimodal AI, Model Training & SFT, Audio Signal Processing (DSP), Computer Vision, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization
+- **AI & ML Frameworks**: PyTorch, Scikit-Learn, OpenCV, torchaudio, librosa, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face, DataParallel, AdamW
+- **Platforms & Models**: Whisper, IndicConformer, Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule, TinyStories
+- **Infrastructure & Security**: Linux, Docker, Kubernetes, Cloud Foundry, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets, Kaggle
 
 ## Experience
 
@@ -48,7 +48,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ### AI Agent Security Red Teaming – OpenAI
 *Security Researcher* | *Aug 2026*
-- Designed adversarial prompt-injection pipelines targeting observer-based guardrails to evaluate security boundaries across 2,000+ agent test cases.
+- Designed adversarial prompt-injection pipelines targeting observer-based guardrails to evaluate security boundaries across 2,000+ agent test cases on Kaggle.
 
 ## Education
 
