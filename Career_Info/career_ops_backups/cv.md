@@ -9,9 +9,9 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 ## Technical Skills
 
 - **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
-- **AI & ML Engineering**: Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference
-- **AI & ML Frameworks**: PyTorch, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face
-- **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule
+- **AI & ML Engineering**: Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization
+- **AI & ML Frameworks**: PyTorch, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face, DataParallel, AdamW
+- **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule, TinyStories
 - **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets
 
 ## Experience
@@ -32,6 +32,11 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ## Open Source & Projects
 
+### Mini Language Model (~85M Parameter Architecture)
+*Personal Research & Author* | *Jan 2026 – Present*
+- Pretrained an ~85M-parameter decoder-only transformer to ~1.43 validation loss on TinyStories dataset, designing FragmentStream Attention (chunked sequence tiling) to eliminate O(T^2) VRAM exhaustion on commodity Tesla P100/T4 GPUs.
+- Implemented conversational alignment via multi-corpus dialogue training with asymmetric loss masking and 70/30 pretraining replay; developed custom Triton kernels and KV caching for low-latency inference.
+
 ### Spring AI (spring-projects/spring-ai)
 *Active Contributor* | *Mar 2026 – Present*
 - Resolved streaming and non-streaming API latency mismatches by merging DeepSeek-R1/Qwen reasoningContent metadata propagation (PR #5711) and AWS Bedrock Converse API prompt-caching TTL support.
@@ -43,7 +48,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ### AI Agent Security Red Teaming – OpenAI
 *Security Researcher* | *Aug 2026*
-- Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases.
+- Designed adversarial prompt-injection pipelines targeting observer-based guardrails to evaluate security boundaries across 2,000+ agent test cases.
 
 ## Education
 

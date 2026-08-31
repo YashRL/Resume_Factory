@@ -462,3 +462,23 @@ The second major component was a **layered web-content extraction pipeline** des
 ### Architectural Significance
 
 This was one of the earlier projects where I started treating **web search, retrieval, ranking, and content extraction as independent capabilities that could later be exposed to AI systems**. The idea eventually evolved considerably in later projects: search became a tool inside agentic systems, retrieval expanded into enterprise RAG, and ranking evolved into hybrid/semantic retrieval and multi-level document search. The project therefore represents an early step toward the larger architecture I later built around **AI agents, tool orchestration, RAG, and autonomous research workflows**.
+
+
+
+### Mini Language Model
+Read for more details: Mini_Language_Model.md
+
+An ongoing research project investigating how to build **coherent, conversational language models under severe compute and parameter constraints (<100M parameters)**.
+
+The project explores:
+
+* **FragmentStream Attention** — chunked attention designed to reduce peak VRAM usage on older GPUs.
+* **Efficient pretraining** using high-density synthetic datasets such as TinyStories.
+* **Conversational alignment** using multi-corpus dialogue training, asymmetric loss masking, and 70/30 pretraining replay.
+* **Empirical failure analysis**, studying repetition loops, semantic collapse, catastrophic forgetting, and dialogue generalization.
+
+The project has produced an **~85M-parameter model achieving ~1.43 validation loss on TinyStories**, with ongoing work focused on efficient inference, KV caching, Triton kernels, and ultra-low-scale preference optimization.
+
+### Technologies Used
+
+**Python, PyTorch, CUDA, Transformer Architecture, Custom BPE Tokenization, AdamW, TinyStories, DailyDialog, PersonaChat, EmpatheticDialogues, DataParallel, FragmentStream Attention, GPU-based distributed training (NVIDIA Tesla P100/T4), and Jupyter/Kaggle.**

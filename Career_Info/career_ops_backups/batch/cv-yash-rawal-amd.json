@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "page_format": "letter",
+  "page_format": "a4",
   "name": "Yash Rawal",
   "contact_line": "Surat, Gujarat, India • +91-9399159685",
   "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
@@ -15,7 +15,7 @@
     "portfolio": null,
     "location": "Surat, Gujarat, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms. Specialized in PyTorch model training, distributed inference via vLLM, and self-evolving agents. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms. Specialized in PyTorch foundation model pretraining (~85M parameters), custom Triton/CUDA attention kernels, and self-evolving agent loops. Active contributor to Spring AI, bridging core machine learning research with high-performance production systems.",
   "experience": [
     {
       "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
@@ -44,22 +44,22 @@
   ],
   "projects": [
     {
-      "name": "Spring AI (spring-projects/spring-ai)",
-      "badge": "Open Source",
-      "tech": "Java, Spring Boot",
-      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
+      "name": "Mini Language Model (~85M Parameter Architecture)",
+      "badge": "Personal Research",
+      "tech": "Python, PyTorch, CUDA, Triton, Tesla P100/T4",
+      "description": "Pretrained an ~85M-parameter transformer to ~1.43 validation loss on TinyStories; engineered FragmentStream chunked attention to eliminate O(T^2) VRAM overhead on commodity GPUs and custom Triton kernels with KV caching for low-latency inference."
     },
     {
       "name": "Modular Agent Harness & Memory System (\"Brain\")",
       "badge": "Open Source",
       "tech": "Java, Spring Boot, PostgreSQL, WebSockets",
-      "description": "**Principal Creator & Architect** of an open-source plug-and-play agentic framework designed to automatically generate and evaluate high-performance CUDA/HIP workloads, implementing a formal Java-based ReAct loop (Thought-Action-Observation) with step budgets, tactical pgvector tool routing, and dynamic settings caching."
+      "description": "**Principal Creator & Architect** of an open-source agentic framework designed to automatically generate and evaluate high-performance CUDA/HIP workloads, implementing a formal ReAct loop (Thought-Action-Observation) with tactical tool routing."
     },
     {
-      "name": "AI Agent Security Red Teaming \u2013 OpenAI",
-      "badge": "Security Researcher",
-      "tech": "Python, Kaggle",
-      "description": "Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases."
+      "name": "Spring AI (spring-projects/spring-ai)",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot",
+      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
     }
   ],
   "education": [
@@ -86,15 +86,15 @@
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Model Training & SFT, Agentic AI, Distributed Training, Distributed Inference, Machine Learning, MCP, Vector Embeddings"
+      "items": "Model Training & SFT, Agentic AI, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization, Machine Learning, MCP, Vector Embeddings"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Triton, CUDA, HIP, vLLM, Spring AI, LangGraph, CrewAI, LangChain, LlamaIndex, AutoGen, Hugging Face"
+      "items": "PyTorch, Triton, CUDA, HIP, vLLM, Spring AI, LangGraph, CrewAI, LangChain, LlamaIndex, AutoGen, Hugging Face, DataParallel, AdamW"
     },
     {
       "category": "Platforms & Models",
-      "items": "Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Qwen, Gemini, Meta Llama & Open Weights"
+      "items": "TinyStories, Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Qwen, Gemini, Meta Llama & Open Weights"
     },
     {
       "category": "Infrastructure & Security",
