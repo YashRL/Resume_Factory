@@ -95,7 +95,7 @@
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Triton, Hugging Face"
+      "items": "PyTorch, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face"
     },
     {
       "category": "Platforms & Models",

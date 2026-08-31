@@ -10,7 +10,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 - **Languages & Backend**: Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
 - **AI & ML Engineering**: Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference
-- **AI & ML Frameworks**: PyTorch, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Triton, Hugging Face
+- **AI & ML Frameworks**: PyTorch, Triton, CUDA, HIP, Spring AI, LangGraph, LangChain, LlamaIndex, CrewAI, AutoGen, vLLM, n8n, GROBID, pdfplumber, Hugging Face
 - **Platforms & Models**: Azure OpenAI, SAP AI Core, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP Build, SAP Joule
 - **Infrastructure & Security**: Docker, Kubernetes, Cloud Foundry, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets
 
@@ -43,7 +43,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ### AI Agent Security Red Teaming – OpenAI
 *Security Researcher* | *Aug 2026*
-- Designed adversarial prompt-injection pipelines targeting observer-based guardrails to evaluate security boundaries across 2,000+ agent test cases.
+- Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases.
 
 ## Education
 
