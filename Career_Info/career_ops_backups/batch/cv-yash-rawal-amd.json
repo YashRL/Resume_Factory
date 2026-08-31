@@ -1,0 +1,104 @@
+{
+  "lang": "en",
+  "page_format": "letter",
+  "name": "Yash Rawal",
+  "contact_line": "Surat, Gujarat, India • +91-9399159685",
+  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
+  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+  "candidate": {
+    "name": "Yash Rawal",
+    "phone": "+91-9399159685",
+    "email": "yashrawal987@gmail.com",
+    "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+    "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+    "portfolio": null,
+    "location": "Surat, Gujarat, India"
+  },
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms. Specialized in PyTorch model training, distributed inference via vLLM, and self-evolving agents. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
+  "experience": [
+    {
+      "company": "TalenTeam Ltd., UK (via Bigscal Technologies)",
+      "role": "AI/ML Engineer",
+      "location": "Remote",
+      "dates": "Oct 2024 - Present",
+      "bullets": [
+        "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.",
+        "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by **70%**.",
+        "Trained domain-specific **Qwen2.5-7B** models on A100 GPUs (served via vLLM) and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.",
+        "Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
+        "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate.",
+        "Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for automated PII redaction."
+      ]
+    },
+    {
+      "company": "Healthray (Bigscal Technologies)",
+      "role": "AI/ML Engineer Intern",
+      "location": "Surat, India",
+      "dates": "Apr 2024 - Sep 2024",
+      "bullets": [
+        "Engineered clinical summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR (Whisper, Vosk, NeMo).",
+        "Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spring AI (spring-projects/spring-ai)",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot",
+      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
+    },
+    {
+      "name": "Modular Agent Harness & Memory System (\"Brain\")",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot, PostgreSQL, WebSockets",
+      "description": "**Principal Creator & Architect** of an open-source plug-and-play agentic framework designed as modular, composable building blocks for flexible enterprise workflows, implementing a formal Java-based ReAct loop (Thought-Action-Observation) with step budgets, tactical pgvector tool routing, and dynamic MCP settings caching."
+    },
+    {
+      "name": "AI Agent Security Red Teaming \u2013 OpenAI",
+      "badge": "Security Researcher",
+      "tech": "Python, Kaggle",
+      "description": "Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases."
+    }
+  ],
+  "education": [
+    {
+      "title": "Master of Computer Applications (Artificial Intelligence & Machine Learning)",
+      "org": "Parul University",
+      "year": "2022 - 2024"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "org": "Microsoft"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "org": "Microsoft"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & Backend",
+      "items": "Python, Java, SQL, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering"
+    },
+    {
+      "category": "AI & ML Engineering",
+      "items": "Model Training & SFT, Agentic AI, Machine Learning, MCP, Vector Embeddings"
+    },
+    {
+      "category": "AI & ML Frameworks",
+      "items": "PyTorch, vLLM, Spring AI, LangGraph, CrewAI, LangChain, LlamaIndex, AutoGen, SAP Build, SAP Joule, GROBID, pdfplumber"
+    },
+    {
+      "category": "Platforms & Models",
+      "items": "Claude, Amazon Bedrock, Google Vertex AI, Azure OpenAI, Qwen, Gemini, Meta Llama & Open Weights, SAP AI Core"
+    },
+    {
+      "category": "Infrastructure & Security",
+      "items": "Docker, Kubernetes, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), Linux, CI/CD, Cloud Foundry"
+    }
+  ]
+}
