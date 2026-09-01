@@ -4,13 +4,13 @@ Surat, Gujarat, India • +91-9399159685 • yashrawal987@gmail.com • linkedin
 
 ## Professional Summary
 
-Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, MCP server infrastructure, and ERP AI systems across 120+ organizations. Specialized in LLM orchestration (LangGraph, ReAct loops), RAG, and core model fine-tuning. Active contributor to Spring AI, bridging generative AI and machine learning models with high-throughput production systems.
+Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, multi-agent systems, and ERP AI infrastructure across 120+ organizations. Specialized in LLM orchestration (LangGraph, CrewAI, ReAct loops), enterprise RAG, and AgentOps evaluation control planes. Active contributor to Spring AI, bridging generative AI models with high-throughput production systems.
 
 ## Technical Skills
 
 - **Languages & Backend**: Python, SQL, Java, C++, Spring Boot, FastAPI, PostgreSQL, SAP HANA, Data Engineering, REST APIs
-- **AI & ML Engineering**: MCP Server Development, Agentic AI, RAG & Vector Search, Model Training & SFT, Context Graphs, Multimodal AI, Audio Signal Processing (DSP), Computer Vision, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization
-- **AI & ML Frameworks**: LangGraph, LangChain, Spring AI, PyTorch, vLLM, LlamaIndex, CrewAI, AutoGen, Scikit-Learn, OpenCV, torchaudio, librosa, Triton, CUDA, HIP, n8n, GROBID, pdfplumber, Hugging Face, DataParallel, AdamW
+- **AI & ML Engineering**: Agentic AI, Multi-Agent Systems, MCP Server Development, RAG & Vector Search, Model Training & SFT, Context Graphs, Multimodal AI, Audio Signal Processing (DSP), Computer Vision, Machine Learning, MCP, Vector Embeddings, Distributed Training, Distributed Inference, KV Caching, Custom BPE Tokenization
+- **AI & ML Frameworks**: LangGraph, CrewAI, LangChain, Spring AI, PyTorch, vLLM, LlamaIndex, AutoGen, Scikit-Learn, OpenCV, torchaudio, librosa, Triton, CUDA, HIP, n8n, GROBID, pdfplumber, Hugging Face, DataParallel, AdamW
 - **Platforms & Models**: Azure OpenAI, Amazon Bedrock, Google Vertex AI, Claude, Gemini, Qwen, Meta Llama & Open Weights, SAP AI Core, SAP Build, SAP Joule, Whisper, IndicConformer, TinyStories
 - **Infrastructure & Security**: Docker, Kubernetes, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization (BIO NER), WebSockets, Kaggle, Cloud Foundry
 

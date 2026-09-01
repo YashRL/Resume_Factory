@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "name": "Yash Rawal",
+    "email": "yashrawal987@gmail.com",
+    "phone": "+91-9399159685",
+    "location": "Surat, Gujarat, India",
+    "linkedin": "https://linkedin.com/in/rawal-yash",
+    "github": "https://github.com/YashRL",
+    "credentials": [
+      "Master of Computer Applications (AI & ML)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+    ]
+  },
+  "letter": {
+    "role_title": "AI Systems Engineer (Ref: JN-082026-7091342)",
+    "company": "Michael Page",
+    "city": "Bangalore, India",
+    "date": "September 1, 2026",
+    "greeting": "Dear Hiring Team,",
+    "opening": "I am writing to express my strong interest in the AI Systems Engineer position (Ref: JN-082026-7091342) based in Bangalore.",
+    "profile_intro": "As an Applied AI & Machine Learning Engineer currently architecting enterprise agentic platforms and SaaS productivity systems serving 1M+ active users across 120+ organizations, my background directly aligns with your mandate to architect a next-generation flagship enterprise AI agent from the ground up. Combining extensive hands-on experience in multi-agent orchestration (LangGraph, CrewAI, ReAct loops), scalable RAG architectures, and PromptOps evaluation control planes, I specialize in delivering trusted, high-impact AI capabilities for enterprise operations.",
+    "achievements": [
+      {
+        "lead": "Flagship Multi-Agent Architecture",
+        "impact": "Architected production-scale multi-agent workflows and designed a single ReAct loop capability contract layer that cut execution latency by 3x and token consumption by 70% across enterprise tenants."
+      },
+      {
+        "lead": "Enterprise RAG & Grounding",
+        "impact": "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate."
+      },
+      {
+        "lead": "PromptOps, Evaluation & Governance",
+        "impact": "Developed the Prompt Lab evaluation control plane to systematically log multi-turn reasoning trajectories, tool call payloads, and human preference annotations, establishing a scalable Human Feedback (RLHF) Pipeline."
+      },
+      {
+        "lead": "Production Security & AgentOps",
+        "impact": "Fortified agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for automated PII redaction."
+      }
+    ],
+    "problems_section": "Architecting an enterprise AI agent for workforce intelligence and productivity governance requires moving far beyond basic prompting—it demands deterministic tool contracts, context grounding across complex operational telemetry, and rigorous regression testing to ensure continuous auditability and user trust. Having built and scaled mission-critical agentic systems to 1M+ active enterprise users, I look forward to bringing this architectural rigor to your client's flagship AI initiatives.",
+    "closing": "Thank you for your time and consideration. I welcome the opportunity to discuss how my hands-on background in agentic AI engineering, RAG optimization, and production LLMOps can deliver immediate value to this initiative.",
+    "signature": {
+      "valediction": "Sincerely,",
+      "name": "Yash Rawal"
+    }
+  },
+  "output_path": "output/cover-yash-rawal-michael-page.pdf"
+}
