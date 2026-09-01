@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "name": "Yash Rawal",
+    "email": "yashrawal987@gmail.com",
+    "phone": "+91-9399159685",
+    "location": "Ratlam (457001), Madhya Pradesh, India",
+    "linkedin": "https://linkedin.com/in/rawal-yash",
+    "github": "https://github.com/YashRL",
+    "credentials": [
+      "Master of Computer Applications (AI & ML)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+    ]
+  },
+  "letter": {
+    "role_title": "AI Engineer — GBSC Analytics and Automation (Job ID: R-279646)",
+    "company": "Mastercard",
+    "city": "Pune, India",
+    "date": "September 1, 2026",
+    "greeting": "Dear Mastercard Hiring Team,",
+    "opening": "I am writing to express my enthusiastic interest in the AI Engineer position within the Global Business Services Center (GBSC) Analytics and Automation team at Mastercard in Pune (Job ID: R-279646).",
+    "profile_intro": "As an Applied AI & Machine Learning Engineer currently architecting enterprise agentic platforms and automated intelligence systems serving 1M+ active users across 120+ organizations, my technical trajectory directly reflects GBSC's incubator mission to empower customers with actionable insights. Combining hands-on expertise in LangChain and LangGraph orchestration, hierarchical RAG architectures, Azure OpenAI, and Responsible AI governance, I specialize in transforming complex data into robust, production-grade AI solutions.",
+    "achievements": [
+      {
+        "lead": "Enterprise Agentic AI & Orchestration",
+        "impact": "Architected production-scale multi-agent workflows and designed a single ReAct loop capability contract layer that cut execution latency by 3x and token consumption by 70% across enterprise tenants."
+      },
+      {
+        "lead": "Hierarchical RAG & Enterprise Grounding",
+        "impact": "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate."
+      },
+      {
+        "lead": "Responsible AI, Safety & Governance",
+        "impact": "Fortified agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for automated PII redaction."
+      },
+      {
+        "lead": "LLMOps & Evaluation Control Planes",
+        "impact": "Developed the Prompt Lab evaluation control plane to systematically log multi-turn reasoning trajectories, tool call payloads, and human preference annotations, establishing a scalable Human Feedback (RLHF) Pipeline."
+      }
+    ],
+    "problems_section": "Driving operational efficiency and delivering actionable insights across Mastercard's global digital payment network requires more than isolated prototypes—it requires scalable cloud-native architectures, deterministic tool integration, and transparent Responsible AI guardrails that guarantee data privacy and compliance. Having deployed and optimized mission-critical agentic systems at 1M+ user scale and contributed upstream to Spring AI, I am eager to contribute to GBSC's automation vision and Mastercard's commitment to secure, accessible digital commerce.",
+    "closing": "Thank you for your time and consideration. I would welcome the opportunity to discuss how my technical expertise in Generative AI, RAG optimization, and agentic workflows can add immediate value to the GBSC Analytics and Automation team at Mastercard.",
+    "signature": {
+      "valediction": "Sincerely,",
+      "name": "Yash Rawal"
+    }
+  },
+  "output_path": "output/cover-yash-rawal-mastercard.pdf"
+}
