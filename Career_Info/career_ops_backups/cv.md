@@ -1,6 +1,6 @@
 # Yash Rawal
 
-Surat, Gujarat, India • +91-9399159685 • yashrawal987@gmail.com • linkedin.com/in/rawal-yash • github.com/YashRL
+Ratlam (457001), Madhya Pradesh, India • +91-9399159685 • yashrawal987@gmail.com • linkedin.com/in/rawal-yash • github.com/YashRL
 
 ## Professional Summary
 

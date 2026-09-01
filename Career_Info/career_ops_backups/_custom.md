@@ -49,6 +49,7 @@
   - **Add high-relevance skills**: Selectively include specific tools or frameworks from your projects (e.g., `GROBID`, `pdfplumber`, `vLLM`, `n8n`, `Triton`, `distributed training`) if they are explicitly mentioned or highly relevant to the target role.
   - **Remove low-relevance skills**: Discard irrelevant or secondary technologies (e.g., remove SAP-specific tools, minor backend frameworks, or web scrapers when targeting core ML research roles) to declutter the skills block and fit neatly on a single line per category.
   - **Fact-Check Safeguard**: All skills must be drawn from the validated pool in `cv.md` to ensure they pass automated fact verification checks.
+- **Candidate Location / Hometown Address**: Always use the candidate's hometown address: **Ratlam (457001), Madhya Pradesh, India** across all resumes, cover letters, and application profiles. Do not use Surat, Gujarat, India.
 
 
 ## Custom Workflows

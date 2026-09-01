@@ -2,7 +2,7 @@
   "lang": "en",
   "page_format": "a4",
   "name": "Yash Rawal",
-  "contact_line": "Surat, Gujarat, India • +91-9399159685",
+  "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
   "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
   "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
   "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
@@ -13,7 +13,7 @@
     "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
     "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
     "portfolio": null,
-    "location": "Surat, Gujarat, India"
+    "location": "Ratlam (457001), Madhya Pradesh, India"
   },
   "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms. Specialized in PyTorch foundation model pretraining (~85M parameters), custom Triton/CUDA attention kernels, and self-evolving agent loops. Active contributor to Spring AI, bridging core machine learning research with high-performance production systems.",
   "experience": [

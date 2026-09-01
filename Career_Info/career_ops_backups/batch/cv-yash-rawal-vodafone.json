@@ -2,7 +2,7 @@
   "lang": "en",
   "page_format": "letter",
   "name": "Yash Rawal",
-  "contact_line": "Surat, Gujarat, India • +91-9399159685",
+  "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
   "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
   "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
   "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
@@ -13,7 +13,7 @@
     "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
     "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
     "portfolio": null,
-    "location": "Surat, Gujarat, India"
+    "location": "Ratlam (457001), Madhya Pradesh, India"
   },
   "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and telecom/IT operations AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
   "experience": [
