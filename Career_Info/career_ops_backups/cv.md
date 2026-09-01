@@ -25,7 +25,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate.
 - Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for automated PII redaction.
 
-### Healthray (Bigscal Technologies)
+### Bigscal Technologies Pvt. Ltd. (Product: Healthray)
 *AI/ML Engineer Intern* | *Apr 2024 – Sep 2024*
 - Engineered clinical summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR (Whisper, Vosk, NeMo).
 - Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets.
