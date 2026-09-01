@@ -16,7 +16,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ## Experience
 
-### TalenTeam Ltd., UK (via Bigscal Technologies)
+### Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)
 *AI/ML Engineer* | *Oct 2024 – Present*
 - Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.
 - Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by **70%**.

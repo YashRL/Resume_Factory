@@ -50,6 +50,7 @@
   - **Remove low-relevance skills**: Discard irrelevant or secondary technologies (e.g., remove SAP-specific tools, minor backend frameworks, or web scrapers when targeting core ML research roles) to declutter the skills block and fit neatly on a single line per category.
   - **Fact-Check Safeguard**: All skills must be drawn from the validated pool in `cv.md` to ensure they pass automated fact verification checks.
 - **Candidate Location / Hometown Address**: Always use the candidate's hometown address: **Ratlam (457001), Madhya Pradesh, India** across all resumes, cover letters, and application profiles. Do not use Surat, Gujarat, India.
+- **Company Name Formatting for ATS**: Always format the primary employer as **Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)** across all resumes, JSON payloads, and cover letters. Never lead with "TalenTeam Ltd." so that ATS scanners properly capture the legal employer as "Bigscal Technologies Pvt. Ltd."
 
 
 ## Custom Workflows
