@@ -37,11 +37,13 @@
 - **Scale-First Professional Summary**: The Professional Summary must lead with enterprise scale metrics (e.g., 1M+ active users, 120+ ERP organizations, enterprise agentic platform) first, followed directly by core model training and machine learning engineering.
 - **Strong Engineering Verbs**: Never use weak or passive descriptors like "Built local POCs," "Assisted," "Helped," or "Worked on." Use authoritative engineering verbs such as "Engineered," "Designed," "Optimized," "Architected," and "Trained" to represent internship and project work.
 - **Pre-Tuning Applied AI Logic**: If a job post is focused only on Applied AI, frame it to show that the candidate tunes and trains the models first (SFT, triplet contrastive training, quantization), then builds the applied agentic systems on top of them. Do not let the profile look like a simple API-wrapper developer.
-- **Strategic CV Bold Highlights (Max 5 highlights)**: Limit the total number of bold highlighted terms/phrases across the entire CV to a maximum of 5 to prevent visual clutter and maintain readability.
-- **Compulsory Highlights**: The following two highlights are compulsory and must always be preserved and bolded across every generated CV:
-  1. `**1M+ active ERP users**` (or `**1M+ user scale**` in the professional summary) — representing scale and impact.
-  2. `**Qwen2.5-7B**` — representing core machine learning/model training background.
-- **Flexible Dynamic Highlights (Up to 3 additional)**: The tailoring system has the flexibility to dynamically choose up to 3 additional key metrics, terms, or roles (such as `**3x**` / `**70%**` efficiency, `**90%+ Recall@10**` RAG metric, `**Human Feedback (RLHF) Pipeline**`, or `**Principal Creator & Architect**`) to bold based on what best matches the target JD.
+- **One Bold Highlight per Experience Bullet**: Each bullet in the work experience section must contain strictly **one** bold highlight to ensure balanced visual hierarchy and maximum scanning readability:
+  1. Bullet 1: `**1M+ active ERP users**`
+  2. Bullet 2: `**3x**` (do not bold 70%)
+  3. Bullet 3: `**Qwen2.5-7B**`
+  4. Bullet 4: `**Human Feedback (RLHF) Pipeline**`
+  5. Bullet 5: `**90%+ Recall@10**`
+  6. Bullet 6: `**automated PII redaction**`
 - **No Line Wrap for Long Bold Phrases**: If a highlighted term or phrase is long (e.g., `**Human Feedback (RLHF) Pipeline**`, `**Principal Creator & Architect**`, `**1M+ active ERP users**`), it must not wrap across a line break to a second line. Format the surrounding sentence text or adjust sentence structure to ensure these bold phrases sit cleanly on a single line.
 - **Context Loading of Projects.txt**: Always read and incorporate the full project inventory context from [Projects.txt](file:///D:/Yash_Code/Resume_Factory/Career_Info/Projects.txt) during tailoring. Use these granular details (such as n8n routing workflows, pgvector indexing, SpaCy NER models, and model parameters) to match the target JD's requirements with the most relevant and high-signal achievements from your actual career history.
 - **Priority-Ordering of Technical Skills**: During CV tailoring, you must reorder items inside the skill category lists (Languages & Backend, AI & ML Engineering, AI & ML Frameworks, Platforms & Models, Infrastructure & Security) to bubble the target company's primary tech stack, programming languages, and tools (e.g., Claude/MCP for Anthropic; AWS Bedrock/SageMaker/Java for Barclays; or Python/LangGraph/CrewAI for Vodafone) to the absolute front of their respective lists. Competitor platforms, models, or clouds must be de-prioritized and moved to the end of the lists. All skills must remain factually matched with the master `cv.md` items to pass fact-checks.
@@ -51,6 +53,7 @@
   - **Fact-Check Safeguard**: All skills must be drawn from the validated pool in `cv.md` to ensure they pass automated fact verification checks.
 - **Candidate Location / Hometown Address**: Always use the candidate's hometown address: **Ratlam (457001), Madhya Pradesh, India** across all resumes, cover letters, and application profiles. Do not use Surat, Gujarat, India.
 - **Company Name Formatting for ATS**: Always format the employers as **Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)** and **Bigscal Technologies Pvt. Ltd. (Product: Healthray)** across all resumes, JSON payloads, and cover letters. Never lead with "TalenTeam Ltd." or "Healthray" so that ATS scanners properly capture the legal employer as "Bigscal Technologies Pvt. Ltd."
+- **Company Folder Organization for Generated Resumes & Artifacts**: Always create and store all generated CVs, cover letters, and application artifacts in a dedicated subfolder named after the company under `Generated_Resumes/<Company_Name>/` (e.g., `Generated_Resumes/Ascendion/`, `Generated_Resumes/Mastercard/`, `Generated_Resumes/American_Express/`). Never place files as a flat list in the root of `Generated_Resumes/`.
 
 
 ## Custom Workflows

@@ -3,15 +3,30 @@
   "page_format": "letter",
   "name": "Yash Rawal",
   "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
-  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
-  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
-  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+  "email": {
+    "url": "mailto:yashrawal987@gmail.com",
+    "display": "yashrawal987@gmail.com"
+  },
+  "linkedin": {
+    "url": "https://linkedin.com/in/rawal-yash",
+    "display": "linkedin.com/in/rawal-yash"
+  },
+  "github": {
+    "url": "https://github.com/YashRL",
+    "display": "github.com/YashRL"
+  },
   "candidate": {
     "name": "Yash Rawal",
     "phone": "+91-9399159685",
     "email": "yashrawal987@gmail.com",
-    "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
-    "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+    "linkedin": {
+      "url": "https://linkedin.com/in/rawal-yash",
+      "display": "linkedin.com/in/rawal-yash"
+    },
+    "github": {
+      "url": "https://github.com/YashRL",
+      "display": "github.com/YashRL"
+    },
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
@@ -24,11 +39,11 @@
       "dates": "Oct 2024 - Present",
       "bullets": [
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.",
-        "Designed a capability contract layer executing nested profiles inside a single ReAct loop and integrated n8n webhooks, reducing execution overhead by **3x** and token consumption by **70%**.",
+        "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
         "Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.",
-        "Developed the Prompt Lab evaluation system utilizing n8n workflows and FastAPI to capture reasoning trajectories, establishing a scalable Human Feedback (RLHF) Pipeline.",
-        "Implemented a hierarchical RAG pipeline using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate over unstructured technical corpora.",
-        "Secured agentic workflows against OWASP LLM vulnerabilities via runtime tool monitoring and trained token-classification models for automated PII redaction."
+        "Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
+        "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
+        "Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for **automated PII redaction**."
       ]
     },
     {
@@ -56,7 +71,7 @@
       "description": "Principal Creator & Architect of an open-source plug-and-play agentic framework designed as modular, composable building blocks for flexible enterprise workflows, implementing a formal Java-based ReAct loop (Thought-Action-Observation) with step budgets, tactical pgvector tool routing, and dynamic MCP settings caching."
     },
     {
-      "name": "AI Agent Security Red Teaming \u2013 OpenAI",
+      "name": "AI Agent Security Red Teaming – OpenAI",
       "badge": "Security Researcher",
       "tech": "Python, Kaggle",
       "description": "Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases."
