@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "name": "Yash Rawal",
+    "email": "yashrawal987@gmail.com",
+    "phone": "+91-9399159685",
+    "location": "Ratlam (457001), Madhya Pradesh, India",
+    "linkedin": "https://linkedin.com/in/rawal-yash",
+    "github": "https://github.com/YashRL",
+    "credentials": [
+      "Master of Computer Applications (AI & ML)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+    ]
+  },
+  "letter": {
+    "role_title": "GenAI Engineer (Job ID: 1970324837507805)",
+    "company": "Ascendion",
+    "city": "Pune, India",
+    "date": "September 2, 2026",
+    "greeting": "Dear Ascendion Hiring Team,",
+    "opening": "I am writing to express my enthusiastic interest in the GenAI Engineer role at Ascendion in Pune (Job ID: 1970324837507805).",
+    "profile_intro": "As an Applied AI & Machine Learning Engineer currently architecting enterprise agentic platforms and automated intelligence systems serving 1M+ active users across 120+ organizations, my technical work directly aligns with Ascendion's AI-native engineering ethos and your 'Engineering to the Power of AI' methodology. Combining deep hands-on expertise in LangChain and LangGraph orchestration, hierarchical RAG architectures, PostgreSQL/PGVector, and model evaluation control planes, I specialize in translating complex business requirements into scalable, secure, and production-ready Generative AI solutions.",
+    "achievements": [
+      {
+        "lead": "Autonomous Agentic AI & ReAct Orchestration",
+        "impact": "Architected production-scale multi-agent workflows and designed a single ReAct loop capability contract layer that cut execution latency by 3x and token consumption by 70% across enterprise tenants."
+      },
+      {
+        "lead": "Hierarchical RAG & Vector Knowledge Retrieval",
+        "impact": "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate."
+      },
+      {
+        "lead": "Model Evaluation & Quality Governance",
+        "impact": "Developed the Prompt Lab evaluation control plane to systematically log multi-turn reasoning trajectories, tool call payloads, and human preference annotations, establishing a scalable Human Feedback (RLHF) Pipeline."
+      },
+      {
+        "lead": "Model Fine-Tuning & Open-Source Depth",
+        "impact": "Trained domain-specific Qwen2.5-7B models and fine-tuned dense embeddings using PyTorch; contributed upstream to Spring AI (PR #5711) resolving streaming reasoningContent and Converse API prompt-caching latency."
+      }
+    ],
+    "problems_section": "Delivering measurable business outcomes for Global 2000 enterprises through thousands of AI agents requires robust software engineering discipline, deterministic tool execution, and rigorous evaluation pipelines. Having deployed high-concurrency agentic runtimes at 1M+ user scale and fortified them against OWASP LLM vulnerabilities with runtime tool monitoring and automated PII redaction, I am eager to help Ascendion engineer the next generation of AI-native platform solutions.",
+    "closing": "Thank you for your time and consideration. I would welcome the opportunity to discuss how my technical background in Generative AI engineering, RAG optimization, and agentic workflows can add immediate value to Ascendion's engineering team.",
+    "signature": {
+      "valediction": "Sincerely,",
+      "name": "Yash Rawal"
+    }
+  },
+  "output_path": "output/cover-yash-rawal-ascendion.pdf"
+}
