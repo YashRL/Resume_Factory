@@ -16,7 +16,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 
 ## Experience
 
-### Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)
+### Bigscal Technologies Pvt. Ltd.
 *AI/ML Engineer* | *Oct 2024 – Present*
 - Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS, GCP).
 - Architected and deployed multi-agent workflows with LangChain and LangGraph, utilizing **MCP Server Tool Routing (Tool RAG)** and A2A communication with integrated guardrails.
@@ -25,7 +25,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Engineered an automated LLM evaluation and red-teaming control plane to log reasoning trajectories, scoring agent behaviors via LLM-as-a-judge and **RLHF preference datasets**.
 - Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**.
 
-### Bigscal Technologies Pvt. Ltd. (Product: Healthray)
+### Bigscal Technologies Pvt. Ltd.
 *AI/ML Engineer Intern* | *Apr 2024 – Sep 2024*
 - Engineered clinical summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR with **NeMo RNN-T and CTC decoding**.
 - Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets.

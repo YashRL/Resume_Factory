@@ -29,7 +29,7 @@
   "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and ERP AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
   "experience": [
     {
-      "company": "Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)",
+      "company": "Bigscal Technologies Pvt. Ltd.",
       "role": "AI/ML Engineer",
       "location": "Remote",
       "dates": "Oct 2024 - Present",
@@ -39,11 +39,11 @@
         "Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.",
         "Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
         "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
-        "Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for **automated PII redaction**."
+        "Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**."
       ]
     },
     {
-      "company": "Bigscal Technologies Pvt. Ltd. (Product: Healthray)",
+      "company": "Bigscal Technologies Pvt. Ltd.",
       "role": "AI/ML Engineer Intern",
       "location": "Surat, India",
       "dates": "Apr 2024 - Sep 2024",
