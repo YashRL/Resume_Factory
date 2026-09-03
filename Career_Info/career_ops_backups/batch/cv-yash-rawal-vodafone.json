@@ -3,15 +3,30 @@
   "page_format": "a4",
   "name": "Yash Rawal",
   "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
-  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
-  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
-  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+  "email": {
+    "url": "mailto:yashrawal987@gmail.com",
+    "display": "yashrawal987@gmail.com"
+  },
+  "linkedin": {
+    "url": "https://linkedin.com/in/rawal-yash",
+    "display": "linkedin.com/in/rawal-yash"
+  },
+  "github": {
+    "url": "https://github.com/YashRL",
+    "display": "github.com/YashRL"
+  },
   "candidate": {
     "name": "Yash Rawal",
     "phone": "+91-9399159685",
     "email": "yashrawal987@gmail.com",
-    "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
-    "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
+    "linkedin": {
+      "url": "https://linkedin.com/in/rawal-yash",
+      "display": "linkedin.com/in/rawal-yash"
+    },
+    "github": {
+      "url": "https://github.com/YashRL",
+      "display": "github.com/YashRL"
+    },
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
@@ -24,11 +39,11 @@
       "dates": "Oct 2024 - Present",
       "bullets": [
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS, GCP).",
-        "Architected and deployed multi-agent workflows with LangChain and LangGraph, utilizing **MCP Server Tool Routing (Tool RAG)** and A2A communication with integrated guardrails.",
+        "Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**.",
         "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
         "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
         "Engineered an automated LLM evaluation and red-teaming control plane to log reasoning trajectories, scoring agent behaviors via LLM-as-a-judge and **RLHF preference datasets**.",
-        "Fortified agentic workflows against OWASP LLM vulnerabilities with phantom-token context isolation, runtime tool telemetry, and **automated PII redaction**."
+        "Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**."
       ]
     },
     {

@@ -23,7 +23,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.
 - Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.
 - Engineered an automated LLM evaluation and red-teaming control plane to log reasoning trajectories, scoring agent behaviors via LLM-as-a-judge and **RLHF preference datasets**.
-- Fortified agentic workflows against OWASP LLM vulnerabilities with phantom-token context isolation, runtime tool telemetry, and **automated PII redaction**.
+- Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**.
 
 ### Bigscal Technologies Pvt. Ltd. (Product: Healthray)
 *AI/ML Engineer Intern* | *Apr 2024 – Sep 2024*
