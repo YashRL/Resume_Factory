@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "name": "Yash Rawal",
+    "email": "yashrawal987@gmail.com",
+    "phone": "+91-9399159685",
+    "location": "Ratlam (457001), Madhya Pradesh, India",
+    "linkedin": "https://linkedin.com/in/rawal-yash",
+    "github": "https://github.com/YashRL",
+    "credentials": [
+      "Master of Computer Applications (AI & ML)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+    ]
+  },
+  "letter": {
+    "role_title": "AI/ML Engineer — ECS Big Bets & AI 10.0 (Req ID: 2333072)",
+    "company": "Optum (UnitedHealth Group)",
+    "city": "Hyderabad, India",
+    "date": "September 3, 2026",
+    "greeting": "Dear Optum Hiring Team,",
+    "opening": "I am writing to express my enthusiastic interest in the AI/ML Engineer position within the ECS Big Bets and AI 10.0 initiatives at Optum (UnitedHealth Group) in Hyderabad (Req ID: 2333072).",
+    "profile_intro": "As an Applied AI & Machine Learning Engineer currently architecting enterprise agentic platforms serving 1M+ active users across 120+ organizations, my background brings together the exact technical pillars required for Optum's next-generation health optimization: Model Context Protocol (MCP) server development, multi-agentic orchestration (LangChain, LangGraph), hierarchical RAG architectures, and clinical NLP experience.",
+    "achievements": [
+      {
+        "lead": "Model Context Protocol (MCP) & Multi-Agent Systems",
+        "impact": "Architected and deployed enterprise multi-agent workflows utilizing MCP Server Tool Routing (Tool RAG) and A2A communication, designing a capability contract layer that cut execution overhead by 3x and token consumption by 70%."
+      },
+      {
+        "lead": "Clinical NLP & Healthcare AI Ingestion",
+        "impact": "Engineered clinical summarization pipelines for 116K+ longitudinal medical records using 4-bit quantized Llama 3, and designed real-time WebSocket streaming Indic ASR with NeMo RNN-T and CTC decoding."
+      },
+      {
+        "lead": "Hierarchical RAG & Vector Knowledge Retrieval",
+        "impact": "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a 90%+ Recall@10 retrieval rate."
+      },
+      {
+        "lead": "Evaluation Control Planes & Guardrail Security",
+        "impact": "Built an automated LLM evaluation and red-teaming control plane to score agent reasoning trajectories, and secured agentic workflows against OWASP LLM vulnerabilities with phantom-token context isolation and automated PII redaction."
+      }
+    ],
+    "problems_section": "Delivering care and connecting millions of patients with clinical insights through AI 10.0 requires high-concurrency systems engineered with strict privacy compliance, deterministic tool invocation, and low-latency agentic execution. Having built production agentic platforms at 1M+ scale, contributed upstream to Spring AI (PR #5711), and engineered clinical NLP pipelines, I am eager to help Optum advance health optimization on a global scale.",
+    "closing": "Thank you for your time and consideration. I would welcome the opportunity to discuss how my technical expertise in MCP, multi-agentic architectures, and clinical AI can contribute to Optum's ECS Big Bets initiatives.",
+    "signature": {
+      "valediction": "Sincerely,",
+      "name": "Yash Rawal"
+    }
+  },
+  "output_path": "output/cover-yash-rawal-optum.pdf"
+}
