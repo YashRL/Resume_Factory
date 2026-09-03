@@ -1,53 +1,38 @@
 {
   "lang": "en",
-  "page_format": "letter",
+  "page_format": "a4",
   "name": "Yash Rawal",
   "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
-  "email": {
-    "url": "mailto:yashrawal987@gmail.com",
-    "display": "yashrawal987@gmail.com"
-  },
-  "linkedin": {
-    "url": "https://linkedin.com/in/rawal-yash",
-    "display": "linkedin.com/in/rawal-yash"
-  },
-  "github": {
-    "url": "https://github.com/YashRL",
-    "display": "github.com/YashRL"
-  },
+  "email": { "url": "mailto:yashrawal987@gmail.com", "display": "yashrawal987@gmail.com" },
+  "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+  "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
   "candidate": {
     "name": "Yash Rawal",
     "phone": "+91-9399159685",
     "email": "yashrawal987@gmail.com",
-    "linkedin": {
-      "url": "https://linkedin.com/in/rawal-yash",
-      "display": "linkedin.com/in/rawal-yash"
-    },
-    "github": {
-      "url": "https://github.com/YashRL",
-      "display": "github.com/YashRL"
-    },
+    "linkedin": { "url": "https://linkedin.com/in/rawal-yash", "display": "linkedin.com/in/rawal-yash" },
+    "github": { "url": "https://github.com/YashRL", "display": "github.com/YashRL" },
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms and telecom/IT operations AI infrastructure across 120+ organizations. Specialized in core model training, embedding optimization, and low-latency agent execution frameworks. Active contributor to Spring AI, bridging machine learning models with high-throughput production systems.",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, hierarchical RAG architectures, and automated intelligence pipelines across 120+ organizations. Specialized in Python, LLM orchestration (LangGraph, CrewAI, ReAct loops), vector search, and model evaluation control planes. Active contributor to Spring AI, bridging generative AI and model fine-tuning with resilient production systems.",
   "experience": [
     {
-      "company": "Bigscal Technologies Pvt. Ltd. (Client: TalenTeam Ltd., UK)",
+      "company": "Bigscal Technologies Pvt. Ltd.",
       "role": "AI/ML Engineer",
       "location": "Remote",
       "dates": "Oct 2024 - Present",
       "bullets": [
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants.",
         "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
-        "Trained domain-specific **Qwen2.5-7B** models on A100 GPUs and fine-tuned E5-large-v2 embeddings using PyTorch to optimize query intent mapping.",
+        "Architected multi-agent routing and copilot workflows with LangGraph and CrewAI, deploying **STREAMABLE HTTP MCP servers** for real-time tool discovery and sub-second execution.",
         "Developed the Prompt Lab evaluation control plane to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
         "Implemented a hierarchical RAG pipeline indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
         "Secured agentic workflows against OWASP LLM vulnerabilities using phantom-token context propagation, runtime tool monitoring, and trained token-classification models for **automated PII redaction**."
       ]
     },
     {
-      "company": "Bigscal Technologies Pvt. Ltd. (Product: Healthray)",
+      "company": "Bigscal Technologies Pvt. Ltd.",
       "role": "AI/ML Engineer Intern",
       "location": "Surat, India",
       "dates": "Apr 2024 - Sep 2024",
@@ -59,22 +44,22 @@
   ],
   "projects": [
     {
-      "name": "Spring AI (spring-projects/spring-ai)",
-      "badge": "Open Source",
-      "tech": "Java, Spring Boot",
-      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
-    },
-    {
       "name": "Modular Agent Harness & Memory System (\"Brain\")",
       "badge": "Open Source",
       "tech": "Java, Spring Boot, PostgreSQL, WebSockets",
-      "description": "Principal Creator & Architect of an open-source plug-and-play agentic framework designed as modular, composable building blocks for flexible enterprise workflows, implementing a formal Java-based ReAct loop (Thought-Action-Observation) with step budgets, tactical pgvector tool routing, and dynamic MCP settings caching."
+      "description": "**Principal Creator & Architect** of an open-source plug-and-play agentic framework designed as modular building blocks for flexible enterprise workflows, implementing a formal ReAct loop with step budgets, vector tool routing, and dynamic MCP settings caching."
     },
     {
-      "name": "AI Agent Security Red Teaming – OpenAI",
-      "badge": "Security Researcher",
-      "tech": "Python, Kaggle",
-      "description": "Designed adversarial prompt-injection pipelines targeting guardrails to evaluate security boundaries across 2,000+ agent test cases."
+      "name": "Spring AI (spring-projects/spring-ai)",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot, Python",
+      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
+    },
+    {
+      "name": "Mini Language Model (~85M Parameter Architecture)",
+      "badge": "Personal Research",
+      "tech": "Python, PyTorch, CUDA, Triton, Tesla P100/T4",
+      "description": "Pretrained an ~85M-parameter transformer to ~1.43 validation loss on TinyStories; engineered FragmentStream chunked attention to eliminate O(T^2) VRAM overhead on commodity GPUs and custom Triton kernels with KV caching for low-latency inference."
     }
   ],
   "education": [
@@ -97,23 +82,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, SQL, FastAPI, Java, Spring Boot, PostgreSQL, SAP HANA, Data Engineering"
+      "items": "Python, SQL, Java, FastAPI, Spring Boot, PostgreSQL, REST APIs"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Agentic AI, Vector Embeddings, MCP, Machine Learning, Model Training & SFT"
+      "items": "Agentic AI, RAG & Vector Search, Multi-Agent Systems, Context Graphs, Semantic Search"
     },
     {
       "category": "AI & ML Frameworks",
-      "items": "LangGraph, CrewAI, Spring AI, LlamaIndex, PyTorch, LangChain, AutoGen, vLLM, SAP Build, SAP Joule, GROBID, pdfplumber"
+      "items": "LangGraph, CrewAI, LangChain, Spring AI, PyTorch, vLLM, LlamaIndex, GROBID"
     },
     {
       "category": "Platforms & Models",
-      "items": "Claude, Azure OpenAI, Amazon Bedrock, Google Vertex AI, Gemini, Qwen, Meta Llama & Open Weights, SAP AI Core"
+      "items": "Azure OpenAI, Claude, Amazon Bedrock, Google Vertex AI, Meta Llama, Qwen"
     },
     {
       "category": "Infrastructure & Security",
-      "items": "Docker, Kubernetes, LLM-as-Judge, PII Sanitization (BIO NER), Red Teaming, CI/CD, Cloud Foundry, Linux"
+      "items": "Docker, Kubernetes, Linux, CI/CD, LLM-as-Judge, Red Teaming, PII Sanitization"
     }
   ]
 }
