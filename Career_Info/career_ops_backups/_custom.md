@@ -33,6 +33,7 @@
 (none yet -- add yours above)
 
 - **Strict Company Naming (Pure Bigscal Technologies Pvt. Ltd.)**: Across ALL resumes, cover letters, portals, and application payloads, ALWAYS use **`Bigscal Technologies Pvt. Ltd.`** ONLY for both the current AI/ML Engineer role and the AI/ML Engineer Intern role. NEVER append client names (e.g., `(Client: TalenTeam Ltd., UK)`) or product names (e.g., `(Product: Healthray)`). Zero client references on the employer line.
+- **Standard Upload Filename (YashRawalResume.pdf)**: Always save and maintain the tailored resume PDF as **`YashRawalResume.pdf`** inside each company's dedicated subfolder in `Generated_Resumes/<Company>/` (alongside any dated archive names) so it is instantly ready for portal upload.
 - **Professional Identity & Title**: Always identify the candidate as an **Applied AI & Machine Learning Engineer** (never use "AI Platform Engineer" or "AI System Engineer").
 - **Balanced All-Rounder Profile (50-50 Applied AI & Core ML)**: Always frame the candidate's skills and experience to show a balanced 50-50% mix between Applied AI (agent runtimes, RAG, MCP, n8n, Spring AI) and Core Machine Learning (model fine-tuning, training, GPU optimization, signal processing, ASR/TTS, NER token-classification).
 - **Scale-First Professional Summary**: The Professional Summary must lead with enterprise scale metrics (e.g., 1M+ active users, 120+ ERP organizations, enterprise agentic platform) first, followed directly by core model training and machine learning engineering.
