@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Rawal — Applied AI & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Yash Rawal — Applied AI & Machine Learning Engineer specializing in First-Principles Engineering, 1M+ User ERP Scale, Distributed Backends, and Open Source Contributions." />
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-slate-900 leading-relaxed text-slate-400 selection:bg-teal-300 selection:text-teal-900">
+
+  <!-- Interactive Spotlight Mouse Follower -->
+  <div id="spotlight" class="pointer-events-none fixed inset-0 z-30 transition duration-300"></div>
+
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-20 lg:py-0">
+    <div class="lg:flex lg:justify-between lg:gap-6">
+      
+      <!-- LEFT FIXED COLUMN -->
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[45%] lg:flex-col lg:justify-between lg:py-20">
+        <div>
+          <h1 class="text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl">
+            <a href="/">Yash Rawal</a>
+          </h1>
+          <h2 class="mt-2 text-base font-semibold tracking-tight text-teal-300 sm:text-lg">
+            Applied AI & Machine Learning Engineer
+          </h2>
+          <p class="mt-3 max-w-xs text-sm leading-normal text-slate-400">
+            I build production AI platforms on a Million+ Users Scale.
+          </p>
+
+          <!-- Navigation Links -->
+          <nav class="nav hidden lg:block" aria-label="In-page jump links">
+            <ul class="mt-10 w-max">
+              <li>
+                <a class="group flex items-center py-2.5 active" href="#about">
+                  <span class="nav-indicator mr-3.5 h-px w-7 bg-slate-600 transition-all group-hover:w-14 group-hover:bg-slate-200 group-focus-visible:w-14 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+                </a>
+              </li>
+              <li>
+                <a class="group flex items-center py-2.5" href="#experience">
+                  <span class="nav-indicator mr-3.5 h-px w-7 bg-slate-600 transition-all group-hover:w-14 group-hover:bg-slate-200 group-focus-visible:w-14 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+                </a>
+              </li>
+              <li>
+                <a class="group flex items-center py-2.5" href="#projects">
+                  <span class="nav-indicator mr-3.5 h-px w-7 bg-slate-600 transition-all group-hover:w-14 group-hover:bg-slate-200 group-focus-visible:w-14 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Architecture & Projects</span>
+                </a>
+              </li>
+              <li>
+                <a class="group flex items-center py-2.5" href="#opensource">
+                  <span class="nav-indicator mr-3.5 h-px w-7 bg-slate-600 transition-all group-hover:w-14 group-hover:bg-slate-200 group-focus-visible:w-14 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Open Source</span>
+                </a>
+              </li>
+              <li>
+                <a class="group flex items-center py-2.5" href="#skills">
+                  <span class="nav-indicator mr-3.5 h-px w-7 bg-slate-600 transition-all group-hover:w-14 group-hover:bg-slate-200 group-focus-visible:w-14 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Skills & Tech</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Social Media & Contact Links -->
+        <div class="mt-8">
+          <ul class="flex items-center gap-4" aria-label="Social media">
+            <li>
+              <a class="block hover:text-slate-200 text-slate-400 text-xl transition" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener" aria-label="GitHub" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="block hover:text-slate-200 text-slate-400 text-xl transition" href="https://linkedin.com/in/yash-rawal" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a class="block hover:text-slate-200 text-slate-400 text-xl transition" href="mailto:yashrawal@example.com" aria-label="Email" title="Direct Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a class="block hover:text-teal-300 text-slate-400 text-xl transition" href="YashRawal_Resume.pdf" target="_blank" rel="noreferrer noopener" aria-label="Resume PDF" title="Download Resume">
+                <i class="fa-solid fa-file-pdf"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="mt-3.5">
+            <a class="inline-flex items-center text-xs font-mono text-slate-400 hover:text-teal-300 transition" href="YashRawal_Resume.pdf" target="_blank" rel="noreferrer noopener">
+              <span>My latest résumé &bull; Updated September 2026</span>
+              <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[0.65rem]"></i>
+            </a>
+          </div>
+          <p class="mt-2.5 text-xs text-slate-500 font-mono">
+            India &bull; Open to Worldwide Remote & Relocation
+          </p>
+        </div>
+      </header>
+
+      <!-- RIGHT SCROLLABLE CONTENT -->
+      <main id="content" class="pt-20 lg:w-[55%] lg:py-20">
+        
+        <!-- ABOUT SECTION -->
+        <section id="about" class="mb-14 scroll-mt-16 md:mb-20 lg:mb-28 lg:scroll-mt-20" aria-label="About me">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/85 px-6 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+          </div>
+          <div class="text-[0.935rem] leading-relaxed space-y-4">
+            <p>
+              I am an <strong class="text-slate-200 font-medium">Applied AI and Machine Learning Engineer</strong> who approaches software architecture with a first-principles mindset. My core focus is building the intelligence and distributed systems layer that connects deep learning models to mission-critical enterprise workflows serving <strong class="text-slate-200 font-medium">1M+ active ERP users across 120+ global enterprises</strong>.
+            </p>
+            <p>
+              Over the past 2 years, I have architected custom agent execution runtimes in <strong class="text-slate-200 font-medium">Python & FastAPI</strong>, scaled <strong class="text-slate-200 font-medium">Model Context Protocol (MCP) ecosystems to 1,000+ tool architectures</strong>, designed hybrid lexical+vector retrieval engines, and fine-tuned dense embedding representations (<span class="text-teal-300">PyTorch & E5 Bi-Encoders</span>).
+            </p>
+            <p>
+              In parallel, I am an active contributor to open-source AI infrastructure projects including <strong class="text-slate-200 font-medium">vLLM</strong> (inference optimizations) and <strong class="text-slate-200 font-medium">FastMCP / Model Context Protocol</strong> tooling. I build with an uncompromising emphasis on deterministic evaluation, zero hallucination tolerance, and sub-second execution latency.
+            </p>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="mb-14 scroll-mt-16 md:mb-20 lg:mb-28 lg:scroll-mt-20" aria-label="Work experience">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/85 px-6 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+          </div>
+          
+          <div class="group/list">
+            <ol class="group/list space-y-12">
+              
+              <!-- Role 1: Enterprise Applied AI & Distributed Systems Engineer -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 font-mono" aria-label="2024 to Present">
+                    2024 — PRESENT
+                  </header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener" aria-label="Enterprise AI Systems Engineer">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>Applied AI & Distributed Systems Engineer · <span class="inline-block">Enterprise AI & ERP Platform <i class="fa-solid fa-arrow-right inline-block ml-1 text-xs transition-transform group-hover/link:translate-x-1"></i></span></span>
+                        </a>
+                      </div>
+                    </h3>
+
+                    <!-- Simple Colored Scale Line -->
+                    <div class="mt-1 font-mono text-xs font-medium text-teal-300">
+                      &bull; SAP &bull; 1M+ Active Users &bull; 120+ Global Enterprises
+                    </div>
+
+                    <p class="mt-2.5 text-[0.875rem] leading-relaxed text-slate-300">
+                      Architected and delivered the core agentic runtime, MCP tool routing layer, and evaluation control plane operating across massive enterprise ERP and talent intelligence databases (SAP HANA / SQL).
+                    </p>
+
+                    <div class="mt-3 space-y-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Master Agent Harness & Planner-ReAct Runtime:</strong> Built a vendor-agnostic agent framework in Python & FastAPI with explicit Planner &rarr; ReAct &rarr; Observer lifecycle, supporting isolated child sub-agents, adaptive tool failure recovery, and circuit breakers.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Scalable MCP Catalog & Streamable HTTP:</strong> Architected a massive 1,000+ tool MCP catalog, exposing secure ERP data via FastMCP and Streamable HTTP at <code class="text-teal-300 font-mono text-xs">/lxp/mcp</code> with real-time SSE token and tool telemetry.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Low-Latency Tool Allowlisting:</strong> Scaled tool discovery beyond raw LLM context limits by shrinking 50 retrieved candidate tools to an optimal 20-tool allowlist using hybrid Vector embeddings + BM25F + TF-IDF + Reciprocal Rank Fusion (RRF).
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Prompt Lab (Chaos Red-Teaming & Evaluation Plane):</strong> Designed a run-centric evaluation platform scoring live agent trajectories across 6 dimensions with LLM-as-Judge (0.75 pass threshold), automated red-teaming, and Golden-Set curation for DPO/RLHF pipelines.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Enterprise Hierarchical RAG:</strong> Engineered 4-level ingestion (paragraph, page, chapter, heading) over 1,000+ books with PGVector and paragraph hash deduplication.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Multilingual PII Token Classification:</strong> Built BIO-tagged entity classification models over AI4Bharat Naamapadam, WikiNER, and CoNLL datasets to redact sensitive identifiers before LLM ingestion.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; E5 Bi-Encoder Fine-Tuning:</strong> Fine-tuned 335M parameter E5-large-v2 embeddings using triplet loss (anchor + positive + hard negatives) for domain competency matching with FAISS vector search.
+                      </div>
+                    </div>
+
+                    <ul class="mt-3.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Python</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Hierarchical RAG</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FastAPI</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Java / Spring AI</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PyTorch / E5</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">MCP Protocol</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">SAP HANA / PGVector</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">BM25F + RRF</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">SSE Streaming</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Role 2: Deep Learning, Speech & NLP R&D Engineer -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 font-mono" aria-label="2023 to 2024">
+                    2023 — 2024
+                  </header>
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener" aria-label="AI/ML R&D Engineering Intern">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>AI / ML Engineer Intern · <span class="inline-block">R&D Systems & Applied Deep Learning <i class="fa-solid fa-arrow-right inline-block ml-1 text-xs transition-transform group-hover/link:translate-x-1"></i></span></span>
+                        </a>
+                      </div>
+                    </h3>
+
+                    <!-- Simple Colored Subtitle Line -->
+                    <div class="mt-1 font-mono text-xs font-medium text-teal-300">
+                      &bull; Clinical Intelligence &bull; Multilingual Speech &bull; Dense Neural Retrieval
+                    </div>
+
+                    <p class="mt-2.5 text-[0.875rem] leading-relaxed text-slate-300">
+                      Conducted applied AI/ML research and production prototyping combining quantized language models, speech processing architectures, and custom embedding fine-tuning.
+                    </p>
+
+                    <div class="mt-3 space-y-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Clinical Data Intelligence:</strong> Designed progressive schema &rarr; stats &rarr; rows &rarr; summary pipelines across 116K+ patient/hospital records using local 4-bit/8-bit quantized Llama 3 models (llama.cpp) and specialized medical NER.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Indian Multilingual Speech Systems:</strong> Prototyped low-latency ASR and TTS pipelines for Gujarati and Hindi incorporating AI4Bharat open-source neural acoustic models.
+                      </div>
+                      <div>
+                        <strong class="text-slate-200 font-medium">&bull; Semantic Search & Microservices:</strong> Engineered asynchronous FastAPI microservices with dense vector indexing and FAISS retrieval achieving sub-100ms response latencies.
+                      </div>
+                    </div>
+
+                    <ul class="mt-3.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PyTorch</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Hugging Face</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">llama.cpp</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Speech ASR/TTS</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FAISS</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FastAPI</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+        </section>
+
+        <!-- PROJECTS & ARCHITECTURE SECTION -->
+        <section id="projects" class="mb-14 scroll-mt-16 md:mb-20 lg:mb-28 lg:scroll-mt-20" aria-label="Selected engineering projects">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/85 px-6 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Architecture & Projects</h2>
+          </div>
+
+          <div class="group/list">
+            <ul class="group/list space-y-10">
+
+              <!-- Project 1: Master Agent Harness -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-network-wired text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">Master Agent</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>Master Agent Harness & Planner-Driven Runtime <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Vendor-agnostic agent execution harness built with Python & FastAPI. Features dynamic tactical tool selection (exposing top 20 tools out of 1,000+ catalog), parent-child context isolation, adaptive tool memory, circuit breakers, and real-time SSE telemetry.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Python</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FastAPI</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Java / Spring Boot</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">MCP Protocol</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Planner-Observer</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">SSE Streaming</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 2: Enterprise Hierarchical RAG -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-book-bookmark text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">Hierarchical RAG</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>Enterprise Hierarchical RAG & 4-Level Knowledge Engine <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Multi-level document intelligence platform extracting paragraph, page, chapter, and heading representations across 1,000+ books. Built with GROBID, pdfplumber, PGVector, and paragraph-level hash signatures for version-aware deduplication.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PostgreSQL / PGVector</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">GROBID / OCR</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Python</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Hybrid RAG</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 3: Prompt Lab -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-shield-halved text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">Eval Control</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>Prompt Lab &bull; Evaluation & Chaos Red-Teaming Plane <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Run-centric evaluation infrastructure scoring agent trajectories across groundedness, trajectory quality, and tool Recall@K via LLM-as-Judge with automated Chaos-Monkey style red-teaming and DPO/RLHF Golden Set curation.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">LLM-as-Judge</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Red-Teaming Harness</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FastAPI</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">DPO / RLHF Pipeline</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Project 4: Dense Bi-Encoder -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-cubes text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">E5 Embeddings</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/yashrawal" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>Domain-Specific E5 Bi-Encoder & Skill Graph <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Fine-tuned 335M parameter E5-large-v2 foundation model on triplet relationships (anchor + positive + hard negatives) for domain semantic retrieval, mapping millions of occupational competencies with FAISS indexing.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PyTorch</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">E5-large-v2</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FAISS Vector Search</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Hugging Face</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <!-- OPEN SOURCE CONTRIBUTIONS SECTION -->
+        <section id="opensource" class="mb-14 scroll-mt-16 md:mb-20 lg:mb-28 lg:scroll-mt-20" aria-label="Open source contributions">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/85 px-6 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Open Source Contributions</h2>
+          </div>
+
+          <div class="group/list">
+            <ul class="group/list space-y-10">
+              
+              <!-- OS Project 1: vLLM -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-microchip text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">vLLM Engine</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/vllm-project/vllm" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>vLLM &bull; High-Throughput LLM Serving Engine <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <div class="scale-highlight-ribbon subtle mt-1 mb-2">
+                      <i class="fa-brands fa-github text-teal-300"></i>
+                      <span>Core Open Source Contributor &bull; Inference & Memory Optimization</span>
+                    </div>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Active open-source contributor to vLLM, focusing on high-throughput serving optimizations, PagedAttention memory mechanics, kernel-level efficiencies, and structured output integrations.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Python</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PyTorch / CUDA</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">PagedAttention</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Inference Serving</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <!-- OS Project 2: Spring AI -->
+              <li>
+                <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-6 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div class="card-backdrop absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-5 lg:block"></div>
+                  
+                  <!-- Thumbnail -->
+                  <div class="z-10 sm:col-span-2 mt-1">
+                    <div class="thumb-container">
+                      <div class="thumb-placeholder">
+                        <i class="fa-solid fa-bolt text-teal-300 text-xl"></i>
+                        <span class="thumb-tag">FastMCP</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="z-10 sm:col-span-6">
+                    <h3 class="font-medium leading-snug text-slate-200">
+                      <div>
+                        <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base" href="https://github.com/modelcontextprotocol" target="_blank" rel="noreferrer noopener">
+                          <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-5 md:-inset-y-3 lg:block"></span>
+                          <span>FastMCP &bull; Python Model Context Protocol Ecosystem <i class="fa-solid fa-arrow-up-right-from-square inline-block ml-1 text-xs transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1"></i></span>
+                        </a>
+                      </div>
+                    </h3>
+                    <div class="scale-highlight-ribbon subtle mt-1 mb-2">
+                      <i class="fa-brands fa-github text-teal-300"></i>
+                      <span>Open Source Contributor &bull; Python AI Tooling & Standards</span>
+                    </div>
+                    <p class="mt-2 text-[0.825rem] leading-relaxed text-slate-400">
+                      Contributed to Python-based Model Context Protocol (MCP) ecosystems, standardizing asynchronous tool execution schemas, SSE streamable transports, and low-latency client integrations for agentic workflows.
+                    </p>
+                    <ul class="mt-2.5 flex flex-wrap" aria-label="Technologies used">
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">Python 3.12</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">FastMCP</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">AsyncIO</div></li>
+                      <li class="mr-1.5 mt-1.5"><div class="tech-pill">JSON-RPC 2.0</div></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <!-- SKILLS & ARCHITECTURE SECTION -->
+        <section id="skills" class="mb-14 scroll-mt-16 md:mb-20 lg:mb-28 lg:scroll-mt-20" aria-label="Skills and Architecture">
+          <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/85 px-6 py-4 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Skills & Tech</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-2.5 font-mono">Applied AI, Machine Learning & LLMs</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tech-pill">Hierarchical RAG</span>
+                <span class="tech-pill">Agentic RAG</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">vLLM Serving</span>
+                <span class="tech-pill">Hugging Face Transformers</span>
+                <span class="tech-pill">FastMCP / MCP Protocol</span>
+                <span class="tech-pill">LangGraph / ReAct Loops</span>
+                <span class="tech-pill">E5 Bi-Encoders</span>
+                <span class="tech-pill">Dense Retrieval (FAISS / PGVector)</span>
+                <span class="tech-pill">Hybrid RAG (BM25F + RRF)</span>
+                <span class="tech-pill">LLM-as-Judge</span>
+                <span class="tech-pill">Speech Models (ASR / TTS)</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-2.5 font-mono">Enterprise Backend & Distributed Systems</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">AsyncIO</span>
+                <span class="tech-pill">Java 17 / 21</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">Spring AI</span>
+                <span class="tech-pill">REST & SSE Streaming</span>
+                <span class="tech-pill">Microservices</span>
+                <span class="tech-pill">Enterprise ERP Architecture</span>
+                <span class="tech-pill">Circuit Breakers</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-200 mb-2.5 font-mono">Databases, Infrastructure & Tools</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="tech-pill">PostgreSQL / PGVector</span>
+                <span class="tech-pill">SAP HANA</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Git / GitHub Actions</span>
+                <span class="tech-pill">Linux</span>
+                <span class="tech-pill">Presidio PII</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER (Clean First-Principles Closing Line) -->
+        <footer class="max-w-md pb-16 text-xs text-slate-500 sm:pb-0 font-mono">
+          <p>
+            Crafted from first principles. Built with clean <span class="text-slate-400">HTML5</span>, <span class="text-slate-400">CSS3</span>, and <span class="text-slate-400">JavaScript</span> &mdash; zero heavy runtime dependencies. Hosted with 100% uptime on <a href="https://pages.github.com/" class="text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" rel="noreferrer noopener">GitHub Pages</a>.
+          </p>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
