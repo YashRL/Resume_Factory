@@ -39,8 +39,7 @@
       "dates": "Oct 2024 - Present",
       "bullets": [
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).",
-        "Architected multi-agent routing with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.",
-        "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
+        "Architected multi-agent routing with **LangGraph & SAP Joule 2.0** across 650+ dynamic MCP capabilities, engineering a capability contract layer in a single ReAct loop that reduced latency by 3x and token costs by 70%.",
         "Fine-tuned and served **Qwen2.5-7B & E5-large-v2** models on A100 GPUs using PyTorch, Unsloth, and contrastive learning, deploying via vLLM on Azure for structured role mapping and semantic retrieval.",
         "Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
         "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**."
@@ -52,8 +51,7 @@
       "location": "Surat, India",
       "dates": "Apr 2024 - Sep 2024",
       "bullets": [
-        "Engineered clinical summarization pipelines in Python for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR with **NeMo RNN-T and CTC decoding**.",
-        "Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets."
+        "Engineered clinical summarization pipelines in Python for 116K+ medical records with 4-bit quantized Llama 3, and built real-time WebSocket streaming for Indic ASR with **NeMo RNN-T & CTC decoding** (STFT, Mel-spectrograms, CNN architectures)."
       ]
     }
   ],
@@ -62,19 +60,25 @@
       "name": "vLLM High-Performance Inference Engine (vllm-project/vllm)",
       "badge": "Open Source",
       "tech": "Python, PyTorch, Pydantic, AsyncIO, PyTest",
-      "description": "Merged **PR #55475** fixing structural XML tool parser silent drops on `/v1/chat/completions` and Pydantic param indexing (64/64 Qwen tests and 983+ regression suite passed); engineered `torchcodec` multimodal decoder guards (Issue #54097)."
+      "description": "Merged **PR #55475** fixing structural XML tool parser drops on `/v1/chat/completions` and Pydantic parameter indexing (64/64 Qwen tests passed); engineered `torchcodec` multimodal decoder guards (Issue #54097)."
     },
     {
       "name": "Job Architecture Generator (Qwen2.5-7B Domain SFT & Serving)",
       "badge": "LLM Training",
       "tech": "Python, PyTorch, Hugging Face, Unsloth, vLLM, Azure A100",
-      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ curated domain examples using Unsloth & PyTorch on NVIDIA A100s for role standardization and structured JSON generation; deployed on Azure NC24ads_A100 with **vLLM** for private, low-latency enterprise inference."
+      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA A100s for role standardization and structured JSON generation; deployed on Azure via **vLLM** for low-latency enterprise inference."
     },
     {
       "name": "Job Framework Semantic Transformer (e5-finetuned-job-framework)",
       "badge": "Model Training",
       "tech": "Python, PyTorch, Hugging Face, E5-large-v2",
-      "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor-market data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general-purpose embeddings to optimize semantic job-to-skills retrieval precision."
+      "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general embeddings to optimize skill retrieval precision."
+    },
+    {
+      "name": "Modular Agent Harness",
+      "badge": "Project",
+      "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
+      "description": "**Principal Creator & Architect** of a modular Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
     }
   ],
   "education": [
