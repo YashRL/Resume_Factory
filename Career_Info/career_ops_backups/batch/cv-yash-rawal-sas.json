@@ -69,12 +69,6 @@
       "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA A100s for role standardization and structured JSON generation; deployed on Azure via **vLLM** for low-latency enterprise inference."
     },
     {
-      "name": "Job Framework Semantic Transformer (e5-finetuned-job-framework)",
-      "badge": "Model Training",
-      "tech": "Python, PyTorch, Hugging Face, E5-large-v2",
-      "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general embeddings to optimize skill retrieval precision."
-    },
-    {
       "name": "Modular Agent Harness",
       "badge": "Project",
       "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
