@@ -67,8 +67,8 @@
     {
       "name": "Job Architecture Generator (Qwen2.5-7B Domain SFT & Serving)",
       "badge": "LLM Training",
-      "tech": "Python, PyTorch, Hugging Face, Unsloth, vLLM, NVIDIA GPUs",
-      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA GPUs for role standardization and structured JSON generation; deployed via **vLLM** for low-latency enterprise inference."
+      "tech": "Python, PyTorch, Hugging Face Transformers, Unsloth, vLLM, NVIDIA GPUs",
+      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA GPUs for role standardization and structured JSON generation; deployed an **OpenAI-compatible endpoint** via vLLM for low-latency enterprise inference."
     },
     {
       "name": "Modular Agent Harness",
@@ -105,7 +105,7 @@
     },
     {
       "category": "AI & Workflow Frameworks",
-      "items": "LangChain, LangGraph, vLLM, PyTorch, Hugging Face, SAP Joule 2.0, vLLM Tool Parsers, LlamaIndex, GROBID"
+      "items": "LangChain, LangGraph, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, LlamaIndex, GROBID"
     },
     {
       "category": "Cloud & Infrastructure",
