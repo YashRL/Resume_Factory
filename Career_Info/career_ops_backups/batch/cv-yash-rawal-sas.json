@@ -39,11 +39,11 @@
       "dates": "Oct 2024 - Present",
       "bullets": [
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).",
-        "Architected multi-agent routing and workflow automation with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.",
+        "Architected multi-agent routing with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.",
         "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
+        "Trained domain-specific **E5-large-v2** embedding models on Lightcast labor-market datasets using PyTorch triplet contrastive learning to optimize semantic job-skill intent mapping.",
         "Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
-        "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**.",
-        "Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**."
+        "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**."
       ]
     },
     {
@@ -62,19 +62,19 @@
       "name": "vLLM High-Performance Inference Engine (vllm-project/vllm)",
       "badge": "Open Source",
       "tech": "Python, PyTorch, Pydantic, AsyncIO, PyTest",
-      "description": "Merged **PR #55475** resolving structural XML tool parser silent drops for `tool_choice=\"required\"` and Pydantic parameter indexing on OpenAI `/v1/chat/completions` (passed 64/64 Qwen tests and 983+ regression suite); engineered unhandled `OSError` guards for `torchcodec` multimodal decoders (Issue #54097)."
+      "description": "Merged **PR #55475** fixing structural XML tool parser silent drops on `/v1/chat/completions` and Pydantic param indexing (64/64 Qwen tests and 983+ regression suite passed); engineered `torchcodec` multimodal decoder guards (Issue #54097)."
     },
     {
-      "name": "Mini Language Model (~85M Parameter Architecture)",
-      "badge": "Personal Research",
-      "tech": "Python, PyTorch, CUDA, Triton, Tesla P100/T4",
-      "description": "Pretrained an ~85M-parameter transformer to ~1.43 validation loss on TinyStories targeting **edge hardware deployment**; engineered FragmentStream chunked attention to eliminate O(T^2) VRAM overhead and custom Triton kernels with KV caching for low-latency inference."
+      "name": "Job Framework Semantic Embedding Model (e5-finetuned-job-framework)",
+      "badge": "Model Training",
+      "tech": "Python, PyTorch, Hugging Face, E5-large-v2",
+      "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor-market data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general-purpose embeddings to optimize semantic job-to-skills retrieval precision."
     },
     {
       "name": "Modular Agent Harness & Memory System (\"Brain\")",
       "badge": "Open Source",
       "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
-      "description": "**Principal Creator & Architect** of an open-source plug-and-play Python agentic framework designed as modular building blocks for flexible enterprise workflows, implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
+      "description": "**Principal Creator & Architect** of an open-source plug-and-play Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
     }
   ],
   "education": [
