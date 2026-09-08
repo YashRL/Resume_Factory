@@ -30,7 +30,7 @@
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, hierarchical RAG architectures, and automated intelligence pipelines across 120+ organizations. Specialized in Python, workflow orchestration (n8n, LangGraph), Model Context Protocol (MCP), and automated testing/evaluation control planes. Active contributor to Spring AI, bridging generative AI and model fine-tuning with resilient cloud deployments (Azure, AWS).",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, hierarchical RAG architectures, and automated intelligence pipelines across 120+ organizations. Specialized in Python, high-throughput LLM serving internals (vLLM contributor), workflow orchestration (n8n, LangGraph), and automated testing/evaluation control planes. Bridges generative AI models and fine-tuning with resilient cloud-native infrastructure (Azure, AWS, Docker, Kubernetes).",
   "experience": [
     {
       "company": "Bigscal Technologies Pvt. Ltd.",
@@ -59,22 +59,22 @@
   ],
   "projects": [
     {
-      "name": "Modular Agent Harness & Memory System (\"Brain\")",
+      "name": "vLLM High-Performance Inference Engine (vllm-project/vllm)",
       "badge": "Open Source",
-      "tech": "Java, Spring Boot, PostgreSQL, WebSockets",
-      "description": "**Principal Creator & Architect** of an open-source plug-and-play agentic framework designed as modular building blocks for flexible enterprise workflows, implementing a formal ReAct loop with step budgets, vector tool routing, and dynamic MCP settings caching."
-    },
-    {
-      "name": "Spring AI (spring-projects/spring-ai)",
-      "badge": "Open Source",
-      "tech": "Java, Spring Boot, Python",
-      "description": "Merged PR #5711 to propagate reasoningContent from AWS Bedrock and OpenAI-compatible models, and resolved Converse API prompt-caching TTL latency consistency."
+      "tech": "Python, PyTorch, Pydantic, AsyncIO, PyTest",
+      "description": "Merged **PR #55475** resolving structural XML tool parser silent drops for `tool_choice=\"required\"` and Pydantic parameter indexing on OpenAI `/v1/chat/completions` (passed 64/64 Qwen tests and 983+ regression suite); engineered unhandled `OSError` guards for `torchcodec` multimodal decoders (Issue #54097)."
     },
     {
       "name": "Mini Language Model (~85M Parameter Architecture)",
       "badge": "Personal Research",
       "tech": "Python, PyTorch, CUDA, Triton, Tesla P100/T4",
       "description": "Pretrained an ~85M-parameter transformer to ~1.43 validation loss on TinyStories targeting **edge hardware deployment**; engineered FragmentStream chunked attention to eliminate O(T^2) VRAM overhead and custom Triton kernels with KV caching for low-latency inference."
+    },
+    {
+      "name": "High-Concurrency Async Web Retrieval & Extraction API",
+      "badge": "Personal Project",
+      "tech": "Python, FastAPI, AsyncIO, Okapi BM25, Selenium",
+      "description": "Engineered an asynchronous search and web extraction service integrating Okapi BM25 reranking, 3-stage HTML fallback parsing (Trafilatura, BeautifulSoup, headless Selenium), YouTube transcript extraction, and SSRF security filters."
     }
   ],
   "education": [
@@ -97,23 +97,23 @@
   "skills": [
     {
       "category": "Languages & Backend",
-      "items": "Python, SQL, PostgreSQL, Java, FastAPI, Spring Boot, REST APIs, Linux"
+      "items": "Python (3.10+), SQL, FastAPI, PostgreSQL, Oracle, REST APIs, WebSockets, AsyncIO, Linux"
     },
     {
       "category": "AI & ML Engineering",
-      "items": "Agentic AI, Model Context Protocol (MCP), Multi-Agent Systems, Tool RAG, Healthcare NLP"
+      "items": "Agentic AI, Model Context Protocol (MCP), Multi-Agent Systems, Tool RAG, Healthcare NLP, vLLM Serving"
     },
     {
       "category": "AI & Workflow Frameworks",
-      "items": "LangChain, LangGraph, n8n, Spring AI, PyTorch, vLLM, LlamaIndex, GROBID"
+      "items": "LangChain, LangGraph, vLLM, PyTorch, Hugging Face, n8n, vLLM Tool Parsers, LlamaIndex, GROBID"
     },
     {
       "category": "Cloud & Infrastructure",
-      "items": "Azure, AWS, Docker, Kubernetes, CI/CD (Git/GitHub/Jenkins), Redis, PGVector"
+      "items": "Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins, Git, Gerrit), Redis, PGVector"
     },
     {
-      "category": "Testing & Governance",
-      "items": "LLM-as-a-Judge, Prompt Lab, Red Teaming, PII Sanitization, Unit/Integration Testing"
+      "category": "Testing, QA & Security",
+      "items": "PyTest, LLM-as-a-Judge, Prompt Lab, Red Teaming, PII Sanitization, Unit/Integration/Regression Testing"
     }
   ]
 }

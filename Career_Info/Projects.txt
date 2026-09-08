@@ -427,6 +427,37 @@ Contributed directly to **Spring AI**, one of the major open-source frameworks i
 
 
 
+### vLLM High-Performance LLM Serving Engine Open Source Contributions — Summary
+Read in details: vLLM_Open_Source_Contributions.md
+
+Contributed core bug fixes and architectural enhancements to **vLLM (`vllm-project/vllm`)**, the industry-standard high-throughput, memory-efficient LLM/VLM inference engine. Work spans two critical production serving subsystems:
+
+1. **Agentic Tool Calling & Parser Pipeline (PR #55475):** Resolved critical silent failures where XML/tag-based structural tool parsers (`qwen3_coder`, `qwen3_xml`) dropped tool calls when requests used `tool_choice="required"` or specific named functions, and fixed protocol crashes on Pydantic parameter objects.
+   - **Root Cause & Fix:** `ToolParser.supports_required_and_named` was defaulting to `True`, triggering unintended JSON schema enforcement on XML outputs and silently discarding tool calls upon validation failure. Set `supports_required_and_named = False` on structural tag models and engine-based streaming parsers, guarded request parameter injection in `adjust_request`, fixed dictionary subscripting crashes in `ChatCompletionRequest.check_tool_usage` on Pydantic `ChatCompletionToolsParam` objects, and enabled immediate streaming tool parsing when reasoning parsers are absent.
+   - **Verification:** Added 4 comprehensive streaming and non-streaming unit tests in `test_qwen3coder_tool_parser.py` (all 64 tests passed; full 983+ parser regression suite passed without failures). Verified and commended by independent community reviewers (`@Manny7717`).
+
+2. **Multimodal Media Decoding Resilience (Issue #54097):** Resolved unhandled `OSError` crashes in `torchcodec` video/audio decoding pipelines when underlying system FFmpeg shared libraries (`libavcodec.so`, `libtorchcodec.so`) were missing or ABI-incompatible.
+   - **Root Cause & Fix:** Existing import guards only caught `(ImportError, RuntimeError)`, allowing `OSError` to escape and crash video decoding requests and server startup. Extended import and constructor guards in `vllm/multimodal/video_decoders/torchcodec.py` and `vllm/multimodal/media/audio.py` to catch `(ImportError, RuntimeError, OSError)`, added `has_torchcodec() -> bool`, updated `check_torchcodec_available()` to sanitize internal system paths and raise clear, actionable `ImportError` exceptions directing users to install FFmpeg, and guarded `get_vllm_optional_dependencies()` against missing package metadata.
+   - **Verification:** Added `TestTorchcodecAvailability` suite (6 test cases) in `tests/utils_/test_import_utils.py` and `test_torchcodec_oserror_raises_import_error` in `tests/multimodal/media/test_video.py` (all 15 import tests and 50 video IO tests passed).
+
+* **2 major open-source contributions** to `vllm-project/vllm`
+* **PR #55475** — *"[Bugfix] Fix tool_choice required and named function handling for XML tool parsers"* (Fixes **#54808** & **#49712**, cross-referenced by **#55754**)
+* **Issue #54097 fix** — *"[Bugfix] Catch OSError and handle unloadable torchcodec in multimodal decoders"*
+* **248 additions / 8 deletions** in PR #55475 across **4 core serving files**
+* **173 additions / 33 deletions** in Issue #54097 fix across **5 core multimodal files**
+* Fixed **silent tool-call dropping** on OpenAI-compatible `/v1/chat/completions` for XML and engine-based tool parsers
+* Fixed **Pydantic model subscript `TypeError`** in `ChatCompletionRequest.check_tool_usage`
+* Fixed **streaming tool-call phase stall** in `DelegatingParser` when reasoning parser is absent
+* Fixed **unhandled `OSError` crash** in `torchcodec` video and audio decoder pipelines
+* Implemented **`has_torchcodec()`** and sanitized **`check_torchcodec_available()`** import utilities
+* Added **11 new comprehensive unit test cases** across `test_qwen3coder_tool_parser.py`, `test_import_utils.py`, and `test_video.py`
+* **100% test pass rate**: 64/64 Qwen tool tests, 983+ full parser regression suite, 15/15 import utils tests, 50/50 video media tests
+* **All linting & formatting checks passed** under Ruff and PyTest
+* Adhered strictly to **vLLM DCO sign-off, Ruff, typing, and contribution guidelines**
+* Demonstrated deep mastery of **high-throughput LLM serving engine internals, OpenAI API protocol layers, structured output decoding, agentic tool parsing, and multimodal media IO pipelines**
+
+
+
 ## Internet Search & Web Content Extraction API
 
 Built a **lightweight, asynchronous web search and content-extraction API in late 2024** as an early retrieval infrastructure project for AI systems. The service was implemented using **FastAPI** and combined DuckDuckGo search with **BM25 relevance reranking**, allowing search results to be fetched, crawled, scored, and returned as structured results rather than simply passing raw search-engine responses downstream. The API supported multiple search modalities including **text, images, videos, and news**, with configurable regional, temporal, SafeSearch, and media-specific filters. For text search, results were fetched concurrently using asynchronous HTTP clients, duplicate URLs were removed, page content was extracted, and BM25 was applied to rank results according to their relevance to the original query. This project became an early foundation for thinking about **search as an AI capability/tool**, rather than simply an external API call.
