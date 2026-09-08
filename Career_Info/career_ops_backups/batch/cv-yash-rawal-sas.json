@@ -30,7 +30,7 @@
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, fine-tuning domain LLMs (Qwen2.5-7B, E5-large-v2) on A100 GPUs, and building automated evaluation control planes. Specialized in Python, high-throughput LLM serving internals (vLLM contributor), workflow orchestration (SAP Joule 2.0, LangGraph), and cloud-native infrastructure (Azure, AWS, Docker, Kubernetes).",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, fine-tuning domain LLMs (Qwen2.5-7B, E5-large-v2) on NVIDIA GPUs, and building automated evaluation control planes. Specialized in Python, high-throughput LLM serving internals (vLLM contributor), workflow orchestration (SAP Joule 2.0, LangGraph), and cloud-native infrastructure (Azure, AWS, Docker, Kubernetes).",
   "experience": [
     {
       "company": "Bigscal Technologies Pvt. Ltd.",
@@ -41,7 +41,7 @@
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).",
         "Architected multi-agent routing with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.",
         "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
-        "Fine-tuned and served **Qwen2.5-7B & E5-large-v2** models on A100 GPUs using PyTorch, Unsloth, and contrastive learning, deploying via vLLM on Azure for structured role mapping and semantic retrieval.",
+        "Fine-tuned and served **Qwen2.5-7B & E5-large-v2** models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning, deploying via vLLM for structured role mapping and semantic retrieval.",
         "Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
         "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**."
       ]
@@ -67,8 +67,8 @@
     {
       "name": "Job Architecture Generator (Qwen2.5-7B Domain SFT & Serving)",
       "badge": "LLM Training",
-      "tech": "Python, PyTorch, Hugging Face, Unsloth, vLLM, Azure A100",
-      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA A100s for role standardization and structured JSON generation; deployed on Azure via **vLLM** for low-latency enterprise inference."
+      "tech": "Python, PyTorch, Hugging Face, Unsloth, vLLM, NVIDIA GPUs",
+      "description": "Fine-tuned **Qwen2.5-7B** on 10K+ domain examples using Unsloth & PyTorch on NVIDIA GPUs for role standardization and structured JSON generation; deployed via **vLLM** for low-latency enterprise inference."
     },
     {
       "name": "Modular Agent Harness",
