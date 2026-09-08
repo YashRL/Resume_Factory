@@ -30,7 +30,7 @@
     "portfolio": null,
     "location": "Ratlam (457001), Madhya Pradesh, India"
   },
-  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, hierarchical RAG architectures, and automated intelligence pipelines across 120+ organizations. Specialized in Python, high-throughput LLM serving internals (vLLM contributor), workflow orchestration (SAP Joule 2.0, LangGraph), and automated testing/evaluation control planes. Bridges generative AI models and fine-tuning with resilient cloud-native infrastructure (Azure, AWS, Docker, Kubernetes).",
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, training/fine-tuning LLMs and transformer architectures (~85M LLM pretraining, E5 domain adaptation), and building automated testing control planes. Specialized in Python, high-throughput LLM serving internals (vLLM contributor), workflow orchestration (SAP Joule 2.0, LangGraph), and cloud-native infrastructure (Azure, AWS, Docker, Kubernetes).",
   "experience": [
     {
       "company": "Bigscal Technologies Pvt. Ltd.",
@@ -41,7 +41,7 @@
         "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).",
         "Architected multi-agent routing with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.",
         "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.",
-        "Trained domain-specific **E5-large-v2** embedding models on Lightcast labor-market datasets using PyTorch triplet contrastive learning to optimize semantic job-skill intent mapping.",
+        "Trained domain-specific **LLM & Transformer models** (E5-large-v2, domain embeddings) on Lightcast labor-market datasets using PyTorch triplet contrastive learning to optimize semantic skill mapping.",
         "Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
         "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**."
       ]
@@ -65,16 +65,16 @@
       "description": "Merged **PR #55475** fixing structural XML tool parser silent drops on `/v1/chat/completions` and Pydantic param indexing (64/64 Qwen tests and 983+ regression suite passed); engineered `torchcodec` multimodal decoder guards (Issue #54097)."
     },
     {
-      "name": "Job Framework Semantic Embedding Model (e5-finetuned-job-framework)",
+      "name": "Mini Language Model (~85M Parameter Architecture)",
+      "badge": "LLM Training",
+      "tech": "Python, PyTorch, CUDA, Triton, GPU Clusters",
+      "description": "Pretrained an ~85M-parameter causal **LLM from scratch** to ~1.43 validation loss on TinyStories; engineered FragmentStream chunked attention to eliminate O(T^2) VRAM overhead and custom Triton kernels with KV caching for low-latency inference."
+    },
+    {
+      "name": "Job Framework Semantic Transformer (e5-finetuned-job-framework)",
       "badge": "Model Training",
       "tech": "Python, PyTorch, Hugging Face, E5-large-v2",
       "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor-market data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general-purpose embeddings to optimize semantic job-to-skills retrieval precision."
-    },
-    {
-      "name": "Modular Agent Harness",
-      "badge": "Project",
-      "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
-      "description": "**Principal Creator & Architect** of a modular, plug-and-play Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
     }
   ],
   "education": [
