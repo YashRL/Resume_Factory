@@ -71,10 +71,10 @@
       "description": "Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor-market data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general-purpose embeddings to optimize semantic job-to-skills retrieval precision."
     },
     {
-      "name": "Modular Agent Harness & Memory System (\"Brain\")",
-      "badge": "Open Source",
+      "name": "Modular Agent Harness",
+      "badge": "Project",
       "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
-      "description": "**Principal Creator & Architect** of an open-source plug-and-play Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
+      "description": "**Principal Creator & Architect** of a modular, plug-and-play Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
     }
   ],
   "education": [
