@@ -26,15 +26,15 @@
       },
       {
         "lead": "Agentic AI Orchestration & Tool Routing (Data Scientist Match)",
-        "impact": "Architected multi-agent workflows with LangGraph and LangChain utilizing hybrid semantic-lexical tool routing across 65+ MCP capabilities, designing a capability contract layer that cut execution overhead by 3x and token consumption by 70%."
+        "impact": "Architected multi-agent workflows with LangGraph and SAP Joule 2.0 utilizing hybrid semantic-lexical tool routing across 650+ MCP capabilities, designing a capability contract layer that cut execution overhead by 3x and token consumption by 70%."
       },
       {
         "lead": "CloudOps & Workflow Automation (Python Developer Match)",
-        "impact": "Deployed production services across Azure and AWS using Docker, Kubernetes, and Linux, integrating custom Python backend services and n8n with runtime tool validation and automated PII redaction."
+        "impact": "Deployed production services across Azure and AWS using Docker, Kubernetes, and Linux, integrating custom Python backend services with runtime tool validation and automated PII redaction."
       },
       {
         "lead": "Automated Testing & Evaluation Control Planes (SDET Match)",
-        "impact": "Engineered Prompt Lab as an automated testing and red-teaming control plane to record agent reasoning trajectories, executing deterministic Recall@K tool-routing tests and LLM-as-a-judge scoring for regression prevention."
+        "impact": "Engineered Prompt Lab as an automated testing and red-teaming control plane in Python to record agent reasoning trajectories, executing deterministic Recall@K tool-routing tests and LLM-as-a-judge scoring for regression prevention."
       }
     ],
     "problems_section": "Whether scaling cloud-native automation across SAS Viya, engineering resilient automated testing harnesses, or building advanced Agentic AI systems with strict statistical and reasoning validation, my experience combining deep algorithmic AI with production cloud engineering enables me to deliver immediate value across SAS's R&D initiatives.",
