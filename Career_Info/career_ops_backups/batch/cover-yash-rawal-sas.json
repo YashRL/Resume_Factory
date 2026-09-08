@@ -1,0 +1,48 @@
+{
+  "candidate": {
+    "name": "Yash Rawal",
+    "email": "yashrawal987@gmail.com",
+    "phone": "+91-9399159685",
+    "location": "Ratlam (457001), Madhya Pradesh, India",
+    "linkedin": "https://linkedin.com/in/rawal-yash",
+    "github": "https://github.com/YashRL",
+    "credentials": [
+      "Master of Computer Applications (AI & ML)",
+      "Microsoft Certified: Azure AI Fundamentals (AI-900)"
+    ]
+  },
+  "letter": {
+    "role_title": "Applied AI & Python Systems Engineer (Requisitions: 20070947 / 20068145 / 20070807)",
+    "company": "SAS Institute",
+    "city": "Pune, Maharashtra, India",
+    "date": "September 8, 2026",
+    "greeting": "Dear SAS Hiring Team,",
+    "opening": "I am writing to express my strong interest in engineering opportunities across SAS's Applied AI, CloudOps Platform, and Software Development teams in Pune (spanning Data Scientist, Python Developer, and SDET roles).",
+    "profile_intro": "As an Applied AI & Machine Learning Engineer currently architecting enterprise agentic platforms serving 1M+ active users across 120+ organizations, my technical background directly bridges SAS's core pillars: Agentic AI orchestration (LangGraph, MCP), production cloud automation (Azure, AWS, Docker, Kubernetes), hierarchical RAG architectures, and rigorous automated testing/evaluation control planes.",
+    "achievements": [
+      {
+        "lead": "Agentic AI Orchestration & Tool Routing (Data Scientist Match)",
+        "impact": "Architected multi-agent workflows with LangGraph and LangChain utilizing hybrid semantic-lexical tool routing across 65+ MCP capabilities, designing a capability contract layer that cut execution overhead by 3x and token consumption by 70%."
+      },
+      {
+        "lead": "CloudOps & Workflow Automation (Python Developer Match)",
+        "impact": "Deployed production services across Azure and AWS using Docker, Kubernetes, and Linux, integrating custom Python backend services with Spring AI MCP servers (upstream contributor on PR #5711)."
+      },
+      {
+        "lead": "Automated Testing & Evaluation Control Planes (SDET Match)",
+        "impact": "Engineered Prompt Lab as an automated testing and red-teaming control plane to record agent reasoning trajectories, executing deterministic Recall@K tool-routing tests and LLM-as-a-judge scoring for regression prevention."
+      },
+      {
+        "lead": "Hierarchical RAG & Clinical NLP (Life Sciences Match)",
+        "impact": "Implemented a 4-level hierarchical RAG pipeline indexing 10,000+ technical documents with GROBID, pdfplumber, and PostgreSQL/PGVector (90%+ Recall@10), and engineered clinical summarization pipelines for 116K+ medical records."
+      }
+    ],
+    "problems_section": "Whether scaling cloud-native automation across SAS Viya, engineering resilient automated testing harnesses, or building advanced Agentic AI systems with strict statistical and reasoning validation, my experience combining deep algorithmic AI with production cloud engineering enables me to deliver immediate value across SAS's R&D initiatives.",
+    "closing": "Thank you for your time and consideration. I would welcome the opportunity to discuss how my multi-agent systems, cloud automation, and evaluation engineering can contribute to SAS's mission in Pune.",
+    "signature": {
+      "valediction": "Sincerely,",
+      "name": "Yash Rawal"
+    }
+  },
+  "output_path": "output/cover-yash-rawal-sas.pdf"
+}
