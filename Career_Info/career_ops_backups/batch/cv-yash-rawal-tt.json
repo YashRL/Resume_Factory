@@ -1,0 +1,132 @@
+{
+  "lang": "en",
+  "page_format": "a4",
+  "name": "Yash Rawal",
+  "contact_line": "Ratlam (457001), Madhya Pradesh, India • +91-9399159685",
+  "email": {
+    "url": "mailto:yashrawal987@gmail.com",
+    "display": "yashrawal987@gmail.com"
+  },
+  "linkedin": {
+    "url": "https://linkedin.com/in/rawal-yash",
+    "display": "linkedin.com/in/rawal-yash"
+  },
+  "github": {
+    "url": "https://github.com/YashRL",
+    "display": "github.com/YashRL"
+  },
+  "candidate": {
+    "name": "Yash Rawal",
+    "phone": "+91-9399159685",
+    "email": "yashrawal987@gmail.com",
+    "linkedin": {
+      "url": "https://linkedin.com/in/rawal-yash",
+      "display": "linkedin.com/in/rawal-yash"
+    },
+    "github": {
+      "url": "https://github.com/YashRL",
+      "display": "github.com/YashRL"
+    },
+    "portfolio": null,
+    "location": "Ratlam (457001), Madhya Pradesh, India"
+  },
+  "summary": "Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architecting enterprise agentic platforms, fine-tuning domain embedding models (**E5-large-v2**) on NVIDIA GPUs, and building automated evaluation control planes. Specialized in **Python**, high-throughput LLM serving internals (vLLM contributor), Java, Spring Boot, SAP BTP, workflow orchestration (LangGraph, n8n), and cloud-native infrastructure (Azure, AWS, Docker, Kubernetes). Active open-source contributor to Spring AI and vLLM.",
+  "experience": [
+    {
+      "company": "Bigscal Technologies Pvt. Ltd.",
+      "role": "AI/ML Engineer",
+      "location": "Surat, India",
+      "dates": "Oct 2024 - Present",
+      "bullets": [
+        "Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS, SAP BTP).",
+        "Architected multi-agent routing with **LangGraph, n8n & SAP BTP**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities using Python and Java/Spring Boot.",
+        "Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and cutting token consumption by **70%**, slashing enterprise inference costs from $150 to $30 per 1K multi-agent runs.",
+        "Fine-tuned and served **E5-large-v2** embedding models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning for high-precision role mapping and semantic retrieval.",
+        "Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.",
+        "Designed the **Phantom Token** security pattern to pass authenticated user credentials securely between custom agents and Model Context Protocol (MCP) servers without exposing raw JWT payloads.",
+        "Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline**."
+      ]
+    },
+    {
+      "company": "Bigscal Technologies Pvt. Ltd.",
+      "role": "AI/ML Engineer Intern",
+      "location": "Surat, India",
+      "dates": "Apr 2024 - Sep 2024",
+      "bullets": [
+        "Engineered clinical summarization pipelines in Python for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR with **NeMo RNN-T and CTC decoding**.",
+        "Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spring AI Framework (spring-projects/spring-ai)",
+      "badge": "Open Source",
+      "tech": "Java, Spring Boot, Spring AI, Amazon Bedrock, REST APIs",
+      "description": "Merged **PR #5711** in Spring AI restoring missing `reasoningContent` metadata fields for DeepSeek-R1 and Qwen reasoning models, and contributed Amazon Bedrock Converse API prompt-cache time-to-live (TTL) configuration parameters."
+    },
+    {
+      "name": "vLLM High-Performance Inference Engine (vllm-project/vllm)",
+      "badge": "Open Source",
+      "tech": "Python, PyTorch, vLLM, Pydantic, AsyncIO, PyTest",
+      "description": "Merged **PR #55475** fixing structural XML tool parser drops on `/v1/chat/completions` and Pydantic parameter indexing (64/64 Qwen tests passed); engineered `torchcodec` multimodal decoder guards (Issue #54097)."
+    },
+    {
+      "name": "Enterprise Hierarchical Document Intelligence & RAG Platform",
+      "badge": "Project",
+      "tech": "Python, PostgreSQL, pgvector, GROBID, pdfplumber, RAG",
+      "description": "Built an **immutable document versioning system** and four-level hierarchical knowledge ingestion pipeline (paragraphs, pages, chapters, headings) using GROBID and pdfplumber; implemented paragraph-level signature hashing in `pgvector` achieving a **90%+ Recall@10** retrieval rate."
+    },
+    {
+      "name": "E5-large-v2 Job & Skills Embedding Fine-Tuning",
+      "badge": "Model Training",
+      "tech": "Python, PyTorch, Hugging Face Transformers, Triplet Loss, NVIDIA GPUs",
+      "description": "Fine-tuned **E5-large-v2** (335M parameters) on Lightcast labor-market data using PyTorch and triplet loss (anchor + positive + hard negative), raising semantic retrieval relevance by **18%** over OpenAI text-embedding-3-small."
+    },
+    {
+      "name": "OpenAI Agentic Red-Teaming & Security Research",
+      "badge": "Kaggle Competition & Research",
+      "tech": "Python, PyTorch, LLM-as-a-Judge, Adversarial Red Teaming, Jailbreak Datasets",
+      "description": "Engineered an **agentic red-teaming framework** inspired by OpenAI red-teaming benchmarks and Kaggle adversarial competitions to automatically mutate prompt payloads, challenge observer guardrails, and detect LLM security vulnerabilities."
+    }
+  ],
+  "education": [
+    {
+      "title": "Master of Computer Applications (Artificial Intelligence & Machine Learning)",
+      "org": "Parul University",
+      "year": "2022 - 2024"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      "org": "Microsoft"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "org": "Microsoft"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & Backend",
+      "items": "Python, SQL, FastAPI, PostgreSQL, Java, Spring Boot, Spring AI, SAP BTP, Oracle, REST APIs, WebSockets, AsyncIO, Linux"
+    },
+    {
+      "category": "AI & ML Engineering",
+      "items": "Agentic AI, Model Context Protocol (MCP), Multi-Agent Systems, Tool RAG, Healthcare NLP, E5-large-v2 Fine-Tuning, vLLM Serving"
+    },
+    {
+      "category": "AI & Workflow Frameworks",
+      "items": "LangChain, LangGraph, n8n, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, LlamaIndex, GROBID"
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "items": "Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins, Git, Gerrit), Redis, PGVector"
+    },
+    {
+      "category": "Testing, QA & Security",
+      "items": "PyTest, LLM-as-a-Judge, Prompt Lab, OpenAI Red Teaming, PII Sanitization, Unit/Integration/Regression Testing"
+    }
+  ]
+}
