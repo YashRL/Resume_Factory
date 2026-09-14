@@ -20,7 +20,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 *AI/ML Engineer* | *Oct 2024 – Present*
 - Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).
 - Architected multi-agent routing and workflow automation with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.
-- Designed a capability contract layer to execute nested profiles inside a single ReAct loop, reducing execution overhead by **3x** and token consumption by 70%.
+- **Re-architected multi-agent execution** with a capability-contract layer and unified ReAct loop, delivering **3× throughput, 70% token reduction, and 5× inference-cost efficiency**, translating to **$120K+ inference savings per million runs** at enterprise platform scale.
 - Trained domain-specific **E5-large-v2** embedding models on Lightcast labor-market datasets using PyTorch triplet contrastive learning to optimize semantic job-to-skills intent matching.
 - Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.
 - Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline** shooting zero regressions.
