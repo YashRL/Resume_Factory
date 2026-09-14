@@ -52,7 +52,7 @@
       "location": "Surat, India",
       "dates": "Apr 2024 - Sep 2024",
       "bullets": [
-        "Engineered clinical summarization pipelines in Python for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR with **NeMo RNN-T and CTC decoding**.",
+        "Engineered clinical summarization pipelines in Python for 116K+ medical records with 4-bit quantized Llama 3, and designed real-time WebSocket audio streaming for Indic ASR with **NVIDIA NeMo (RNN-T and CTC decoding)**.",
         "Researched audio digital signal processing (STFT, Mel-spectrograms, MFCC feature extraction via librosa/torchaudio) and CNN audio architectures (VGGish, ResNet), compiling custom Indic LJSpeech-format datasets."
       ]
     }
@@ -75,6 +75,18 @@
       "badge": "Model Training",
       "tech": "Python, PyTorch, Hugging Face Transformers, Triplet Loss, NVIDIA GPUs",
       "description": "Fine-tuned **E5-large-v2** (335M parameters) on Lightcast labor-market data using PyTorch and triplet loss (anchor + positive + hard negative), raising semantic retrieval relevance by **18%** over OpenAI text-embedding-3-small."
+    },
+    {
+      "name": "Modular Agent Harness",
+      "badge": "Project",
+      "tech": "Python, FastAPI, PostgreSQL, WebSockets, pgvector",
+      "description": "**Principal Creator & Architect** of a modular Python agentic framework implementing a formal ReAct loop with step budgets, pgvector tool routing, and dynamic MCP settings caching."
+    },
+    {
+      "name": "Enterprise Hierarchical Document Intelligence & RAG Platform",
+      "badge": "Project",
+      "tech": "Python, PostgreSQL, pgvector, GROBID, pdfplumber",
+      "description": "Built an immutable document versioning system and 4-level hierarchical ingestion pipeline (paragraphs, pages, chapters, headings) using GROBID and pdfplumber with paragraph-level signatures in `pgvector` (**90%+ Recall@10**)."
     }
   ],
   "education": [
