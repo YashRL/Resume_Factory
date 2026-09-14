@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-Developed a domain-specific embedding model, **`e5-finetuned-job-framework`**, by fine-tuning **E5-large-v2 (~335M parameters)** on job, occupation, and skills data to improve semantic matching between job titles, job descriptions, skills, and related job-framework information.
+Developed a domain-specific embedding model, **`e5-finetuned-job-framework`**, by fine-tuning **E5-large-v2 (~335M parameters)** on job, occupation, and skills data using PyTorch and triplet loss (anchor + positive + hard negative), raising semantic retrieval relevance by **18%** over **OpenAI text-embedding-3-small** for job and skills matching.
 
 The project was initiated after the general-purpose **OpenAI text-embedding-3-small** model did not provide sufficiently relevant results for the project's job and skills retrieval requirements. Rather than continuing to tune the retrieval layer around a general-purpose embedding model, a specialized embedding model was developed using domain-specific labor-market data from **Lightcast**.
 

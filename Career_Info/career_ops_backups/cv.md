@@ -38,9 +38,13 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Merged **PR #55475** resolving structural XML tool parser silent drops for `tool_choice="required"` on `/v1/chat/completions`, safe Pydantic param indexing in `ChatCompletionRequest`, and streaming parser activation (passed 64/64 Qwen tests and 983+ regression suite).
 - Fixed unhandled `OSError` crashes in `torchcodec` multimodal video/audio decoder pipelines (Issue #54097) by engineering resilient system FFmpeg error boundaries and import validation suites (15 import tests, 50 video IO tests passed).
 
-### Job Framework Semantic Embedding Model (e5-finetuned-job-framework)
-*Machine Learning Model Training* | *2025 – Present*
-- Fine-tuned an ~335M-parameter **E5-large-v2** transformer on Lightcast labor-market data using triplet contrastive learning with hard-negative mining in PyTorch, replacing general-purpose embeddings to optimize semantic job-to-skills retrieval precision.
+### Job Architecture Generator (Qwen2.5-7B Domain SFT & Serving)
+*LLM Training & Serving* | *2025 – Present*
+- Fine-tuned **Qwen2.5-7B** on 10K+ curated domain examples using Unsloth & PyTorch on NVIDIA GPUs for role standardization and structured JSON generation; deployed an **OpenAI-compatible endpoint** via vLLM for low-latency enterprise inference.
+
+### E5-large-v2 Job & Skills Embedding Fine-Tuning
+*Model Training* | *2025 – Present*
+- Fine-tuned **E5-large-v2** (335M parameters) on Lightcast labor-market data using PyTorch and triplet loss (anchor + positive + hard negative), raising semantic retrieval relevance by **18%** over OpenAI `text-embedding-3-small`.
 
 ### Modular Agent Harness & Memory System ("Brain")
 *Creator & Core Architect* | *Jan 2026 – Present*
