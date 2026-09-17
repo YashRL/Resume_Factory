@@ -1,4 +1,6 @@
 # Node
+node_modules/
+**/node_modules/
 career-ops/node_modules/
 
 # Generated PDF/HTML output (keep source, not output binaries)
