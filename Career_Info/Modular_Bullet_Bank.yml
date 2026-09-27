@@ -1,0 +1,98 @@
+# MASTER MODULAR BULLET BANK & VARIANT MATRIX
+# All bullets are calibrated to 110-122 characters for strict 1-line execution.
+
+experience:
+  bigscal_ai_lead:
+    leadership:
+      default: "Served as AI Lead driving 100% end-to-end ownership across system design, microservices, and model deployment."
+      variants:
+        architect: "Served as Principal AI Architect leading end-to-end system design, microservices, and LLM deployments."
+        fullstack: "Led full lifecycle engineering across distributed microservices, agent runtimes, and model deployment."
+    scale:
+      default: "Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants on Azure and AWS."
+      variants:
+        gcp_aws: "Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants on GCP and AWS."
+        azure_openai: "Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ tenants on Azure OpenAI & AWS."
+    routing:
+      default: "Architected multi-agent routing with LangGraph & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
+      variants:
+        crewai: "Architected multi-agent routing with CrewAI & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
+        autogen: "Architected multi-agent routing with AutoGen & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
+        semantic_kernel: "Architected multi-agent routing with Semantic Kernel, discovering and integrating 650+ dynamic function tools."
+    cost_efficiency:
+      default: "Re-architected multi-agent execution with capability contracts, yielding 3× throughput gains and $120K+ annual savings."
+      variants:
+        latency: "Re-architected multi-agent execution with capability contracts, slashing latency by 65% and saving $120K+ annually."
+    finetuning:
+      default: "Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints."
+      variants:
+        tensorflow: "Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using TensorFlow, PyTorch, and vLLM endpoints."
+        triton: "Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Triton, and vLLM inference engines."
+    rag:
+      default: "Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90%+ Recall@10."
+      variants:
+        pinecone: "Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via Pinecone achieving 90%+ Recall@10."
+        qdrant: "Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via Qdrant achieving 90%+ Recall@10."
+        milvus: "Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via Milvus achieving 90%+ Recall@10."
+    rlhf_eval:
+      default: "Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and RLHF pipelines."
+      variants:
+        dpo: "Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and DPO alignment."
+        observability: "Conceived and built Prompt Lab control plane to capture execution traces, enabling OpenTelemetry and evaluation."
+    security:
+      default: "Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs."
+      variants:
+        guardrails: "Architected multi-tier zero-trust guardrails scrubbing sensitive PII data at tool and server boundaries before LLMs."
+    mentorship:
+      default: "Mentored and upskilled 5+ interns and junior engineers in PyTorch fine-tuning, agentic workflows, and LLM evaluation."
+      variants:
+        leadership: "Mentored and directed 5+ engineers across model fine-tuning, agentic workflows, and production LLM evaluation."
+
+  bigscal_intern:
+    clinical_nlp:
+      default: "Engineered clinical NLP summarization pipelines for 116K+ medical records using 4-bit quantized Llama 3 and FastAPI."
+      variants:
+        flask: "Engineered clinical NLP summarization pipelines for 116K+ medical records using 4-bit quantized Llama 3 and Flask."
+    asr_speech:
+      default: "Built real-time WebSocket audio streaming for Indic ASR using NVIDIA NeMo (RNN-T and CTC decoding) and audio DSP."
+      variants:
+        whisper: "Built real-time WebSocket audio streaming for Indic ASR using fine-tuned Whisper, NVIDIA NeMo, and audio DSP."
+    tts_speech:
+      default: "Constructed multilingual speech synthesis pipelines with Coqui TTS, formatting custom LJSpeech audio datasets via DSP."
+      variants:
+        indic_parler: "Constructed multilingual speech synthesis pipelines with Indic Parler-TTS, formatting LJSpeech datasets via DSP."
+
+projects:
+  vllm:
+    bullet1: "Merged PR #55475 fixing XML tool parser drops on /v1/chat/completions and engineered torchcodec compatibility guards."
+    bullet2: "Resolved unhandled torchcodec multimodal video decoder crashes by engineering resilient FFmpeg error boundaries."
+    bullet3: "Optimized async inference request lifecycle and validated Pydantic schema serialization across multi-GPU test suites."
+
+  qwen_sft:
+    bullet1: "Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth and deployed low-latency OpenAI-compatible endpoints."
+    bullet2: "Trained 4-bit QLoRA adapters with custom chat templates, cutting GPU memory overhead by 60% during vLLM serving."
+    bullet3: "Engineered Pydantic structured output validation pipelines guaranteeing 100% schema compliance for ERP ingestion."
+
+  e5_embedding:
+    bullet1: "Fine-tuned E5-large-v2 (335M params) with triplet loss, boosting domain semantic retrieval relevance by 18% over OpenAI."
+    bullet2: "Constructed hard-negative mining pipeline over Lightcast labor datasets to separate closely aligned skill taxonomies."
+    bullet3: "Evaluated embedding cosine distance distributions to optimize Top-K nearest-neighbor candidate ranking precision."
+
+  edge_lm:
+    bullet1: "Pretrained sub-100M autoregressive Transformer from scratch on 462M tokens with custom Pre-LN architecture (1.43 val loss)."
+    bullet2: "Engineered FragmentStream tiled memory attention algorithm preventing OOMs during long-context generation."
+    bullet3: "Implemented custom RoPE rotary position embeddings and KV-cache quantization routines in CUDA for fast generation."
+
+  modular_agent_harness:
+    bullet1: "Architected modular Python agent framework implementing formal ReAct loops with step budgets and dynamic tool routing."
+    bullet2: "Engineered persistent multi-tenant session state and automated checkpoint recovery across asynchronous worker threads."
+    bullet3: "Integrated dynamic subagent branching and state synchronization across asynchronous distributed worker nodes."
+
+  hierarchical_rag:
+    bullet1: "Engineered 4-level hierarchical RAG ingestion for complex documents using GROBID parsing and PGVector similarity search."
+    bullet2: "Developed paragraph-level signature deduplication and versioning pipeline supporting 1,000+ domain reference books."
+    bullet3: "Implemented hybrid semantic + BM25 reciprocal rank fusion (RRF) reranking, shrinking context window noise by 45%."
+
+  spring_ai:
+    bullet1: "Contributed to VMware Spring AI open-source repository integrating Amazon Bedrock Converse API reasoning parity."
+    bullet2: "Engineered dynamic tool callback handlers and Anthropic Claude tool routing layers with automated unit test suites."
