@@ -1,11 +1,11 @@
 %-------------------------
-% Resume in Latex - Yash Rawal (Calibrated 1-Line Budget)
+% Resume in Latex - Yash Rawal (Strict 1-Line Zero-Wrap)
 % Author : Jake Gutierrez template adaptation
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -21,7 +21,7 @@
 \input{glyphtounicode}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -87,10 +87,11 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Yash Rawal} \\ \vspace{1pt}
-    \small Ratlam (457001), Madhya Pradesh, India $|$ +91-9399159685 $|$ 
-    \href{mailto:yashrawal987@gmail.com}{\underline{yashrawal987@gmail.com}} $|$ 
+    \small +91-9399159685 $|$ 
+    \href{mailto:yash.mahesh.rawal@gmail.com}{\underline{yash.mahesh.rawal@gmail.com}} $|$ 
     \href{https://linkedin.com/in/rawal-yash}{\underline{linkedin.com/in/rawal-yash}} $|$
-    \href{https://github.com/YashRL}{\underline{github.com/YashRL}}
+    \href{https://github.com/YashRL}{\underline{github.com/YashRL}} $|$
+    \small Ratlam, MP, India
 \end{center}
 
 %-----------EXPERIENCE-----------
@@ -101,20 +102,20 @@
       {Bigscal Technologies Pvt. Ltd.}{Surat, India}
       {AI/ML Engineer}{Oct. 2024 -- Present}
       \resumeItemListStart
-        \resumeItem{Deployed enterprise agentic platform and multi-agent systems serving \textbf{1M+ active ERP users} across 120+ cloud tenants.}
-        \resumeItem{Architected multi-agent routing with \textbf{LangGraph \& SAP Joule 2.0}, integrating hybrid tool discovery across 650+ MCP tools.}
-        \resumeItem{\textbf{Re-architected multi-agent execution} with capability contracts, delivering \textbf{3$\times$ throughput, 70\% token cut, and \$120K+ savings}.}
-        \resumeItem{Fine-tuned and served \textbf{Qwen2.5-7B \& E5-large-v2} models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning via vLLM.}
-        \resumeItem{Implemented 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using PGVector (\textbf{90\%+ Recall@10}).}
-        \resumeItem{Built Prompt Lab evaluation control plane to monitor model outputs, collecting reasoning trajectories for \textbf{RLHF benchmarking}.}
+        \resumeItem{Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants.}
+        \resumeItem{Architected multi-agent routing with LangGraph \& SAP Joule 2.0, discovering 650+ dynamic MCP tools.}
+        \resumeItem{Re-architected multi-agent execution with capability contracts, yielding 3$\times$ throughput \& \$120K+ savings.}
+        \resumeItem{Fine-tuned \& served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM.}
+        \resumeItem{Built 4-level hierarchical RAG in Python indexing 10K+ technical documents via PGVector (90\%+ Recall@10).}
+        \resumeItem{Built Prompt Lab evaluation control plane to monitor LLM outputs and curate RLHF benchmark datasets.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Bigscal Technologies Pvt. Ltd.}{Surat, India}
-      {AI/ML Engineer Intern}{Apr. 2024 -- Sep. 2024}
+      {AI/ML Intern}{Apr. 2024 -- Sep. 2024}
       \resumeItemListStart
-        \resumeItem{Engineered clinical NLP summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3 and FastAPI endpoints.}
-        \resumeItem{Built real-time WebSocket audio streaming for Indic ASR with \textbf{NVIDIA NeMo (RNN-T and CTC decoding)} and torchaudio DSP.}
+        \resumeItem{Engineered clinical NLP pipelines for 116K+ medical records using 4-bit Llama 3 and FastAPI endpoints.}
+        \resumeItem{Built real-time WebSocket audio streaming for Indic ASR using NVIDIA NeMo (RNN-T/CTC) and DSP.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -123,29 +124,29 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{vLLM High-Performance Inference Engine} $|$ \emph{Python, PyTorch, Pydantic, AsyncIO, PyTest}}{Open Source}
+          {\textbf{vLLM High-Performance Inference Engine} $|$ \emph{Python, PyTorch, Pydantic, AsyncIO}}{Open Source}
           \resumeItemListStart
-            \resumeItem{Merged \textbf{PR \#55475} fixing structural XML tool parser drops on `/v1/chat/completions` and engineered `torchcodec` multimodal guards.}
+            \resumeItem{Merged PR \#55475 fixing XML tool parser drops on \texttt{/v1/chat/completions} with torchcodec guards.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Job Architecture Generator (Qwen2.5-7B SFT)} $|$ \emph{Python, PyTorch, Hugging Face, Unsloth, vLLM}}{LLM Training}
+          {\textbf{Job Architecture Generator (Qwen2.5-7B SFT)} $|$ \emph{Python, PyTorch, Unsloth, vLLM}}{LLM Training}
           \resumeItemListStart
-            \resumeItem{Fine-tuned \textbf{Qwen2.5-7B} on 10K+ domain examples using Unsloth on NVIDIA GPUs, deploying OpenAI-compatible vLLM endpoints.}
+            \resumeItem{Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth for low-latency OpenAI endpoints.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{E5-large-v2 Job \& Skills Embedding Fine-Tuning} $|$ \emph{Python, PyTorch, Triplet Loss, Transformers}}{Model Training}
+          {\textbf{E5-large-v2 Job \& Skills Embedding Fine-Tuning} $|$ \emph{Python, PyTorch, Transformers}}{Model Training}
           \resumeItemListStart
-            \resumeItem{Fine-tuned \textbf{E5-large-v2} (335M params) on labor data with triplet loss, raising semantic retrieval relevance by \textbf{18\%} over OpenAI.}
+            \resumeItem{Fine-tuned E5-large-v2 (335M) with triplet loss, boosting semantic relevance by 18\% over OpenAI.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Modular Agent Harness \& Conversational Copilot} $|$ \emph{Python, FastAPI, PostgreSQL, WebSockets, pgvector}}{Project}
+          {\textbf{Modular Agent Harness \& Conversational Copilot} $|$ \emph{Python, FastAPI, pgvector}}{Project}
           \resumeItemListStart
-            \resumeItem{Architected modular Python agentic framework implementing formal ReAct loop with step budgets and pgvector tool routing.}
+            \resumeItem{Architected modular Python agent framework implementing ReAct loops with step budgets and tool routing.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Hierarchical Document Intelligence \& RAG Platform} $|$ \emph{Python, PostgreSQL, pgvector, GROBID}}{Project}
+          {\textbf{Hierarchical Document Intelligence \& RAG Platform} $|$ \emph{Python, pgvector, GROBID}}{Project}
           \resumeItemListStart
-            \resumeItem{Engineered immutable 4-level hierarchical RAG ingestion (paragraphs, pages, headings) using GROBID and PGVector retrieval.}
+            \resumeItem{Engineered 4-level hierarchical RAG ingestion (paragraphs, headings) with GROBID and PGVector retrieval.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -154,9 +155,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages \& Backend}{: Python, SQL, FastAPI, PostgreSQL, Oracle, REST APIs, WebSockets, AsyncIO, Linux} \\
-     \textbf{AI \& ML Engineering}{: Large Language Models (LLMs), Agentic AI, MCP, Tool RAG, Model Fine-Tuning (SFT/LoRA), vLLM Serving, RLHF} \\
-     \textbf{Frameworks \& Libraries}{: LangChain, LangGraph, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, NVIDIA NeMo, LlamaIndex} \\
-     \textbf{Cloud \& DevOps}{: Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, PyTest, LLM-as-a-Judge}
+     \textbf{AI \& ML Engineering}{: LLMs, Agentic AI, MCP, Tool RAG, SFT/LoRA, vLLM Serving, RLHF, Prompt Tuning} \\
+     \textbf{Frameworks \& Libraries}{: LangChain, LangGraph, PyTorch, Hugging Face, vLLM, SAP Joule 2.0, NVIDIA NeMo} \\
+     \textbf{Cloud \& DevOps}{: Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, LLM Evaluation}
     }}
  \end{itemize}
 
@@ -170,7 +171,7 @@
   \vspace{-5pt}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Certifications}{: Microsoft Certified: Azure AI Fundamentals (AI-900) $|$ Microsoft Certified: Azure Fundamentals (AZ-900)}
+     \textbf{Certifications}{: Azure AI Fundamentals (AI-900) $|$ Azure Fundamentals (AZ-900)}
     }}
   \end{itemize}
 

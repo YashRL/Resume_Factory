@@ -9,7 +9,7 @@
     --font-serif: "Times New Roman", "Nimbus Roman No9 L", "Liberation Serif", "FreeSerif", serif;
     --font-size: 10.5pt;
     --page-margin-x: 0.5in;
-    --page-margin-y: 0.42in;
+    --page-margin-y: 0.45in;
   }
 
   @page {
@@ -28,7 +28,7 @@
   body {
     font-family: var(--font-serif);
     font-size: 10.5pt;
-    line-height: 1.25;
+    line-height: 1.28;
     color: #000000;
     background: #ffffff;
     padding: 0;
@@ -39,7 +39,7 @@
   /* ---------- HEADING ---------- */
   .header {
     text-align: center;
-    margin-bottom: 7pt;
+    margin-bottom: 8pt;
   }
 
   .header .name {
@@ -71,25 +71,25 @@
 
   /* ---------- SECTION ---------- */
   .section {
-    margin-bottom: 6.5pt;
+    margin-bottom: 7pt;
   }
 
   .section-title {
     font-family: var(--font-serif);
-    font-size: 11.5pt;
+    font-size: 12pt;
     font-weight: 700;
     font-variant: small-caps;
     letter-spacing: 0.5pt;
     text-transform: none;
     border-bottom: 1px solid #000000;
     padding-bottom: 1pt;
-    margin-bottom: 3.5pt;
+    margin-bottom: 4pt;
     line-height: 1.15;
   }
 
-  /* ---------- SUBHEADINGS (TABLE LAYOUT) ---------- */
+  /* ---------- SUBHEADINGS ---------- */
   .subheading {
-    margin-bottom: 3pt;
+    margin-bottom: 3.5pt;
   }
 
   .row-top {
@@ -97,7 +97,7 @@
     justify-content: space-between;
     align-items: baseline;
     font-size: 10.5pt;
-    line-height: 1.22;
+    line-height: 1.25;
   }
 
   .row-bottom {
@@ -105,9 +105,9 @@
     justify-content: space-between;
     align-items: baseline;
     font-size: 9.5pt;
-    line-height: 1.22;
+    line-height: 1.25;
     margin-top: 0.5pt;
-    margin-bottom: 1pt;
+    margin-bottom: 1.5pt;
   }
 
   .bold-title {
@@ -127,16 +127,15 @@
   /* ---------- BULLET ITEMS ---------- */
   .bullet-list {
     list-style-type: disc;
-    margin-left: 17pt;
-    margin-bottom: 1.5pt;
+    margin-left: 18pt;
+    margin-bottom: 2pt;
   }
 
   .bullet-list li {
     font-size: 9.5pt;
-    line-height: 1.25;
-    margin-bottom: 1.2pt;
-    text-align: justify;
-    text-justify: inter-word;
+    line-height: 1.28;
+    margin-bottom: 1.5pt;
+    text-align: left;
   }
 
   .bullet-list li:last-child {
@@ -146,12 +145,12 @@
   /* ---------- SKILLS SECTION ---------- */
   .skills-list {
     font-size: 9.5pt;
-    line-height: 1.32;
+    line-height: 1.35;
     margin-left: 2pt;
   }
 
   .skill-item {
-    margin-bottom: 1.2pt;
+    margin-bottom: 1.5pt;
   }
 
   .skill-item:last-child {
@@ -173,10 +172,11 @@
   <div class="header">
     <div class="name">Yash Rawal</div>
     <div class="contact-line">
-      Ratlam (457001), MP, India <span class="separator">|</span> +91-9399159685 <span class="separator">|</span>
-      <a href="mailto:yashrawal987@gmail.com">yashrawal987@gmail.com</a> <span class="separator">|</span>
+      +91-9399159685 <span class="separator">|</span>
+      <a href="mailto:yash.mahesh.rawal@gmail.com">yash.mahesh.rawal@gmail.com</a> <span class="separator">|</span>
       <a href="https://linkedin.com/in/rawal-yash">linkedin.com/in/rawal-yash</a> <span class="separator">|</span>
-      <a href="https://github.com/YashRL">github.com/YashRL</a>
+      <a href="https://github.com/YashRL">github.com/YashRL</a> <span class="separator">|</span>
+      Ratlam, MP, India
     </div>
   </div>
 
@@ -194,27 +194,27 @@
         <span class="date-location">Oct. 2024 – Present</span>
       </div>
       <ul class="bullet-list">
-        <li>Deployed enterprise agentic platform and multi-agent systems serving <strong>1M+ active ERP users</strong> across 120+ cloud tenants.</li>
-        <li>Architected multi-agent routing with <strong>LangGraph & SAP Joule 2.0</strong>, integrating hybrid tool discovery across 650+ MCP tools.</li>
-        <li><strong>Re-architected multi-agent execution</strong> with capability contracts, delivering <strong>3× throughput, 70% token cut, and $120K+ savings</strong>.</li>
-        <li>Fine-tuned and served <strong>Qwen2.5-7B & E5-large-v2</strong> models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning via vLLM.</li>
-        <li>Implemented 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using PGVector (<strong>90%+ Recall@10</strong>).</li>
-        <li>Built Prompt Lab evaluation control plane to monitor model outputs, collecting reasoning trajectories for <strong>RLHF benchmarking</strong>.</li>
+        <li>Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants.</li>
+        <li>Architected multi-agent routing with LangGraph & SAP Joule 2.0, discovering 650+ dynamic MCP tools.</li>
+        <li>Re-architected multi-agent execution with capability contracts, yielding 3× throughput & $120K+ savings.</li>
+        <li>Fine-tuned & served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM.</li>
+        <li>Built 4-level hierarchical RAG in Python indexing 10K+ technical documents via PGVector (90%+ Recall@10).</li>
+        <li>Built Prompt Lab evaluation control plane to monitor LLM outputs and curate RLHF benchmark datasets.</li>
       </ul>
     </div>
 
-    <div class="subheading" style="margin-top: 3.5pt;">
+    <div class="subheading" style="margin-top: 4pt;">
       <div class="row-top">
         <span class="bold-title">Bigscal Technologies Pvt. Ltd.</span>
         <span class="date-location">Surat, India</span>
       </div>
       <div class="row-bottom">
-        <span class="italic-subtitle">AI/ML Engineer Intern</span>
+        <span class="italic-subtitle">AI/ML Intern</span>
         <span class="date-location">Apr. 2024 – Sep. 2024</span>
       </div>
       <ul class="bullet-list">
-        <li>Engineered clinical NLP summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3 and FastAPI endpoints.</li>
-        <li>Built real-time WebSocket audio streaming for Indic ASR with <strong>NVIDIA NeMo (RNN-T and CTC decoding)</strong> and torchaudio DSP.</li>
+        <li>Engineered clinical NLP pipelines for 116K+ medical records using 4-bit Llama 3 and FastAPI endpoints.</li>
+        <li>Built real-time WebSocket audio streaming for Indic ASR using NVIDIA NeMo (RNN-T/CTC) and DSP.</li>
       </ul>
     </div>
   </div>
@@ -225,51 +225,51 @@
 
     <div class="subheading">
       <div class="row-top">
-        <span><strong>vLLM High-Performance Inference Engine</strong> <span class="separator">|</span> <em>Python, PyTorch, Pydantic, AsyncIO, PyTest</em></span>
+        <span><strong>vLLM High-Performance Inference Engine</strong> <span class="separator">|</span> <em>Python, PyTorch, Pydantic, AsyncIO</em></span>
         <span class="date-location">Open Source</span>
       </div>
       <ul class="bullet-list">
-        <li>Merged <strong>PR #55475</strong> fixing structural XML tool parser drops on <code>/v1/chat/completions</code> and engineered <code>torchcodec</code> multimodal guards.</li>
+        <li>Merged PR #55475 fixing XML tool parser drops on <code>/v1/chat/completions</code> with torchcodec guards.</li>
       </ul>
     </div>
 
     <div class="subheading">
       <div class="row-top">
-        <span><strong>Job Architecture Generator (Qwen2.5-7B SFT)</strong> <span class="separator">|</span> <em>Python, PyTorch, Hugging Face, Unsloth, vLLM</em></span>
+        <span><strong>Job Architecture Generator (Qwen2.5-7B SFT)</strong> <span class="separator">|</span> <em>Python, PyTorch, Unsloth, vLLM</em></span>
         <span class="date-location">LLM Training</span>
       </div>
       <ul class="bullet-list">
-        <li>Fine-tuned <strong>Qwen2.5-7B</strong> on 10K+ domain examples using Unsloth on NVIDIA GPUs, deploying OpenAI-compatible vLLM endpoints.</li>
+        <li>Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth for low-latency OpenAI endpoints.</li>
       </ul>
     </div>
 
     <div class="subheading">
       <div class="row-top">
-        <span><strong>E5-large-v2 Job & Skills Embedding Fine-Tuning</strong> <span class="separator">|</span> <em>Python, PyTorch, Triplet Loss, Transformers</em></span>
+        <span><strong>E5-large-v2 Job & Skills Embedding Fine-Tuning</strong> <span class="separator">|</span> <em>Python, PyTorch, Transformers</em></span>
         <span class="date-location">Model Training</span>
       </div>
       <ul class="bullet-list">
-        <li>Fine-tuned <strong>E5-large-v2</strong> (335M params) on labor data with triplet loss, raising semantic retrieval relevance by <strong>18%</strong> over OpenAI.</li>
+        <li>Fine-tuned E5-large-v2 (335M) with triplet loss, boosting semantic relevance by 18% over OpenAI.</li>
       </ul>
     </div>
 
     <div class="subheading">
       <div class="row-top">
-        <span><strong>Modular Agent Harness & Conversational Copilot</strong> <span class="separator">|</span> <em>Python, FastAPI, PostgreSQL, WebSockets, pgvector</em></span>
+        <span><strong>Modular Agent Harness & Conversational Copilot</strong> <span class="separator">|</span> <em>Python, FastAPI, pgvector</em></span>
         <span class="date-location">Project</span>
       </div>
       <ul class="bullet-list">
-        <li>Architected modular Python agentic framework implementing formal ReAct loop with step budgets and pgvector tool routing.</li>
+        <li>Architected modular Python agent framework implementing ReAct loops with step budgets and tool routing.</li>
       </ul>
     </div>
 
     <div class="subheading">
       <div class="row-top">
-        <span><strong>Hierarchical Document Intelligence & RAG Platform</strong> <span class="separator">|</span> <em>Python, PostgreSQL, pgvector, GROBID</em></span>
+        <span><strong>Hierarchical Document Intelligence & RAG Platform</strong> <span class="separator">|</span> <em>Python, pgvector, GROBID</em></span>
         <span class="date-location">Project</span>
       </div>
       <ul class="bullet-list">
-        <li>Engineered immutable 4-level hierarchical RAG ingestion (paragraphs, pages, headings) using GROBID and PGVector retrieval.</li>
+        <li>Engineered 4-level hierarchical RAG ingestion (paragraphs, headings) with GROBID and PGVector retrieval.</li>
       </ul>
     </div>
   </div>
@@ -279,9 +279,9 @@
     <div class="section-title">Technical Skills</div>
     <div class="skills-list">
       <div class="skill-item"><span class="skill-label">Languages & Backend:</span> Python, SQL, FastAPI, PostgreSQL, Oracle, REST APIs, WebSockets, AsyncIO, Linux</div>
-      <div class="skill-item"><span class="skill-label">AI & ML Engineering:</span> Large Language Models (LLMs), Agentic AI, MCP, Tool RAG, Model Fine-Tuning (SFT/LoRA), vLLM Serving, RLHF</div>
-      <div class="skill-item"><span class="skill-label">Frameworks & Libraries:</span> LangChain, LangGraph, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, NVIDIA NeMo, LlamaIndex</div>
-      <div class="skill-item"><span class="skill-label">Cloud & DevOps:</span> Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, PyTest, LLM-as-a-Judge</div>
+      <div class="skill-item"><span class="skill-label">AI & ML Engineering:</span> LLMs, Agentic AI, MCP, Tool RAG, SFT/LoRA, vLLM Serving, RLHF, Prompt Tuning</div>
+      <div class="skill-item"><span class="skill-label">Frameworks & Libraries:</span> LangChain, LangGraph, PyTorch, Hugging Face, vLLM, SAP Joule 2.0, NVIDIA NeMo</div>
+      <div class="skill-item"><span class="skill-label">Cloud & DevOps:</span> Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, LLM Evaluation</div>
     </div>
   </div>
 
@@ -300,8 +300,8 @@
       </div>
     </div>
 
-    <div class="skills-list" style="margin-top: 2.5pt;">
-      <div class="skill-item"><span class="skill-label">Certifications:</span> Microsoft Certified: Azure AI Fundamentals (AI-900) <span class="separator">|</span> Microsoft Certified: Azure Fundamentals (AZ-900)</div>
+    <div class="skills-list" style="margin-top: 3pt;">
+      <div class="skill-item"><span class="skill-label">Certifications:</span> Azure AI Fundamentals (AI-900) <span class="separator">|</span> Azure Fundamentals (AZ-900)</div>
     </div>
   </div>
 
