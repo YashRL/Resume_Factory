@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -30,8 +30,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
 
 \urlstyle{same}
 
@@ -41,7 +41,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -51,12 +51,12 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-2.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-2.5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -94,6 +94,15 @@
     \small Ratlam, MP, India
 \end{center}
 
+%-----------SUMMARY-----------
+\section{Professional Summary}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     AI/ML Engineer specializing in production LLMs, Agentic AI architectures, and low-latency RAG systems with PyTorch and vLLM. \\
+     Proven expertise in fine-tuning open-source models, building multi-agent MCP tools, and deploying enterprise AI pipelines.
+    }}
+ \end{itemize}
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -108,6 +117,8 @@
         \resumeItem{Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.}
         \resumeItem{Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90\%+ Recall@10.}
         \resumeItem{Built Prompt Lab evaluation control plane to monitor LLM outputs, track latency, and curate RLHF benchmark datasets.}
+        \resumeItem{Engineered Spring AI MCP server exposing 65+ SAP/HANA tools with JSON-RPC 2.0 and phantom-token security patterns.}
+        \resumeItem{Implemented SSE streaming telemetry and 6-dimension LLM-as-a-Judge evaluation framework scoring groundedness.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -127,26 +138,31 @@
           {\textbf{vLLM High-Performance Inference Engine} $|$ \emph{Python, PyTorch, Pydantic, AsyncIO}}{Open Source}
           \resumeItemListStart
             \resumeItem{Merged PR \#55475 fixing XML tool parser drops on \texttt{/v1/chat/completions} and engineered torchcodec compatibility guards.}
+            \resumeItem{Optimized async inference request lifecycle and validated Pydantic schema serialization across multi-GPU test suites.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Job Architecture Generator (Qwen2.5-7B SFT)} $|$ \emph{Python, PyTorch, Unsloth, vLLM}}{LLM Training}
           \resumeItemListStart
             \resumeItem{Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth and deployed low-latency OpenAI-compatible endpoints.}
+            \resumeItem{Trained 4-bit QLoRA adapters with custom chat templates, cutting GPU memory overhead by 60\% during vLLM serving.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{E5-large-v2 Job \& Skills Embedding Fine-Tuning} $|$ \emph{Python, PyTorch, Transformers}}{Model Training}
           \resumeItemListStart
             \resumeItem{Fine-tuned E5-large-v2 (335M params) with triplet loss, boosting domain semantic retrieval relevance by 18\% over OpenAI.}
+            \resumeItem{Constructed hard-negative mining pipeline over Lightcast labor datasets to separate closely aligned skill taxonomies.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Modular Agent Harness \& Conversational Copilot} $|$ \emph{Python, FastAPI, pgvector}}{Project}
           \resumeItemListStart
             \resumeItem{Architected modular Python agent framework implementing formal ReAct loops with step budgets and dynamic tool routing.}
+            \resumeItem{Integrated multi-turn conversational session memory and PostgreSQL state persistence with automated fallback handlers.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Hierarchical Document Intelligence \& RAG Platform} $|$ \emph{Python, pgvector, GROBID}}{Project}
           \resumeItemListStart
             \resumeItem{Engineered 4-level hierarchical RAG ingestion for complex documents using GROBID parsing and PGVector similarity search.}
+            \resumeItem{Developed paragraph-level signature deduplication and versioning pipeline supporting 1,000+ domain reference books.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 

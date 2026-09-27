@@ -7,9 +7,9 @@
 <style>
   :root {
     --font-serif: "Times New Roman", "Nimbus Roman No9 L", "Liberation Serif", "FreeSerif", serif;
-    --font-size: 10.5pt;
+    --font-size: 10pt;
     --page-margin-x: 0.5in;
-    --page-margin-y: 0.45in;
+    --page-margin-y: 0.35in;
   }
 
   @page {
@@ -27,8 +27,8 @@
 
   body {
     font-family: var(--font-serif);
-    font-size: 10.5pt;
-    line-height: 1.28;
+    font-size: 9.8pt;
+    line-height: 1.22;
     color: #000000;
     background: #ffffff;
     padding: 0;
@@ -39,12 +39,12 @@
   /* ---------- HEADING ---------- */
   .header {
     text-align: center;
-    margin-bottom: 8pt;
+    margin-bottom: 5pt;
   }
 
   .header .name {
     font-family: var(--font-serif);
-    font-size: 20pt;
+    font-size: 19pt;
     font-weight: 700;
     font-variant: small-caps;
     letter-spacing: 0.5pt;
@@ -54,8 +54,8 @@
   }
 
   .header .contact-line {
-    font-size: 9.5pt;
-    line-height: 1.3;
+    font-size: 9.2pt;
+    line-height: 1.25;
     color: #111111;
   }
 
@@ -69,45 +69,53 @@
     color: #444444;
   }
 
+  /* ---------- SUMMARY ---------- */
+  .summary-text {
+    font-size: 9.2pt;
+    line-height: 1.25;
+    text-align: left;
+    margin-bottom: 1pt;
+  }
+
   /* ---------- SECTION ---------- */
   .section {
-    margin-bottom: 7pt;
+    margin-bottom: 5pt;
   }
 
   .section-title {
     font-family: var(--font-serif);
-    font-size: 12pt;
+    font-size: 11.2pt;
     font-weight: 700;
     font-variant: small-caps;
     letter-spacing: 0.5pt;
     text-transform: none;
     border-bottom: 1px solid #000000;
-    padding-bottom: 1pt;
-    margin-bottom: 4pt;
-    line-height: 1.15;
+    padding-bottom: 0.5pt;
+    margin-bottom: 3pt;
+    line-height: 1.1;
   }
 
   /* ---------- SUBHEADINGS ---------- */
   .subheading {
-    margin-bottom: 3.5pt;
+    margin-bottom: 2.5pt;
   }
 
   .row-top {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 10.5pt;
-    line-height: 1.25;
+    font-size: 9.8pt;
+    line-height: 1.2;
   }
 
   .row-bottom {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 9.5pt;
-    line-height: 1.25;
+    font-size: 9.2pt;
+    line-height: 1.2;
     margin-top: 0.5pt;
-    margin-bottom: 1.5pt;
+    margin-bottom: 1pt;
   }
 
   .bold-title {
@@ -119,7 +127,7 @@
   }
 
   .date-location {
-    font-size: 9.5pt;
+    font-size: 9.2pt;
     white-space: nowrap;
     text-align: right;
   }
@@ -127,14 +135,14 @@
   /* ---------- BULLET ITEMS ---------- */
   .bullet-list {
     list-style-type: disc;
-    margin-left: 18pt;
-    margin-bottom: 2pt;
+    margin-left: 17pt;
+    margin-bottom: 1.5pt;
   }
 
   .bullet-list li {
-    font-size: 9.5pt;
-    line-height: 1.28;
-    margin-bottom: 1.5pt;
+    font-size: 9.2pt;
+    line-height: 1.22;
+    margin-bottom: 1pt;
     text-align: left;
   }
 
@@ -144,13 +152,13 @@
 
   /* ---------- SKILLS SECTION ---------- */
   .skills-list {
-    font-size: 9.5pt;
-    line-height: 1.35;
+    font-size: 9.2pt;
+    line-height: 1.28;
     margin-left: 2pt;
   }
 
   .skill-item {
-    margin-bottom: 1.5pt;
+    margin-bottom: 1pt;
   }
 
   .skill-item:last-child {
@@ -180,6 +188,13 @@
     </div>
   </div>
 
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">AI/ML Engineer specializing in production LLMs, Agentic AI architectures, and low-latency RAG systems with PyTorch and vLLM.</p>
+    <p class="summary-text">Proven expertise in fine-tuning open-source models, building multi-agent MCP tools, and deploying enterprise AI pipelines.</p>
+  </div>
+
   <!-- EXPERIENCE -->
   <div class="section">
     <div class="section-title">Experience</div>
@@ -200,10 +215,12 @@
         <li>Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.</li>
         <li>Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90%+ Recall@10.</li>
         <li>Built Prompt Lab evaluation control plane to monitor LLM outputs, track latency, and curate RLHF benchmark datasets.</li>
+        <li>Engineered Spring AI MCP server exposing 65+ SAP/HANA tools with JSON-RPC 2.0 and phantom-token security patterns.</li>
+        <li>Implemented SSE streaming telemetry and 6-dimension LLM-as-a-Judge evaluation framework scoring groundedness.</li>
       </ul>
     </div>
 
-    <div class="subheading" style="margin-top: 4pt;">
+    <div class="subheading" style="margin-top: 3pt;">
       <div class="row-top">
         <span class="bold-title">Bigscal Technologies Pvt. Ltd.</span>
         <span class="date-location">Surat, India</span>
@@ -230,6 +247,7 @@
       </div>
       <ul class="bullet-list">
         <li>Merged PR #55475 fixing XML tool parser drops on <code>/v1/chat/completions</code> and engineered torchcodec compatibility guards.</li>
+        <li>Optimized async inference request lifecycle and validated Pydantic schema serialization across multi-GPU test suites.</li>
       </ul>
     </div>
 
@@ -240,6 +258,7 @@
       </div>
       <ul class="bullet-list">
         <li>Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth and deployed low-latency OpenAI-compatible endpoints.</li>
+        <li>Trained 4-bit QLoRA adapters with custom chat templates, cutting GPU memory overhead by 60% during vLLM serving.</li>
       </ul>
     </div>
 
@@ -250,6 +269,7 @@
       </div>
       <ul class="bullet-list">
         <li>Fine-tuned E5-large-v2 (335M params) with triplet loss, boosting domain semantic retrieval relevance by 18% over OpenAI.</li>
+        <li>Constructed hard-negative mining pipeline over Lightcast labor datasets to separate closely aligned skill taxonomies.</li>
       </ul>
     </div>
 
@@ -260,6 +280,7 @@
       </div>
       <ul class="bullet-list">
         <li>Architected modular Python agent framework implementing formal ReAct loops with step budgets and dynamic tool routing.</li>
+        <li>Integrated multi-turn conversational session memory and PostgreSQL state persistence with automated fallback handlers.</li>
       </ul>
     </div>
 
@@ -270,6 +291,7 @@
       </div>
       <ul class="bullet-list">
         <li>Engineered 4-level hierarchical RAG ingestion for complex documents using GROBID parsing and PGVector similarity search.</li>
+        <li>Developed paragraph-level signature deduplication and versioning pipeline supporting 1,000+ domain reference books.</li>
       </ul>
     </div>
   </div>
@@ -300,7 +322,7 @@
       </div>
     </div>
 
-    <div class="skills-list" style="margin-top: 3pt;">
+    <div class="skills-list" style="margin-top: 2pt;">
       <div class="skill-item"><span class="skill-label">Certifications:</span> Microsoft Certified: Azure AI Fundamentals (AI-900) <span class="separator">|</span> Microsoft Certified: Azure Fundamentals (AZ-900)</div>
     </div>
   </div>
