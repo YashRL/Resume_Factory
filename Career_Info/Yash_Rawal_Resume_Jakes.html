@@ -9,7 +9,7 @@
     --font-serif: "Times New Roman", "Nimbus Roman No9 L", "Liberation Serif", "FreeSerif", serif;
     --font-size: 11pt;
     --page-margin-x: 0.5in;
-    --page-margin-y: 0.5in;
+    --page-margin-y: 0.45in;
     --indent: 0.15in;
   }
 
@@ -29,7 +29,7 @@
   body {
     font-family: var(--font-serif);
     font-size: 11pt;
-    line-height: 1.22;
+    line-height: 1.20;
     color: #000000;
     background: #ffffff;
     padding: 0;
@@ -40,7 +40,7 @@
   /* ---------- HEADING ---------- */
   .header {
     text-align: center;
-    margin-bottom: 5pt;
+    margin-bottom: 4.5pt;
   }
 
   .header .name {
@@ -56,7 +56,7 @@
 
   .header .contact-line {
     font-size: 9.8pt;
-    line-height: 1.22;
+    line-height: 1.20;
     color: #000000;
   }
 
@@ -74,14 +74,14 @@
   .summary-box {
     margin-left: var(--indent);
     font-size: 9.8pt;
-    line-height: 1.22;
+    line-height: 1.20;
     text-align: left;
-    margin-bottom: 3pt;
+    margin-bottom: 2.5pt;
   }
 
   /* ---------- SECTION ---------- */
   .section {
-    margin-bottom: 4.5pt;
+    margin-bottom: 4pt;
   }
 
   .section-title {
@@ -92,15 +92,15 @@
     letter-spacing: 0.5pt;
     text-transform: none;
     border-bottom: 1px solid #000000;
-    padding-bottom: 1pt;
-    margin-bottom: 3pt;
+    padding-bottom: 0.5pt;
+    margin-bottom: 2.5pt;
     line-height: 1.1;
   }
 
   /* ---------- SUBHEADINGS ---------- */
   .subheading {
     margin-left: var(--indent);
-    margin-bottom: 2.5pt;
+    margin-bottom: 2pt;
   }
 
   .row-top {
@@ -108,7 +108,7 @@
     justify-content: space-between;
     align-items: baseline;
     font-size: 11pt;
-    line-height: 1.2;
+    line-height: 1.18;
   }
 
   .row-bottom {
@@ -116,9 +116,9 @@
     justify-content: space-between;
     align-items: baseline;
     font-size: 9.8pt;
-    line-height: 1.2;
+    line-height: 1.18;
     margin-top: 0.5pt;
-    margin-bottom: 1.5pt;
+    margin-bottom: 1pt;
   }
 
   .bold-title {
@@ -140,13 +140,13 @@
     list-style-type: disc;
     margin-left: 0;
     padding-left: 14pt;
-    margin-bottom: 2pt;
+    margin-bottom: 1.5pt;
   }
 
   .bullet-list li {
     font-size: 9.8pt;
-    line-height: 1.22;
-    margin-bottom: 1.2pt;
+    line-height: 1.20;
+    margin-bottom: 1pt;
     text-align: left;
   }
 
@@ -157,12 +157,12 @@
   /* ---------- SKILLS SECTION ---------- */
   .skills-list {
     font-size: 9.8pt;
-    line-height: 1.25;
+    line-height: 1.22;
     margin-left: var(--indent);
   }
 
   .skill-item {
-    margin-bottom: 1.2pt;
+    margin-bottom: 1pt;
   }
 
   .skill-item:last-child {
@@ -227,7 +227,7 @@
       </ul>
     </div>
 
-    <div class="subheading" style="margin-top: 2.5pt;">
+    <div class="subheading" style="margin-top: 2pt;">
       <div class="row-top">
         <span class="bold-title">Bigscal Technologies Pvt. Ltd.</span>
         <span class="date-location">Surat, India</span>
@@ -239,6 +239,7 @@
       <ul class="bullet-list">
         <li>Engineered clinical NLP summarization pipelines for 116K+ medical records using 4-bit quantized Llama 3 and FastAPI.</li>
         <li>Built real-time WebSocket audio streaming for Indic ASR using NVIDIA NeMo (RNN-T and CTC decoding) and audio DSP.</li>
+        <li>Constructed multilingual speech synthesis pipelines with Coqui TTS, formatting custom LJSpeech audio datasets via DSP.</li>
       </ul>
     </div>
   </div>
@@ -277,6 +278,17 @@
       <ul class="bullet-list">
         <li>Fine-tuned E5-large-v2 (335M params) with triplet loss, boosting domain semantic retrieval relevance by 18% over OpenAI.</li>
         <li>Constructed hard-negative mining pipeline over Lightcast labor datasets to separate closely aligned skill taxonomies.</li>
+      </ul>
+    </div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>Edge Language Model for Edge Hardware</strong> <span class="separator">|</span> <em>Python, PyTorch, CUDA, TinyStories</em></span>
+        <span class="date-location">Research Project</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Pretrained sub-100M autoregressive Transformer from scratch on 462M tokens with custom Pre-LN architecture (1.43 val loss).</li>
+        <li>Engineered FragmentStream tiled memory attention algorithm preventing OOMs during long-context generation.</li>
       </ul>
     </div>
 
@@ -329,7 +341,7 @@
       </div>
     </div>
 
-    <div class="skills-list" style="margin-top: 2pt;">
+    <div class="skills-list" style="margin-top: 1.5pt;">
       <div class="skill-item"><span class="skill-label">Certifications:</span> Microsoft Certified: Azure AI Fundamentals (AI-900) <span class="separator">|</span> Microsoft Certified: Azure Fundamentals (AZ-900)</div>
     </div>
   </div>
