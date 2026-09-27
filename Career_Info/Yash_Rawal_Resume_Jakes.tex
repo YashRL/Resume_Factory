@@ -1,11 +1,11 @@
 %-------------------------
-% Resume in Latex - Yash Rawal (Edge-to-Edge 1-Line Calibrated)
-% Author : Jake Gutierrez template adaptation
+% Resume in Latex
+% Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -20,18 +20,31 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins - Jake's exact dimensions
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.55in}
-\addtolength{\textheight}{1.1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -41,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -51,15 +64,22 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2.5pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2.5pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -82,17 +102,18 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Yash Rawal} \\ \vspace{1pt}
-    \small +91-9399159685 $|$ 
-    \href{mailto:yash.mahesh.rawal@gmail.com}{\underline{yash.mahesh.rawal@gmail.com}} $|$ 
+    \small +91-9399159685 $|$ \href{mailto:yash.mahesh.rawal@gmail.com}{\underline{yash.mahesh.rawal@gmail.com}} $|$ 
     \href{https://linkedin.com/in/rawal-yash}{\underline{linkedin.com/in/rawal-yash}} $|$
     \href{https://github.com/YashRL}{\underline{github.com/YashRL}} $|$
-    \small Ratlam, MP, India
+    Ratlam, MP, India
 \end{center}
+
 
 %-----------SUMMARY-----------
 \section{Professional Summary}
@@ -102,6 +123,7 @@
      Proven expertise in fine-tuning open-source models, building multi-agent MCP tools, and deploying enterprise AI pipelines.
     }}
  \end{itemize}
+
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -117,8 +139,6 @@
         \resumeItem{Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.}
         \resumeItem{Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90\%+ Recall@10.}
         \resumeItem{Built Prompt Lab evaluation control plane to monitor LLM outputs, track latency, and curate RLHF benchmark datasets.}
-        \resumeItem{Engineered Spring AI MCP server exposing 65+ SAP/HANA tools with JSON-RPC 2.0 and phantom-token security patterns.}
-        \resumeItem{Implemented SSE streaming telemetry and 6-dimension LLM-as-a-Judge evaluation framework scoring groundedness.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -131,6 +151,7 @@
 
   \resumeSubHeadingListEnd
 
+
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
@@ -138,33 +159,29 @@
           {\textbf{vLLM High-Performance Inference Engine} $|$ \emph{Python, PyTorch, Pydantic, AsyncIO}}{Open Source}
           \resumeItemListStart
             \resumeItem{Merged PR \#55475 fixing XML tool parser drops on \texttt{/v1/chat/completions} and engineered torchcodec compatibility guards.}
-            \resumeItem{Optimized async inference request lifecycle and validated Pydantic schema serialization across multi-GPU test suites.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Job Architecture Generator (Qwen2.5-7B SFT)} $|$ \emph{Python, PyTorch, Unsloth, vLLM}}{LLM Training}
           \resumeItemListStart
             \resumeItem{Fine-tuned Qwen2.5-7B on 10K+ domain examples using Unsloth and deployed low-latency OpenAI-compatible endpoints.}
-            \resumeItem{Trained 4-bit QLoRA adapters with custom chat templates, cutting GPU memory overhead by 60\% during vLLM serving.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{E5-large-v2 Job \& Skills Embedding Fine-Tuning} $|$ \emph{Python, PyTorch, Transformers}}{Model Training}
           \resumeItemListStart
             \resumeItem{Fine-tuned E5-large-v2 (335M params) with triplet loss, boosting domain semantic retrieval relevance by 18\% over OpenAI.}
-            \resumeItem{Constructed hard-negative mining pipeline over Lightcast labor datasets to separate closely aligned skill taxonomies.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Modular Agent Harness \& Conversational Copilot} $|$ \emph{Python, FastAPI, pgvector}}{Project}
           \resumeItemListStart
             \resumeItem{Architected modular Python agent framework implementing formal ReAct loops with step budgets and dynamic tool routing.}
-            \resumeItem{Integrated multi-turn conversational session memory and PostgreSQL state persistence with automated fallback handlers.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Hierarchical Document Intelligence \& RAG Platform} $|$ \emph{Python, pgvector, GROBID}}{Project}
           \resumeItemListStart
             \resumeItem{Engineered 4-level hierarchical RAG ingestion for complex documents using GROBID parsing and PGVector similarity search.}
-            \resumeItem{Developed paragraph-level signature deduplication and versioning pipeline supporting 1,000+ domain reference books.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
+
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
@@ -176,6 +193,7 @@
      \textbf{Cloud \& DevOps}{: Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, PyTest, LLM-as-a-Judge}
     }}
  \end{itemize}
+
 
 %-----------EDUCATION & CERTIFICATIONS-----------
 \section{Education \& Certifications}
@@ -190,6 +208,7 @@
      \textbf{Certifications}{: Microsoft Certified: Azure AI Fundamentals (AI-900) $|$ Microsoft Certified: Azure Fundamentals (AZ-900)}
     }}
   \end{itemize}
+
 
 %-------------------------------------------
 \end{document}
