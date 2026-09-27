@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Rawal — Resume</title>
+<style>
+  :root {
+    --font-serif: "Times New Roman", "Nimbus Roman No9 L", "Liberation Serif", "FreeSerif", serif;
+    --font-size: 10.5pt;
+    --page-margin-x: 0.5in;
+    --page-margin-y: 0.42in;
+  }
+
+  @page {
+    size: letter;
+    margin: var(--page-margin-y) var(--page-margin-x);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    font-size: 10.5pt;
+    line-height: 1.25;
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 8.5in;
+  }
+
+  /* ---------- HEADING ---------- */
+  .header {
+    text-align: center;
+    margin-bottom: 7pt;
+  }
+
+  .header .name {
+    font-family: var(--font-serif);
+    font-size: 20pt;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.5pt;
+    line-height: 1.1;
+    margin-bottom: 2pt;
+    color: #000000;
+  }
+
+  .header .contact-line {
+    font-size: 9.5pt;
+    line-height: 1.3;
+    color: #111111;
+  }
+
+  .header .contact-line a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .header .separator {
+    margin: 0 4pt;
+    color: #444444;
+  }
+
+  /* ---------- SECTION ---------- */
+  .section {
+    margin-bottom: 6.5pt;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: 11.5pt;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.5pt;
+    text-transform: none;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1pt;
+    margin-bottom: 3.5pt;
+    line-height: 1.15;
+  }
+
+  /* ---------- SUBHEADINGS (TABLE LAYOUT) ---------- */
+  .subheading {
+    margin-bottom: 3pt;
+  }
+
+  .row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 10.5pt;
+    line-height: 1.22;
+  }
+
+  .row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 9.5pt;
+    line-height: 1.22;
+    margin-top: 0.5pt;
+    margin-bottom: 1pt;
+  }
+
+  .bold-title {
+    font-weight: 700;
+  }
+
+  .italic-subtitle {
+    font-style: italic;
+  }
+
+  .date-location {
+    font-size: 9.5pt;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  /* ---------- BULLET ITEMS ---------- */
+  .bullet-list {
+    list-style-type: disc;
+    margin-left: 17pt;
+    margin-bottom: 1.5pt;
+  }
+
+  .bullet-list li {
+    font-size: 9.5pt;
+    line-height: 1.25;
+    margin-bottom: 1.2pt;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .bullet-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------- SKILLS SECTION ---------- */
+  .skills-list {
+    font-size: 9.5pt;
+    line-height: 1.32;
+    margin-left: 2pt;
+  }
+
+  .skill-item {
+    margin-bottom: 1.2pt;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-label {
+    font-weight: 700;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADING -->
+  <div class="header">
+    <div class="name">Yash Rawal</div>
+    <div class="contact-line">
+      Ratlam (457001), MP, India <span class="separator">|</span> +91-9399159685 <span class="separator">|</span>
+      <a href="mailto:yashrawal987@gmail.com">yashrawal987@gmail.com</a> <span class="separator">|</span>
+      <a href="https://linkedin.com/in/rawal-yash">linkedin.com/in/rawal-yash</a> <span class="separator">|</span>
+      <a href="https://github.com/YashRL">github.com/YashRL</a>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+    
+    <div class="subheading">
+      <div class="row-top">
+        <span class="bold-title">Bigscal Technologies Pvt. Ltd.</span>
+        <span class="date-location">Surat, India</span>
+      </div>
+      <div class="row-bottom">
+        <span class="italic-subtitle">AI/ML Engineer</span>
+        <span class="date-location">Oct. 2024 – Present</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Deployed enterprise agentic platform and multi-agent systems serving <strong>1M+ active ERP users</strong> across 120+ cloud tenants.</li>
+        <li>Architected multi-agent routing with <strong>LangGraph & SAP Joule 2.0</strong>, integrating hybrid tool discovery across 650+ MCP tools.</li>
+        <li><strong>Re-architected multi-agent execution</strong> with capability contracts, delivering <strong>3× throughput, 70% token cut, and $120K+ savings</strong>.</li>
+        <li>Fine-tuned and served <strong>Qwen2.5-7B & E5-large-v2</strong> models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning via vLLM.</li>
+        <li>Implemented 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using PGVector (<strong>90%+ Recall@10</strong>).</li>
+        <li>Built Prompt Lab evaluation control plane to monitor model outputs, collecting reasoning trajectories for <strong>RLHF benchmarking</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="subheading" style="margin-top: 3.5pt;">
+      <div class="row-top">
+        <span class="bold-title">Bigscal Technologies Pvt. Ltd.</span>
+        <span class="date-location">Surat, India</span>
+      </div>
+      <div class="row-bottom">
+        <span class="italic-subtitle">AI/ML Engineer Intern</span>
+        <span class="date-location">Apr. 2024 – Sep. 2024</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Engineered clinical NLP summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3 and FastAPI endpoints.</li>
+        <li>Built real-time WebSocket audio streaming for Indic ASR with <strong>NVIDIA NeMo (RNN-T and CTC decoding)</strong> and torchaudio DSP.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>vLLM High-Performance Inference Engine</strong> <span class="separator">|</span> <em>Python, PyTorch, Pydantic, AsyncIO, PyTest</em></span>
+        <span class="date-location">Open Source</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Merged <strong>PR #55475</strong> fixing structural XML tool parser drops on <code>/v1/chat/completions</code> and engineered <code>torchcodec</code> multimodal guards.</li>
+      </ul>
+    </div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>Job Architecture Generator (Qwen2.5-7B SFT)</strong> <span class="separator">|</span> <em>Python, PyTorch, Hugging Face, Unsloth, vLLM</em></span>
+        <span class="date-location">LLM Training</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Fine-tuned <strong>Qwen2.5-7B</strong> on 10K+ domain examples using Unsloth on NVIDIA GPUs, deploying OpenAI-compatible vLLM endpoints.</li>
+      </ul>
+    </div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>E5-large-v2 Job & Skills Embedding Fine-Tuning</strong> <span class="separator">|</span> <em>Python, PyTorch, Triplet Loss, Transformers</em></span>
+        <span class="date-location">Model Training</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Fine-tuned <strong>E5-large-v2</strong> (335M params) on labor data with triplet loss, raising semantic retrieval relevance by <strong>18%</strong> over OpenAI.</li>
+      </ul>
+    </div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>Modular Agent Harness & Conversational Copilot</strong> <span class="separator">|</span> <em>Python, FastAPI, PostgreSQL, WebSockets, pgvector</em></span>
+        <span class="date-location">Project</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Architected modular Python agentic framework implementing formal ReAct loop with step budgets and pgvector tool routing.</li>
+      </ul>
+    </div>
+
+    <div class="subheading">
+      <div class="row-top">
+        <span><strong>Hierarchical Document Intelligence & RAG Platform</strong> <span class="separator">|</span> <em>Python, PostgreSQL, pgvector, GROBID</em></span>
+        <span class="date-location">Project</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Engineered immutable 4-level hierarchical RAG ingestion (paragraphs, pages, headings) using GROBID and PGVector retrieval.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-list">
+      <div class="skill-item"><span class="skill-label">Languages & Backend:</span> Python, SQL, FastAPI, PostgreSQL, Oracle, REST APIs, WebSockets, AsyncIO, Linux</div>
+      <div class="skill-item"><span class="skill-label">AI & ML Engineering:</span> Large Language Models (LLMs), Agentic AI, MCP, Tool RAG, Model Fine-Tuning (SFT/LoRA), vLLM Serving, RLHF</div>
+      <div class="skill-item"><span class="skill-label">Frameworks & Libraries:</span> LangChain, LangGraph, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, NVIDIA NeMo, LlamaIndex</div>
+      <div class="skill-item"><span class="skill-label">Cloud & DevOps:</span> Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, PyTest, LLM-as-a-Judge</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <div class="section" style="margin-bottom: 0;">
+    <div class="section-title">Education & Certifications</div>
+    
+    <div class="subheading">
+      <div class="row-top">
+        <span class="bold-title">Parul University</span>
+        <span class="date-location">Gujarat, India</span>
+      </div>
+      <div class="row-bottom">
+        <span class="italic-subtitle">Master of Computer Applications (Artificial Intelligence & Machine Learning)</span>
+        <span class="date-location">2022 – 2024</span>
+      </div>
+    </div>
+
+    <div class="skills-list" style="margin-top: 2.5pt;">
+      <div class="skill-item"><span class="skill-label">Certifications:</span> Microsoft Certified: Azure AI Fundamentals (AI-900) <span class="separator">|</span> Microsoft Certified: Azure Fundamentals (AZ-900)</div>
+    </div>
+  </div>
+
+</body>
+</html>

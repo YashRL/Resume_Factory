@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex - Yash Rawal (Calibrated 1-Line Budget)
+% Author : Jake Gutierrez template adaptation
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins - Jake's exact dimensions
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Rawal} \\ \vspace{1pt}
+    \small Ratlam (457001), Madhya Pradesh, India $|$ +91-9399159685 $|$ 
+    \href{mailto:yashrawal987@gmail.com}{\underline{yashrawal987@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rawal-yash}{\underline{linkedin.com/in/rawal-yash}} $|$
+    \href{https://github.com/YashRL}{\underline{github.com/YashRL}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bigscal Technologies Pvt. Ltd.}{Surat, India}
+      {AI/ML Engineer}{Oct. 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Deployed enterprise agentic platform and multi-agent systems serving \textbf{1M+ active ERP users} across 120+ cloud tenants.}
+        \resumeItem{Architected multi-agent routing with \textbf{LangGraph \& SAP Joule 2.0}, integrating hybrid tool discovery across 650+ MCP tools.}
+        \resumeItem{\textbf{Re-architected multi-agent execution} with capability contracts, delivering \textbf{3$\times$ throughput, 70\% token cut, and \$120K+ savings}.}
+        \resumeItem{Fine-tuned and served \textbf{Qwen2.5-7B \& E5-large-v2} models on NVIDIA GPUs using PyTorch, Unsloth, and contrastive learning via vLLM.}
+        \resumeItem{Implemented 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using PGVector (\textbf{90\%+ Recall@10}).}
+        \resumeItem{Built Prompt Lab evaluation control plane to monitor model outputs, collecting reasoning trajectories for \textbf{RLHF benchmarking}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bigscal Technologies Pvt. Ltd.}{Surat, India}
+      {AI/ML Engineer Intern}{Apr. 2024 -- Sep. 2024}
+      \resumeItemListStart
+        \resumeItem{Engineered clinical NLP summarization pipelines for 116K+ medical records with 4-bit quantized Llama 3 and FastAPI endpoints.}
+        \resumeItem{Built real-time WebSocket audio streaming for Indic ASR with \textbf{NVIDIA NeMo (RNN-T and CTC decoding)} and torchaudio DSP.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{vLLM High-Performance Inference Engine} $|$ \emph{Python, PyTorch, Pydantic, AsyncIO, PyTest}}{Open Source}
+          \resumeItemListStart
+            \resumeItem{Merged \textbf{PR \#55475} fixing structural XML tool parser drops on `/v1/chat/completions` and engineered `torchcodec` multimodal guards.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Job Architecture Generator (Qwen2.5-7B SFT)} $|$ \emph{Python, PyTorch, Hugging Face, Unsloth, vLLM}}{LLM Training}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned \textbf{Qwen2.5-7B} on 10K+ domain examples using Unsloth on NVIDIA GPUs, deploying OpenAI-compatible vLLM endpoints.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{E5-large-v2 Job \& Skills Embedding Fine-Tuning} $|$ \emph{Python, PyTorch, Triplet Loss, Transformers}}{Model Training}
+          \resumeItemListStart
+            \resumeItem{Fine-tuned \textbf{E5-large-v2} (335M params) on labor data with triplet loss, raising semantic retrieval relevance by \textbf{18\%} over OpenAI.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Modular Agent Harness \& Conversational Copilot} $|$ \emph{Python, FastAPI, PostgreSQL, WebSockets, pgvector}}{Project}
+          \resumeItemListStart
+            \resumeItem{Architected modular Python agentic framework implementing formal ReAct loop with step budgets and pgvector tool routing.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Hierarchical Document Intelligence \& RAG Platform} $|$ \emph{Python, PostgreSQL, pgvector, GROBID}}{Project}
+          \resumeItemListStart
+            \resumeItem{Engineered immutable 4-level hierarchical RAG ingestion (paragraphs, pages, headings) using GROBID and PGVector retrieval.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Backend}{: Python, SQL, FastAPI, PostgreSQL, Oracle, REST APIs, WebSockets, AsyncIO, Linux} \\
+     \textbf{AI \& ML Engineering}{: Large Language Models (LLMs), Agentic AI, MCP, Tool RAG, Model Fine-Tuning (SFT/LoRA), vLLM Serving, RLHF} \\
+     \textbf{Frameworks \& Libraries}{: LangChain, LangGraph, vLLM, PyTorch, Hugging Face Transformers, SAP Joule 2.0, NVIDIA NeMo, LlamaIndex} \\
+     \textbf{Cloud \& DevOps}{: Azure, AWS, Docker, Kubernetes, CI/CD (GitHub Actions), Redis, PGVector, PyTest, LLM-as-a-Judge}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+\section{Education \& Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Parul University}{Gujarat, India}
+      {Master of Computer Applications (Artificial Intelligence \& Machine Learning)}{2022 -- 2024}
+  \resumeSubHeadingListEnd
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications}{: Microsoft Certified: Azure AI Fundamentals (AI-900) $|$ Microsoft Certified: Azure Fundamentals (AZ-900)}
+    }}
+  \end{itemize}
+
+%-------------------------------------------
+\end{document}
