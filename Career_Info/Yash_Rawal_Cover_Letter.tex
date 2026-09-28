@@ -1,0 +1,95 @@
+%-------------------------
+% Cover Letter in Latex
+% Author : Yash Rawal
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Rawal} \\ \vspace{1pt}
+    \small +91-9399159685 $|$ \href{mailto:yash.mahesh.rawal@gmail.com}{\uline{yash.mahesh.rawal@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/rawal-yash}{\uline{linkedin.com/in/rawal-yash}} $|$
+    \href{https://github.com/YashRL}{\uline{github.com/YashRL}} $|$
+    Ratlam, MP, India
+\end{center}
+
+\vspace{-4pt}
+\hrule
+\vspace{10pt}
+
+%----------METADATA----------
+\noindent September 28, 2026 \\
+\textbf{Hiring Team \& Engineering Leadership} \\
+Applied AI \& Machine Learning Engineering \\
+
+\vspace{8pt}
+\noindent Dear Hiring Team,
+
+\vspace{6pt}
+I am writing to express my strong interest in the \textbf{AI/ML Engineer / Applied AI Engineer} position. As an AI Engineer and Technical Lead with hands-on experience designing and operating production agentic platforms serving \textbf{1M+ active ERP users} across 120+ enterprise cloud tenants, I specialize in architecting reliable multi-agent systems, low-latency LLM serving infrastructure, and production RAG pipelines. Combining core model training with distributed systems engineering, my focus centers on building deterministic, secure, and cost-efficient AI applications that scale seamlessly in enterprise environments.
+
+\vspace{6pt}
+At Bigscal Technologies, I served as AI Lead with end-to-end technical ownership across architecture design, microservices, and model deployment. Key highlights of my technical work and leadership include:
+
+\begin{itemize}[leftmargin=0.2in, itemsep=3pt]
+    \item \textbf{Enterprise Multi-Agent Routing \& Scale:} Architected multi-agent routing with LangGraph \& SAP Joule 2.0 discovering and integrating 650+ dynamic MCP tools. Re-engineered execution flows with capability contracts and a unified ReAct loop, achieving \textbf{3$\times$ throughput gains and \$120K+ annual compute savings}.
+    \item \textbf{High-Performance LLM Serving \& Open-Source Contributions:} Active contributor to \textbf{vLLM} (merged PR \#55475 fixing XML tool parser drops and resolved unhandled torchcodec multimodal video decoder crash boundaries). Fine-tuned and served Qwen2.5-7B and E5-large-v2 embeddings using PyTorch, Unsloth, and vLLM endpoints.
+    \item \textbf{Hierarchical RAG \& Zero-Trust Governance:} Built 4-level hierarchical RAG pipelines indexing 10,000+ technical documents via PGVector (achieving \textbf{90\%+ Recall@10}), and engineered multi-tier zero-trust PII sanitization scrubbing sensitive data across tool and server boundaries before LLMs.
+    \item \textbf{Evaluation Control Planes \& Mentorship:} Conceived and developed the Prompt Lab control plane to capture execution traces and curate benchmark datasets for RLHF/DPO pipelines, while mentoring and upskilling 5+ junior engineers and interns in model fine-tuning and agent evaluation.
+\end{itemize}
+
+\vspace{4pt}
+What distinguishes my engineering approach is the conviction that production AI requires systems-level rigor rather than brittle wrapper APIs. Whether pretraining sub-100M custom Transformers from scratch on 462M tokens, engineering chunked attention routines (FragmentStream) for memory-constrained hardware, or optimizing async inference request lifecycles, I focus on delivering tangible business value with strict performance and security guarantees.
+
+\vspace{6pt}
+I am excited about the opportunity to bring my hands-on architectural experience, model fine-tuning depth, and agent infrastructure leadership to your engineering team. Thank you for your time and consideration, and I welcome the opportunity to discuss how my background aligns with your engineering goals.
+
+\vspace{12pt}
+\noindent Sincerely, \\ \vspace{4pt}
+\textbf{Yash Rawal} \\
+\small AI/ML Engineer \& Technical Lead
+
+\end{document}
