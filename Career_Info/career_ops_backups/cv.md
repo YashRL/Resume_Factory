@@ -17,14 +17,16 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 ## Experience
 
 ### Bigscal Technologies Pvt. Ltd.
-*AI/ML Engineer* | *Oct 2024 – Present*
-- Deployed a production-scale agentic platform and multi-agent systems serving **1M+ active ERP users** across 120+ enterprise tenants on cloud infrastructure (Azure, AWS).
-- Architected multi-agent routing and workflow automation with **LangGraph & SAP Joule 2.0**, implementing hybrid semantic-lexical tool discovery (vector + BM25F/RRF) across 650+ dynamic read/write and generation MCP capabilities.
-- **Re-architected multi-agent execution** with a capability-contract layer and unified ReAct loop, delivering **3× throughput, 70% token reduction, and 5× inference-cost efficiency**, translating to **$120K+ inference savings per million runs** at enterprise platform scale.
-- Trained domain-specific **E5-large-v2** embedding models on Lightcast labor-market datasets using PyTorch triplet contrastive learning to optimize semantic job-to-skills intent matching.
-- Implemented a 4-level hierarchical RAG pipeline in Python indexing 10,000+ technical documents using GROBID, pdfplumber, and PostgreSQL/PGVector, achieving a **90%+ Recall@10** retrieval rate.
-- Developed the Prompt Lab evaluation control plane in Python to collect reasoning trajectories and human preference annotations, establishing a scalable **Human Feedback (RLHF) Pipeline** shooting zero regressions.
-- Built production guardrails against prompt injections and data leaks, integrating runtime tool validation and **automated PII redaction**.
+*AI/ML Engineer (Technical Lead)* | *Oct 2024 – Present*
+- Served as AI Lead driving 100% end-to-end ownership across multi-tenant microservices, agent runtimes, and models.
+- Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants on Azure and AWS.
+- Architected multi-agent A2A routing with LangGraph & SAP Joule 2.0, unifying SAP SuccessFactors, Blend, and MCP APIs.
+- Engineered dynamic UI widget rendering contracts and capability layers, boosting throughput 3× and saving $120K+/year.
+- Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.
+- Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90%+ Recall@10.
+- Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and RLHF pipelines.
+- Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs.
+- Mentored and upskilled 5+ interns and junior engineers in PyTorch fine-tuning, agentic workflows, and LLM evaluation.
 
 ### Bigscal Technologies Pvt. Ltd.
 *AI/ML Engineer Intern* | *Apr 2024 – Sep 2024*
