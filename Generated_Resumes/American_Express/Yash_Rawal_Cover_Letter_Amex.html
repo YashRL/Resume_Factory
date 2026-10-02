@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cover Letter — Yash Rawal (American Express)</title>
+<style>
+  :root {
+    --font-serif: "Times New Roman", "Nimbus Roman No9 L", "Liberation Serif", "FreeSerif", serif;
+    --font-size: 10.5pt;
+    --page-margin-x: 0.65in;
+    --page-margin-y: 0.6in;
+    --line-height: 1.32;
+    --color-text: #000000;
+  }
+
+  @page {
+    size: letter;
+    margin: var(--page-margin-y) var(--page-margin-x);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  body {
+    font-family: var(--font-serif);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--color-text);
+    background: #ffffff;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    text-align: center;
+    margin-bottom: 8pt;
+  }
+
+  .header .name {
+    font-family: var(--font-serif);
+    font-size: 20pt;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.5pt;
+    line-height: 1.1;
+    margin-bottom: 2pt;
+  }
+
+  .header .contact-line {
+    font-size: 9.8pt;
+    line-height: 1.25;
+  }
+
+  .header .contact-line a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    text-decoration-thickness: 0.75px;
+  }
+
+  .header .separator {
+    margin: 0 4pt;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 6pt 0 12pt;
+  }
+
+  /* ---------- METADATA ---------- */
+  .meta-block {
+    margin-bottom: 12pt;
+    font-size: 10.5pt;
+    line-height: 1.3;
+  }
+
+  .meta-block .date {
+    margin-bottom: 8pt;
+  }
+
+  .meta-block .recipient {
+    font-weight: 700;
+  }
+
+  /* ---------- LETTER BODY ---------- */
+  .greeting {
+    margin-bottom: 8pt;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 8pt;
+    text-align: justify;
+  }
+
+  .highlights {
+    margin: 4pt 0 8pt 18pt;
+    list-style-type: disc;
+  }
+
+  .highlights li {
+    margin-bottom: 4pt;
+    text-align: justify;
+  }
+
+  .highlights strong {
+    font-weight: 700;
+  }
+
+  /* ---------- SIGNATURE ---------- */
+  .closing {
+    margin-top: 12pt;
+  }
+
+  .signature-block {
+    margin-top: 16pt;
+    line-height: 1.2;
+  }
+
+  .signature-name {
+    font-weight: 700;
+    font-size: 11pt;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name">Yash Rawal</div>
+    <div class="contact-line">
+      <span>+91-9399159685</span>
+      <span class="separator">|</span>
+      <a href="mailto:yash.mahesh.rawal@gmail.com">yash.mahesh.rawal@gmail.com</a>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/rawal-yash">linkedin.com/in/rawal-yash</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/YashRL">github.com/YashRL</a>
+      <span class="separator">|</span>
+      <span>Ratlam, MP, India</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- METADATA -->
+  <div class="meta-block">
+    <div class="date">October 3, 2026</div>
+    <div class="recipient">Amex Tech Global Engineering Team, American Express</div>
+    <div class="company-sub">Bengaluru / Chennai, India</div>
+  </div>
+
+  <!-- SALUTATION -->
+  <div class="greeting">Dear American Express Hiring Team,</div>
+
+  <!-- BODY -->
+  <p>
+    I am writing to express my strong interest in the <strong>AI Engineer II</strong> position at American Express. As an AI Engineer and Technical Lead with proven experience architecting enterprise GenAI platforms serving <strong>1M+ active users</strong> across 120+ cloud tenants, I specialize in building autonomous Agentic AI workflows, scalable data pipelines (GCP BigQuery, Composer, Cloud Storage), and production-grade RAG architectures. My technical background in distributed systems, LLM evaluation pipelines, and Responsible AI governance directly aligns with Amex Tech’s commitment to driving secure, intelligent customer experiences at global scale.
+  </p>
+
+  <p>
+    At Bigscal Technologies, I served as AI Lead driving end-to-end technical execution across microservices design, cloud pipelines, and model deployment. Key technical achievements that match Amex Tech’s core focus areas include:
+  </p>
+
+  <ul class="highlights">
+    <li>
+      <strong>Agentic AI & Multi-Agent Orchestration:</strong> Architected multi-agent A2A routing using LangGraph & SAP Joule 2.0 unifying enterprise tools and APIs. Re-engineered execution flows with capability contracts and a unified ReAct loop, delivering <strong>3× throughput gains and $120K+ annual compute savings</strong>.
+    </li>
+    <li>
+      <strong>Enterprise RAG & Data Infrastructure:</strong> Built 4-level hierarchical RAG ingestion and indexing pipelines over 10,000+ technical documents using GROBID and PGVector, achieving <strong>90%+ Recall@10</strong> retrieval accuracy with automated BigQuery/SQL data preparation workflows.
+    </li>
+    <li>
+      <strong>Responsible AI & Enterprise Security:</strong> Architected a multi-stage AI guardrail engine enforcing tenant safety policies, PII/secrets redaction, and prompt injection defense, ensuring financial-grade data privacy and hallucination mitigation.
+    </li>
+    <li>
+      <strong>High-Performance Serving & Framework Contribution:</strong> Active contributor to <strong>vLLM</strong> (merged PR #55475 tool parser fix & torchcodec video decoder error boundaries). Fine-tuned and served Qwen2.5-7B and E5-large-v2 embedding models on distributed cloud infrastructure.
+    </li>
+  </ul>
+
+  <p>
+    Delivering AI within mission-critical financial and customer platforms demands systems-level rigor, deterministic tool execution, and strong risk governance. Having developed reusable agentic harnesses, automated LLM-as-a-Judge evaluation control planes (Prompt Lab), and zero-trust security boundaries, I am eager to help Amex Tech build and scale its next-generation intelligent platforms.
+  </p>
+
+  <p>
+    Thank you for your time and consideration. I welcome the opportunity to discuss how my experience in Agentic AI, RAG optimization, and enterprise AI engineering can contribute to American Express.
+  </p>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <div>Sincerely,</div>
+    <div class="signature-block">
+      <div class="signature-name">Yash Rawal</div>
+      <div style="font-size: 9.8pt; color: #333333; margin-top: 2pt;">AI/ML Engineer & Technical Lead</div>
+    </div>
+  </div>
+
+</body>
+</html>
