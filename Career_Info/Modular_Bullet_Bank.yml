@@ -4,7 +4,7 @@
 experience:
   bigscal_ai_lead:
     leadership:
-      default: "Served as AI Lead driving 100% end-to-end ownership across system design, microservices, and model deployment."
+      default: "Served as AI Lead driving 100% end-to-end ownership across multi-tenant microservices, agent runtimes, and models."
       variants:
         architect: "Served as Principal AI Architect leading end-to-end system design, microservices, and LLM deployments."
         fullstack: "Led full lifecycle engineering across distributed microservices, agent runtimes, and model deployment."
@@ -14,15 +14,17 @@ experience:
         gcp_aws: "Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ cloud tenants on GCP and AWS."
         azure_openai: "Deployed enterprise agentic platform serving 1M+ active ERP users across 120+ tenants on Azure OpenAI & AWS."
     routing:
-      default: "Architected multi-agent routing with LangGraph & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
+      default: "Architected multi-agent A2A routing with LangGraph & SAP Joule 2.0, unifying SAP SuccessFactors, Blend, and MCP APIs."
       variants:
-        crewai: "Architected multi-agent routing with CrewAI & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
-        autogen: "Architected multi-agent routing with AutoGen & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
-        semantic_kernel: "Architected multi-agent routing with Semantic Kernel, discovering and integrating 650+ dynamic function tools."
+        mcp_tools: "Architected multi-agent routing with LangGraph & SAP Joule 2.0, discovering and integrating 650+ dynamic MCP tools."
+        crewai: "Architected multi-agent routing with CrewAI & SAP Joule 2.0, unifying SAP SuccessFactors, Blend, and MCP APIs."
+        autogen: "Architected multi-agent routing with AutoGen & SAP Joule 2.0, unifying SAP SuccessFactors, Blend, and MCP APIs."
+        semantic_kernel: "Architected multi-agent routing with Semantic Kernel, unifying SAP SuccessFactors, Blend, and MCP APIs."
     cost_efficiency:
-      default: "Re-architected multi-agent execution with capability contracts, yielding 3× throughput gains and $120K+ annual savings."
+      default: "Engineered dynamic UI widget rendering contracts and capability layers, boosting throughput 3× and saving $120K+/year."
       variants:
-        latency: "Re-architected multi-agent execution with capability contracts, slashing latency by 65% and saving $120K+ annually."
+        capability_contracts: "Re-architected multi-agent execution with capability contracts, yielding 3× throughput gains and $120K+ annual savings."
+        latency: "Engineered dynamic UI widget rendering contracts and capability layers, slashing latency by 65% and saving $120K+ yearly."
     finetuning:
       default: "Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints."
       variants:
