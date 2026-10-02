@@ -25,7 +25,7 @@ Applied AI & Machine Learning Engineer serving a **1M+ user scale** by architect
 - Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.
 - Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90%+ Recall@10.
 - Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and RLHF pipelines.
-- Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs.
+- Architected multi-stage AI guardrail engine enforcing tenant policies, PII/secrets redaction, and prompt injection defense.
 - Mentored and upskilled 5+ interns and junior engineers in PyTorch fine-tuning, agentic workflows, and LLM evaluation.
 
 ### Bigscal Technologies Pvt. Ltd.
