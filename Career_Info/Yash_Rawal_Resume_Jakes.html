@@ -223,8 +223,8 @@
         <li>Engineered dynamic UI widget rendering contracts and capability layers, boosting throughput 3× and saving $120K+/year.</li>
         <li>Fine-tuned and served Qwen2.5-7B and E5-large-v2 on NVIDIA GPUs using PyTorch, Unsloth, and vLLM inference endpoints.</li>
         <li>Built 4-level hierarchical RAG in Python indexing 10,000+ technical documents via PGVector achieving 90%+ Recall@10.</li>
-        <li>Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and RLHF pipelines.</li>
-        <li>Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs.</li>
+        <li>Conceived and built Prompt Lab evaluation control plane to benchmark LLM outputs and track hallucination metrics.</li>
+        <li>Architected dual-door policy guardrails enforcing tenant rules, jailbreak defense, PII masking, and write claims.</li>
         <li>Mentored and upskilled 5+ interns and junior engineers in PyTorch fine-tuning, agentic workflows, and LLM evaluation.</li>
       </ul>
     </div>
@@ -258,7 +258,6 @@
       <ul class="bullet-list">
         <li>Merged PR #55475 fixing XML tool parser drops on <code>/v1/chat/completions</code> and engineered torchcodec compatibility guards.</li>
         <li>Resolved unhandled torchcodec multimodal video decoder crashes by engineering resilient FFmpeg error boundaries.</li>
-        <li>Optimized async inference request lifecycle and validated Pydantic schema serialization across multi-GPU test suites.</li>
       </ul>
     </div>
 

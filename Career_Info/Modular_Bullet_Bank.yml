@@ -42,9 +42,10 @@ experience:
         dpo: "Conceived and built Prompt Lab control plane to capture execution traces, enabling human feedback and DPO alignment."
         observability: "Conceived and built Prompt Lab control plane to capture execution traces, enabling OpenTelemetry and evaluation."
     security:
-      default: "Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs."
+      default: "Architected dual-door policy guardrails enforcing tenant rules, jailbreak defense, PII masking, and write claims."
       variants:
-        guardrails: "Architected multi-tier zero-trust guardrails scrubbing sensitive PII data at tool and server boundaries before LLMs."
+        pii_masking: "Architected multi-tier zero-trust PII sanitization scrubbing sensitive data at tool and server boundaries before LLMs."
+        guardrail_gates: "Architected multi-stage enterprise policy gates with tenant guardrails, injection defense, and write-claim checks."
     mentorship:
       default: "Mentored and upskilled 5+ interns and junior engineers in PyTorch fine-tuning, agentic workflows, and LLM evaluation."
       variants:
